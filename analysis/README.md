@@ -1,6 +1,6 @@
-# analysis/ -- follow-up analyses, rounds 28--49
+# analysis/ -- follow-up analyses, rounds 28--50
 
-Scripts, analysis plans, and result tables of the follow-up analyses on the TUEP v2.0.1 first-session cohort (200 patients, 50 canonical patient-level folds). The code of the earlier rounds (feature extraction, models, rounds 3--27) is in `../code/`. The manuscript (`../manuscript/`, Supplement S1--S3) describes each round and its status.
+Scripts, analysis plans, and result tables of the follow-up analyses on the TUEP v2.0.1 first-session cohort (200 patients, 50 canonical patient-level folds); round 50 also uses the public Emotiv cohort (Zenodo 1252141, 299 subjects). The code of the earlier rounds (feature extraction, models, rounds 3--27) is in `../code/`. The manuscript (`../manuscript/`, Supplement S1--S3) describes each round and its status.
 
 All analyses are **follow-up analyses**: every plan was written after the results of earlier rounds were known, so none is confirmatory. The `PRAREGISTRASI_*.md` files are version-controlled analysis plans (the file names keep the original wording), not formal registrations.
 
@@ -21,11 +21,16 @@ File and folder names, CSV columns, and decision labels were kept as they were p
 | `kebocoran` | leakage |
 | `kalibrasi` | calibration (operating characteristics of the decision rules, round 49B) |
 | `struktur` | structure (within-patient structure, round 49D) |
+| `deskriptif` | descriptive (outside the plan) |
+| `sebelum_perbaikan_cetak` | before the print correction (copy kept as evidence, round 50 addendum 1) |
+| `emotiv_fitur.npz` | cache of the Emotiv window features written by `round50_emotiv.py` (not included; recomputed on the first run) |
 | `nesting_ketat`, `nm_ketat` | strict nesting (round 49A) |
 | `perlipatan` | per fold |
 | `tindaklanjut` | follow-up |
 | `*_SELESAI` | "done" marker files (not included) |
 | decision labels `tidak ada bukti` / `tidak pasti` / `kebocoran` | `no evidence` / `uncertain` / `leakage` (rules R1/R2) |
+| CSV columns of `hasil50/ringkas_A*.csv`, `ringkas_B_uji.csv`: `aturan`, `n_rep`, `tidak_ada_bukti`, `tidak_pasti`, `kebocoran` (+ `_lo`/`_hi`), `delta_awal`, `sd_awal`, `famili`, `uji` | rule, number of replicates per draw, % no evidence, % uncertain, % leakage (+ Monte Carlo CI), difference and SD in the first 30/20 replicates, family, test |
+| values `primer` / `sekunder`; `R2 normal (selisih 0)` | primary / secondary family; R2 under a normal model with a true difference of zero |
 | CSV columns of `hasil49/B_*.csv`: `sumber`, `kumpulan`, `aturan`, `tingkat`, `jenis`, `ukuran_kumpulan`, `rata2`, `p_tidak_ada_bukti`, `p_tidak_pasti`, `p_kebocoran`, `ci_*` | source, pool, rule, level, type, pool size, mean, P(no evidence), P(uncertain), P(leakage), CI |
 
 ## Rounds
@@ -46,7 +51,8 @@ File and folder names, CSV columns, and decision labels were kept as they were p
 | 46 | R1 on the per-fold AUC for C1 and V0--V4 | `round46_*.py` |
 | 47 | F2 without NM | `round47_*.py` |
 | 48 | Dynamic leakage audit on all 50 folds | `round48_*.py` |
-| 49 | Strict nesting (49A), operating characteristics of R1/R2 (49B), EEG over non-EEG predictors (49C), within-patient structure (49D), strata weighting and kurtosis table (49E/F) | `round49_*.py`, `table_builders/` |
+| 49 | Strict nesting (49A), operating characteristics of R1/R2 (49B), EEG over non-EEG predictors (49C), within-patient structure (49D), strata weighting and kurtosis table (49E/F) | `round49_*.py`, `table_builders/hitung_49D.py` |
+| 50 | Plasmode replicates for raw-feature trees extended to 120 per cell (50A); plasmode repeated on the independent Emotiv cohort (50B); reporting completeness from stored results (50C) | `round50_*.py`, `run_chain_50.sh`, `hasil50/deskriptif_120_semua_pipeline.py`, `table_builders/bangun_tabel_putaran50.py` |
 
 Each plan lists its hypotheses, decision rules, predictions (written before the results), and the checks that were promised. Every round has an independent check (`*_cek_independen.py`) that recomputes the main numbers with a second implementation.
 
@@ -54,5 +60,5 @@ Each plan lists its hypotheses, decision rules, predictions (written before the 
 
 * TUEP data and anything derived from it that carries patient identifiers (for example per-fold prediction files keyed by subject). The result tables and prediction arrays kept in `hasil*/` carry no identifiers.
 * Run logs and "done" marker files.
-* Scripts that generated the Indonesian version of the manuscript tables. Some presentation scripts named in the plans (for example the table builders listed in addendum 5 of round 49) are therefore not part of this repository.
+* Scripts that generated the Indonesian version of the manuscript tables. Some presentation scripts named in the plans (for example the table builders listed in addendum 5 of round 49) are therefore not part of this repository. For round 50, `table_builders/bangun_tabel_putaran50.py` is an English-only version of the presentation script; `--check` confirms that it reproduces the Emotiv rows of the plasmode table and Table S2.16 in `../manuscript/naskah/`.
 * The plans, hash notes, and script comments were translated into English for publication. The SHA-256 values in `PRAREGISTRASI_hash_*.txt` were computed on the original Indonesian files and do not match the English files here.

@@ -3,7 +3,7 @@
 \renewcommand{\thetable}{S2.\arabic{table}}
 \renewcommand{\thefigure}{S2.\arabic{figure}}
 
-\section*{Supplementary Material S2: rounds 39--49}\label{sec:s2}
+\section*{Supplementary Material S2: rounds 39--50}\label{sec:s2}
 
 \subsection*{S2.1 Analysis-plan documents}
 The plan of each round was written and hashed with SHA-256 before the round was run. \tabref{tab:kronologi} lists the first 12 characters of the hash of each round and the number of independent check groups that passed (the files \path{PRAREGISTRASI_hash_putaran*.txt} contain the full hashes, addenda, and scripts). Hash procedure: the 12-character prefix of the SHA-256 of the plan document was computed on the content of the document up to the heading ``\#\# Adendum'' (the heading used in the registration documents) when the document contains addenda (verified in rounds 29, 36, and 39).
@@ -139,3 +139,4 @@ Because NM (a nonlinear classifier) did not fully pass the leakage test, the F2 
 The perturbation test of round 30 (altering test data and flipping test labels) was repeated on all 50 canonical folds for I2 with V4, P3 with V5, and NM with V4 (six checks per fold, 300 checks; identical check code, only the list of folds extended). The repetition used a hashed plan before the run (\tabref{tab:kronologi}) and three independent check groups, all of which passed. All 300 checks passed; the prediction in the plan that all would pass (probability 90\%) was met. Residual orthogonality and the global label permutation (100 permutations) remain from round 30.
 
 \input{\naskahdir/S2_putaran49}
+\input{\naskahdir/S2_putaran50}

@@ -10,15 +10,15 @@ explicit decision rules (R1, R2) raises false alarms or misses the leak. The pip
 mean of three view-specific probabilities) is a test case, not a validated clinical model. The label is the TUEP
 curation label (derived from reports, clinical history and medication), not an independent clinical diagnosis.
 
-> Status: manuscript in preparation. The analyses are follow-up analyses on one retrospective archive over 49
-> rounds; they are exploratory, not confirmatory.
+> Status: manuscript in preparation. The analyses are follow-up analyses on one retrospective archive over 50
+> rounds (round 50 also repeats the plasmode on the independent Emotiv cohort); they are exploratory, not confirmatory.
 
 ## Repository layout
 
 | Folder | Content |
 |---|---|
 | `manuscript/` | LaTeX sources of the main text (`main_en.tex`) and the supplementary material S1--S3 (`supl_S1S3_en.tex`), section files in `naskah/`, figures in `figures_en/`, bibliography, build script, and the compiled PDFs in `manuscript/pdf/` |
-| `analysis/` | Scripts, analysis plans (`PRAREGISTRASI_*.md`) with their SHA-256 records (`PRAREGISTRASI_hash_*.txt`), and result tables for rounds 28--49 (`hasil*/`); see `analysis/README.md` for the round index and a glossary of the Indonesian-derived file names |
+| `analysis/` | Scripts, analysis plans (`PRAREGISTRASI_*.md`) with their SHA-256 records (`PRAREGISTRASI_hash_*.txt`), and result tables for rounds 28--50 (`hasil*/`); see `analysis/README.md` for the round index and a glossary of the Indonesian-derived file names |
 | `code/` | Pipeline code shared by all rounds (feature extraction, normative adjustment, evaluation kit, models, rounds 3--27) |
 | `tools/` | `verify_sha256.sh`, `rewrite_paths.sh` |
 | `SHA256SUMS.txt` | Checksums of every file in this repository |
@@ -30,10 +30,12 @@ curation label (derived from reports, clinical history and medication), not an i
   Data Consortium (https://isip.piconepress.com/projects/nedc/html/tuh_eeg/). The data use terms do not allow
   redistribution, so no EEG, no patient index and no per-patient outputs are included here.
 * Result files that contain TUEP subject identifiers (per-fold predictions keyed by subject) were removed;
-  `analysis/hasil*/` keeps the aggregate result tables, logs, and prediction arrays that carry no identifiers.
+  `analysis/hasil*/` keeps the aggregate result tables and prediction arrays that carry no identifiers (run logs are not included).
 * The patient-level folds are deterministic: `code/folds.py` rebuilds the 10 x 5 stratified folds
   (`StratifiedKFold`, seeds 1000 + repetition) from the patient index.
-* External transfer sets: Kural et al. (Zenodo 4688758) and the Emotiv Guinea-Bissau/Nigeria set (Zenodo 1252141).
+* External sets: Kural et al. (Zenodo 4688758) and the Emotiv Guinea-Bissau/Nigeria set (Zenodo 1252141). Both are used
+  for prediction transfer; the Emotiv set is also used for the round-50 plasmode (`analysis/round50_emotiv.py`, which
+  recomputes its cached band-power features from the preprocessed Emotiv windows).
 
 ## Rebuilding the manuscript
 
@@ -54,14 +56,14 @@ written to `manuscript/build/out/`. Their text matches the PDFs in `manuscript/p
 3. `bash tools/rewrite_paths.sh /path/to/WORKDIR` points the hard-coded paths (the scripts were written on a
    single workstation with absolute paths) to this clone and your working directory.
 4. Create the environment from `requirements.txt` and run the scripts of the round of interest, e.g.
-   `analysis/round49_*.py`. Each round's plan (`analysis/PRAREGISTRASI_putaranNN.md`) describes its scripts and outputs.
+   `analysis/round50_*.py`. Each round's plan (`analysis/PRAREGISTRASI_putaranNN.md`) describes its scripts and outputs.
    Some rounds need a GPU (NormMamba, foundation-model embeddings); LaBraM, CBraMod, BENDR and EEG-Bench checkpoints must be
    obtained from their original repositories.
 
 ## Analysis plans and their status
 
 Every round was planned in a version-controlled document written after the results of earlier rounds were
-known. Rounds 3--27 were committed to Git before their code ran; rounds 28--49 were hashed with SHA-256 (the
+known. Rounds 3--27 were committed to Git before their code ran; rounds 28--50 were hashed with SHA-256 (the
 `PRAREGISTRASI_hash_*.txt` files). A hash identifies a document but does not by itself prove when it was written, and
 these plans are **not** registrations in the confirmatory sense. Addenda made after results were seen are
 listed in the plans and in the manuscript (Supplement S1).

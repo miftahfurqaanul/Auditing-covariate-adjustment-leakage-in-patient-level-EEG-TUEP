@@ -1,5 +1,5 @@
 \begin{table}[t]
-\caption{Plasmode: real EEG features with synthetic labels derived from covariates alone (H1: features swapped between patients). Per-fold AUC (percent; replicate mean) by label--covariate association strength $\gamma$ ($\gamma=1$ mimics the real association). The last two columns: the R1 decision and the paired difference in pp (R2 decision) at $\gamma=1$ against the raw pipeline without adjustment. R1: no evidence if the mean $\leq 52.0$ and the mean $+\,1.645\,\mathrm{SE} \leq 54.0$, leakage if $> 55$; R2: no evidence if the difference $\leq 1.0$ pp (upper bound $\leq 3.0$ pp), leakage if $> 3.0$ pp; otherwise uncertain; ``--'': baseline row, no decision. Replicates: 30 (\textit{random forest}, logistic regression) and 20 (XGBoost, Bi-LSTM, NM); Bi-LSTM and NM only $\gamma\in\{0,1\}$. $^{\ddagger}$ CPU, same histogram algorithm (S2).}\label{tab:plasmode}
+\caption{Plasmode: real EEG features with synthetic labels derived from covariates alone (H1: features swapped between patients); upper blocks TUEP (round 42), lower block the independent Emotiv cohort (round 50). Per-fold AUC (percent; replicate mean) by label--covariate association strength $\gamma$ ($\gamma=1$ mimics the real association). The last two columns: the R1 decision and the paired difference in pp (R2 decision) at $\gamma=1$ against the same transformation without adjustment (for the tree classifiers, the raw pipeline); its Monte Carlo SE was 0.3--0.9 pp, except 1.1--2.3 pp for raw adjustment with trees or the Bi-LSTM. R1: no evidence if the mean $\leq 52.0$ and the mean $+\,1.645\,\mathrm{SE} \leq 54.0$, leakage if $> 55$; R2: no evidence if the difference $\leq 1.0$ pp (upper bound $\leq 3.0$ pp), leakage if $> 3.0$ pp; otherwise uncertain; ``--'': baseline row, no decision. Replicates: 30 (\textit{random forest}, logistic regression) and 20 (XGBoost, Bi-LSTM, NM) in both cohorts; Bi-LSTM and NM only $\gamma\in\{0,1\}$. $^{\ddagger}$ CPU, same histogram algorithm (S2).}\label{tab:plasmode}
 \centering\scriptsize
 \setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{p{0.40\textwidth}ccccc}
@@ -26,6 +26,19 @@ Pipeline & $\gamma=0$ & $\gamma=0.5$ & $\gamma=1$ & R1 ($\gamma=1$) & $\Delta$; 
 \quad no covariate regression (N0) & 49.5 & -- & 50.5 & -- & -- \\
 \quad V4 adjustment & 50.1 & -- & 50.9 & no evidence & +0.4; no evidence \\
 \quad rank-normal + V4 & 50.5 & -- & 50.3 & no evidence & $-$0.3; no evidence \\
+\multicolumn{6}{l}{\textit{Independent cohort: Emotiv, 299 subjects (round 50)}} \\
+\multicolumn{6}{l}{\quad\textit{Random forest (raw band power, 60 features)}} \\
+\qquad raw, no adjustment & 50.7 & 50.3 & 48.8 & -- & -- \\
+\qquad raw + per-patient adjustment & 49.7 & 54.2 & 61.6 & leakage & +12.7; leakage \\
+\qquad rank-normal + per patient & 50.8 & 50.8 & 50.2 & no evidence & +1.4; uncertain \\
+\multicolumn{6}{l}{\quad\textit{XGBoost (raw band power, 60 features)}} \\
+\qquad raw, no adjustment & 50.1 & 51.4 & 48.9 & -- & -- \\
+\qquad raw + per-patient adjustment & 50.0 & 54.3 & 60.5 & leakage & +11.6; leakage \\
+\qquad rank-normal + per patient & 50.7 & 52.3 & 49.9 & no evidence & +1.0; uncertain \\
+\multicolumn{6}{l}{\quad\textit{Logistic regression (subject-level log band power)}} \\
+\qquad raw, no adjustment & 50.3 & 50.3 & 49.5 & -- & -- \\
+\qquad raw + per-patient adjustment & 50.6 & 50.1 & 49.8 & no evidence & +0.3; no evidence \\
+\qquad rank-normal + per patient & 49.9 & 50.6 & 49.5 & no evidence & $-$0.1; no evidence \\
 \bottomrule
 \end{tabular}
 \end{table}

@@ -1,7 +1,7 @@
 {\scriptsize
 \setlength{\tabcolsep}{2.5pt}
 \begin{longtable}{p{0.20\textwidth}p{0.17\textwidth}p{0.24\textwidth}p{0.13\textwidth}p{0.17\textwidth}}
-\caption{Questions, endpoints, contrasts, analysis status, and multiplicity control. Every analysis is a follow-up analysis on the same 200 patients and 50 folds. Holm within one round controls the family-wise error only within that family, not across the 49 rounds; with respect to the whole analysis history every inference is exploratory. BH: Benjamini--Hochberg.}\label{tab:peta_hipotesis}\\
+\caption{Questions, endpoints, contrasts, analysis status, and multiplicity control. Every analysis is a follow-up analysis on the same 200 patients and 50 folds (round 50 also on the Emotiv cohort). Holm within one round controls the family-wise error only within that family, not across the 50 rounds; with respect to the whole analysis history every inference is exploratory. BH: Benjamini--Hochberg.}\label{tab:peta_hipotesis}\\
 \toprule
 Question (round) & Endpoint & Contrast & Status & Family and correction \\
 \midrule
@@ -28,6 +28,8 @@ EEG over non-EEG predictors (49) & Per-fold AUC & N1 $-$ N0, N2 $-$ N0 & Follow-
 Properties of R1/R2 (49) & Decision frequencies & -- & Follow-up & None (Monte Carlo CI) \\
 Within-patient structure (49) & Pooled AUC $\Delta$ (simulation) & D1, D2 & Follow-up & Holm, 2 tests \\
 Strata weighting (49) & $A_{\mathrm{avg}}$ & Cell-weighted; largest cell removed & Follow-up & None (descriptive) \\
+R2 with 120 plasmode replicates (50) & Decision frequencies & -- & Follow-up & None (Monte Carlo CI) \\
+Plasmode on the Emotiv cohort (50) & Per-fold AUC & Raw adjusted $-$ unadjusted; raw $-$ rank-normal (\textit{random forest}, XGBoost) & Follow-up & Holm, 2 tests per family \\
 Registry of 89 tests under V0 (3--26) & Various & Various & Superseded (leaking pipeline) & Holm per round; kept in the repository as an analysis trail \\
 \end{longtable}
 }

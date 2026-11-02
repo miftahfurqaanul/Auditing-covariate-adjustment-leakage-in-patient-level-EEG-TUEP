@@ -1,0 +1,25 @@
+6e4e37e4920c7a0a9ad09c4faac0f1e9d53f1d0841e191a1c0a04cdc2c6bdd77  PRAREGISTRASI_putaran50.md
+0c64578717f4102489836c693fda64ba183bf2fe41e716229f81b64732bddc51  round50_A.py
+ec3747cfadf7d933546420b5f5ea30c7563e651c58e19f40752ab935ca4d2dde  round50_emotiv.py
+2026-11-02T23:32:11+07:00
+(document and code recorded before the run; only the --check mode had been run: reproduction of XGB replicate 0 identical to hasil42 (5.6e-17); Emotiv 12 checks passed, AUC eta -> real label 0.6854; RF --check still running; no 50A/50B plasmode AUC had been computed or seen)
+
+# Summary script (written and recorded BEFORE the 50A/50B output was seen; runs still in progress)
+f2f11e3df026d08ac0f2eaa6b2245e2885ef817566ff422f29a5dac08eb0106c  round50_ringkas.py
+8263fe5bb73120ff5e86cdedaf920c6db43aa244539fe97f8db9768e284efab9  run_chain_50.sh
+2026-11-02T23:35:06+07:00
+
+# Print correction (AFTER the 50B output was seen; BEFORE 50A finished): DataFrame.pipe is a pandas method, so the filter '.pipe == raw-pat' was empty in two prediction print lines (P50B-1, P50A-3); replaced by ['pipe']. The computations and the CSV files did not change. Copy before the correction: hasil50/round50_ringkas.sebelum_perbaikan_cetak.py
+879de23ddbd30bd069f923829a820e7e14b59c67d56df866316c1737ec930d0b  round50_ringkas.py
+2026-11-02T23:36:55+07:00
+
+# Descriptive analysis OUTSIDE the plan (written AFTER ringkas_A was seen): all RF/XGB pipelines over 120 replicates
+2144cc03e4ad29eaed1b6766cc7b6be826d6f58d7ffcb86dd6b2af04d8c8a726  hasil50/deskriptif_120_semua_pipeline.py
+2026-11-03T00:30:58+07:00
+
+# Addendum 1 (after the 50A/50B output was seen): print correction, descriptive 120 replicates, prediction outcomes, independent checks
+f880667cdf99c8414db4df366891967db9285b457bf85f70a8da41abe0248319  PRAREGISTRASI_putaran50.md
+4b801b943fe3730eaf36e46877428a32d9de362b067eac15d8ad9df571712031  round50_cek_independen.py
+2026-11-03T00:37:15+07:00
+
+# Note on translation (2026-11-03): the plan document, the notes in this file, and the comments and messages of the scripts in this repository were translated from Indonesian into English for publication. The SHA-256 values above were computed on the original Indonesian files and therefore refer to those originals; they do not match the English files of this repository. run_chain_50.sh contains no Indonesian text and is byte-identical to the hashed original. The originals can be provided to reviewers on request.

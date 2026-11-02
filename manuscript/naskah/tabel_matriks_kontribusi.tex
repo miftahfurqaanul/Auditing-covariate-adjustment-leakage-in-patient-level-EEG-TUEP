@@ -8,11 +8,11 @@ Known before & Added here & Evidence \\
 \midrule
 Splitting EEG by segment instead of by subject inflates performance \cite{brookshire2024,delpup2025,lemoine2024} & Applied as a precondition (patient-level folds); not claimed & \figref{fig:alur} \\
 Removing confounders by regression can leak the target into nonlinear models; shuffling features before removal reveals it (tabular data, one row per subject) \cite{hamdan2023} & Explicit decision rules for this test, with measured frequencies of false alarms and detections, sensitivity to replicate number and thresholds & \tabref{tab:oc} \\
-The leak depends on feature distribution and model \cite{hamdan2023} & Size of the leak on real EEG features with synthetic labels, by representation, classifier, and mitigation; rank-normal fails for a sequence model & \tabref{tab:plasmode} \\
+The leak depends on feature distribution and model \cite{hamdan2023} & Size of the leak on real EEG features with synthetic labels in two archives, by representation, classifier, and mitigation; rank-normal fails for a sequence model & \tabref{tab:plasmode} \\
 Hamdan et al. analyzed tabular data \cite{hamdan2023}; the references reviewed did not examine windows nested within patients & With heavy-tailed features, the leak of window-level adjustment was not shown to grow with the correlation of the windows ($-$1.8 pp; Holm 0.79); the order of aggregation mattered at low correlation (+8.9 pp in one simulated cell) & \figref{fig:struktur} \\
 Normative models express features as deviations from a reference sample \cite{rutherford2022,rutherford2023} & When the reference was the training controls of the same archive, the adjustment leaked even with a linear classifier & \tabref{tab:kebocoran_badan} \\
 Acquisition shortcuts are learned and missed by internal validation \cite{ongly2024}; confounder tests exist \cite{spisak2022} & Acquisition-metadata baseline, EEG over all non-EEG predictors, matched strata with an age caliper & \tabref{tab:utama}, \tabref{tab:kaliper} \\
-Selection after many analyses biases estimates \cite{varma2006} & Optimism conditional on 15 or 50 stored candidates after 49 rounds & \tabref{tab:optimisme} \\
+Selection after many analyses biases estimates \cite{varma2006} & Optimism conditional on 15 or 50 stored candidates after 50 rounds & \tabref{tab:optimisme} \\
 \bottomrule
 \end{tabular}
 \end{table}
