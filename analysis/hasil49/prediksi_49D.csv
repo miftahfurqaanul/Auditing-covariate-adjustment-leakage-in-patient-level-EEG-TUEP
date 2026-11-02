@@ -1,0 +1,8 @@
+prediction,status,number
+D1 positive and passes Holm (55%),missed,difference -1.79 points; p = 0.79; Holm 0.79
+D2 positive and passes Holm (65%),met,difference +8.91 points; p = 1.8e-06; Holm 3.6e-06
+A - C narrows at ICC 0.95 compared with ICC 0 (55%),met,"lognormal, m = 50: 8.9 -> 0.1 points"
+LR |delta| <= 1 point in all cells (80%),missed,11 of 36 cells exceed; max absolute 3.3 points
+Normal distribution |delta| <= 1 point for all arms (75%),missed,"normal cells that exceed: A 1, C 3, LR 2 of 12; max absolute A 1.4, C 1.9, LR 1.9"
+Delta A increases with m at ICC 0 (40%),missed,"normal: -0.6, 1.4, -0.3; lognormal: 10.8, 9.4, 11.0; contam: 14.4, 14.3, 12.4"
+(descriptive) delta A at ICC 0.95 lower than at ICC 0,-,6 of 6 combinations of heavy-tailed distribution x m

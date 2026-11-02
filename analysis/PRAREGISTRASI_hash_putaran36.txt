@@ -1,0 +1,16 @@
+179b07cf852aeae56dc83b58cfc6117301406ec065fb7989c53d539c4415894e  PRAREGISTRASI_putaran36.md
+81f06a969bada32f28dbf3e80fb982dd231f62bdc43bff7a918db5020d333725  round36_diagnosis_rohira.py
+2026-10-22T04:54:43+07:00
+(recorded before the run; only --check had been seen)
+aad58e9ccfef912ea6f21b34f19a3c3d8da34d4ea31d7e722ab8c23daa27fede  PRAREGISTRASI_putaran36.md
+9a722844e9b039318b7977a3be2981275c7c369ba32a2f60ef8b511ed42a71d5  round36b_log.py
+2026-10-22T05:01:50+07:00
+(addendum 1 and the log code recorded after seeing RF-pat H1 = 0.575 and the LR cells, before the other RF cells finished and before the log cells were run; the kurtosis diagnostic had been seen)
+
+5ba72ec45da51042501bd69faf07f97bc4591d0c15173bad3a97e4c24d37a5f8  PRAREGISTRASI_putaran37_38.md
+d4d5ae2979a17f2949b0d52868952edecfba4b8f1affcbc32d0d43b860ef42d7  round36c_paired.py
+4fe93394b9044705ce7006c443c866a711bb4ba9bb926e70beab91a83d1914b7  round37_tang_log.py
+9b0d5c10af3e8c8a1100c84bff4ee958f517f694b08c3edeb0d630d053916658  round38_nm_paired.py
+ee73004c3fe95fa2e003330a5077543d8e93f70da504884d681a5d66212debca  run_queue_37.sh
+2026-10-22T05:46:04+07:00
+(recorded before the run; only a one-fold function test, the CPU --check, and the distribution diagnostics had been seen)

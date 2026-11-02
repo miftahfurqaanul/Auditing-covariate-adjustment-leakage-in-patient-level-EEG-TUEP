@@ -1,0 +1,6 @@
+
+6cb861734a24bde48aa3d5f8ed0e2871bf206ff9783beae44e02be51dacc23f8  PRAREGISTRASI_putaran32_33.md
+a04acf0ac7fd893027628c3c3a24e7519a9c6919c90ae3a172cb490fe76b8b46  round32_anggaran_setara.py
+3effef24c1187271baafebc1eaa5ea149f2994b979b1437508499d971c8f6f95  round33_pembanding_v4.py
+2026-10-21T22:53:04+07:00
+(document and code recorded before the full run; only a 1-fold dry run and the perturbation checks had been seen)

@@ -1,0 +1,70 @@
+\subsection*{S2.15 Round 49: follow-up analyses for the review}
+Round 49 was planned after the review of 2026-11-01 (plan hashed before the runs, \texttt{cc77ba97df7a}; five dated addenda). Addendum 1 recorded the pre-run checks: the code for strict nesting reproduced the stored predictions in its non-strict mode (17 checks; largest difference $1.25\times10^{-3}$ after adopting the warm-started path of the logistic regression with internal cross-validation); the strict NM code reproduced the stored fold r0k0 exactly; and the rule code reproduced 796 published simulation decisions and 98 plasmode decisions without a difference. Addendum 2 was written after the first output of the rule analysis had been seen: simulation cells in scenario H2a without adjustment had been counted as null controls although their features legitimately carry covariate information, and the definition was corrected; a parametric curve with the largest plasmode SD was added. Addendum 3 recorded that the Rohira log pipeline used $\ln x$, not $\ln(1+x)$ as written earlier. Addendum 4 recorded an execution-only change at the owner's request: the strict NM run was split into three parallel GPU processes over different folds (same seeds and code) and the within-patient simulation was resumed with 18 workers; the fold and batch interrupted at that moment were recomputed from the start. Addendum 5 was written after all results of 49A--49F had been seen and covered presentation only: the scripts for the tables, the figure, the summaries, and the independent checks were hashed at that point, and no analysis, threshold, or decision changed. Independent checks: nine groups passed (a second implementation of the strict nesting for I2; Mann--Whitney AUCs computed independently; explicit Nadeau--Bengio tests and Holm; decision frequencies with different code; the 100 reruns of C1 and V4 reproducing round 29; strata AUCs from brute-force pairs; kurtosis from manual moments; completeness of the strict NM folds; and the primary tests of 49D from explicit formulas).
+
+\textbf{Strict nesting (49A).} Refitting the scaler, the adjustment, the reference covariance, and PCA inside every inner training split changed the mean per-fold AUCs by at most 0.3 pp for every model, including the strict NM (+0.3 pp) and the strict F2 (+0.3 pp; 95\% CI $-$3.5 to +4.2), although the chosen $C$ differed in some folds and single predictions changed by up to 0.69 (\tabref{tab:s2_ketat}). For NM, the adjustment and the summary standardization were fitted without the validation patients, and the chosen configuration $(d, L)$ differed from the original in 27 of 50 folds. The strict F2 did not differ significantly from the strict metadata baseline (+4.4 pp; $p = 0.44$) or the strict C1 (+2.4 pp; $p = 0.45$), so no decision changed and the main figures were kept; the predictions in the plan for round 49A were met (\tabref{tab:s2_pred49}).
+{\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{p{0.20\textwidth}cccccc}
+\caption{Strict nesting (round 49): per-fold AUC (percent) of the original pipeline and of the strict version (Nadeau--Bengio 95\% CI), the paired difference strict minus original (pp; Nadeau--Bengio CI and $p$), and the pooled AUCs.}\label{tab:s2_ketat}\label{tab:s1_ketat}\\
+\toprule
+Model & Original & Strict [CI] & Difference [CI] & $p$ & Pooled original & Pooled strict \\
+\midrule
+\endfirsthead
+\toprule
+Model & Original & Strict [CI] & Difference [CI] & $p$ & Pooled original & Pooled strict \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+I2 & 68.0 & 68.0 [59.7--76.4] & 0.0 [$-$2.3, +2.3] & 1.00 & 67.8 & 67.8 \\
+P3 & 66.6 & 66.4 [58.4--74.4] & $-$0.1 [$-$2.6, +2.3] & 0.91 & 65.3 & 65.4 \\
+C1 & 67.5 & 67.6 [59.1--76.1] & +0.1 [$-$0.4, +0.6] & 0.65 & 66.6 & 66.8 \\
+Metadata baseline & 65.5 & 65.6 [56.0--75.2] & +0.1 [$-$2.8, +3.0] & 0.94 & 64.8 & 65.2 \\
+F2 without NM & 68.2 & 68.5 [60.8--76.3] & +0.3 [$-$4.3, +4.9] & 0.88 & 68.0 & 68.2 \\
+NM & 67.0 & 67.3 [59.2--75.4] & +0.3 [$-$4.2, +4.8] & 0.88 & 66.3 & 66.7 \\
+F2 & 69.7 & 70.1 [62.1--78.0] & +0.3 [$-$3.5, +4.2] & 0.87 & 69.4 & 69.8 \\
+\end{longtable}
+}
+
+\textbf{EEG beyond non-EEG predictors (49C).} With strict nesting, metadata with age and sex (N0) reached 66.1, N0 plus the adjusted I2 features (N1) 73.8, and N0 plus the unadjusted band powers (N2) 74.3. The differences N1 $-$ N0 (+7.6 pp; Nadeau--Bengio 95\% CI $-$1.0 to +16.2; $p = 0.082$) and N2 $-$ N0 (+8.2 pp; $-$0.7 to +17.0; $p = 0.071$) had Holm 0.14; the patient bootstrap with fixed models gave +0.1 to +13.2 and +0.2 to +13.7 pp. N0 did not differ from the metadata baseline (+0.5 pp; $p = 0.88$). The predictions in the plan (N0 within 64--69; both differences positive; Nadeau--Bengio CI including zero) were met.
+
+\textbf{Properties of the rules (49B).} \tabref{tab:s2_ocpar} gives the parametric operating curves for the median replicate SD of the null pools (R1: 5.1 pp) and of the paired pools (R2: 2.6 pp), and for the SD of the raw tree pipelines at $\gamma=0$ (7.8 pp). Between the leakage and no-evidence thresholds the rules return ``uncertain'' with high probability by design; a true mean exactly at a threshold gives about 50\% for each neighboring decision at every replicate number. Under the stricter thresholds 2 of 18 R1 and 1 of 5 R2 decisions on the real EEG pools changed, 7 of 49 and 11 of 49 in the plasmode, and 40 of 430 and 52 of 366 in the simulation map; under the looser thresholds 2 of 18, 1 of 5, 5 of 49, 6 of 49, 22 of 430, and 31 of 366. Rerunning 100 null replicates of C1 and V4 with stored predictions reproduced round 29 exactly; the patient-bootstrap SD of the mean null AUC (0.34 and 0.31 pp) was smaller than its Monte Carlo SE (0.43 and 0.38 pp), so the prediction that patient variation would exceed three times the Monte Carlo SE was not met.
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{lcccccccc}
+\caption{Parametric operating curves of the rules: percent of decisions ``no evidence'' / ``leakage'' (``uncertain'' is the remainder) for replicate AUCs (R1) or paired differences (R2) drawn from a normal distribution with the given true mean and SD (20,000 simulations per cell).}\label{tab:s2_ocpar}\\
+\toprule
+Rule, SD & True mean (AUC or pp) & $n=10$ & $n=20$ & $n=30$ & $n=50$ & $n=100$ \\
+\midrule
+\endfirsthead
+\toprule
+Rule, SD & True mean (AUC or pp) & $n=10$ & $n=20$ & $n=30$ & $n=50$ & $n=100$ \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+R1, SD 5.1 pp & 50 & 78.7 / 0.1 & 95.4 / 0.0 & 98.4 / 0.0 & 99.7 / 0.0 & 100.0 / 0.0 \\
+R1, SD 5.1 pp & 52 & 35.8 / 3.0 & 47.6 / 0.4 & 49.5 / 0.0 & 49.9 / 0.0 & 50.5 / 0.0 \\
+R1, SD 5.1 pp & 55 & 1.5 / 50.2 & 0.4 / 50.4 & 0.1 / 49.9 & 0.0 / 49.7 & 0.0 / 50.1 \\
+R1, SD 5.1 pp & 56 & 0.3 / 73.3 & 0.0 / 80.7 & 0.0 / 85.7 & 0.0 / 91.8 & 0.0 / 97.4 \\
+R1, SD 5.1 pp & 58 & 0.0 / 96.6 & 0.0 / 99.6 & 0.0 / 99.9 & 0.0 / 100.0 & 0.0 / 100.0 \\
+R2, SD 2.6 pp & 0 & 88.3 / 0.0 & 95.7 / 0.0 & 98.0 / 0.0 & 99.7 / 0.0 & 100.0 / 0.0 \\
+R2, SD 2.6 pp & 1 & 50.1 / 0.8 & 50.0 / 0.0 & 50.1 / 0.0 & 49.9 / 0.0 & 50.3 / 0.0 \\
+R2, SD 2.6 pp & 2 & 11.2 / 11.8 & 4.4 / 4.3 & 2.0 / 1.9 & 0.4 / 0.3 & 0.0 / 0.0 \\
+R2, SD 2.6 pp & 3 & 0.9 / 49.8 & 0.0 / 50.0 & 0.0 / 50.0 & 0.0 / 50.1 & 0.0 / 49.7 \\
+R2, SD 2.6 pp & 5 & 0.0 / 99.1 & 0.0 / 99.9 & 0.0 / 100.0 & 0.0 / 100.0 & 0.0 / 100.0 \\
+R2, SD 7.8 pp & 0 & 36.1 / 11.0 & 53.4 / 4.2 & 67.7 / 1.6 & 81.4 / 0.3 & 89.8 / 0.0 \\
+R2, SD 7.8 pp & 1 & 22.8 / 21.0 & 32.1 / 12.7 & 40.8 / 8.2 & 49.4 / 3.6 & 50.2 / 0.6 \\
+R2, SD 7.8 pp & 2 & 13.3 / 33.9 & 15.1 / 28.3 & 17.6 / 23.9 & 18.0 / 18.1 & 10.0 / 9.9 \\
+R2, SD 7.8 pp & 3 & 6.6 / 50.0 & 5.5 / 49.8 & 5.5 / 50.0 & 3.4 / 50.0 & 0.4 / 50.0 \\
+\end{longtable}
+}
+
+\textbf{Who contributes to the caliper strata (M7).} \tabref{tab:s2_kontributor} lists the pairs and the patients behind them. The AUC weights every eligible pair equally; the CI resamples patients within each year $\times$ device stratum and rebuilds the pairs, so pairs that share a patient are not treated as independent. Weighting every stratum equally or removing the largest stratum (2012, device X; 35\%--38\% of the pairs) did not remove the discrimination of F2 at $k=10$ and 15; at $k=5$ the stratum-weighted CI included 50.
+\input{\naskahdir/tabel_s2_kontributor}
+
+\textbf{Within-patient structure (49D).} The simulation had 720 unique replicates (3 distributions $\times$ 3 numbers of windows $\times$ 4 ICC values $\times$ 20 replicates). Arms A and B coincided in every replicate, as did the two logistic regressions (maximum difference 0), as the design implies when every patient has the same number of windows; the plan had anticipated that they would differ only with unequal window counts. In the primary family (Holm, two tests; lognormal, 50 windows), D1 was $-$1.8 pp (95\% CI $-$6.3 to +2.7; one-sided Welch $p = 0.79$; Holm 0.79) and D2 +8.9 pp (95\% CI +6.0 to +11.8; one-sided paired $p = 1.8\times10^{-6}$; Holm $3.6\times10^{-6}$). The target SE of 0.6 pp in the plan assumed an SD of the difference of at most 2.7 pp; the SD was 2.4 to 8.2 pp for arm A (cell SE 0.5 to 1.8 pp), so the cell means are imprecise and no replicates were added after the results were seen. \tabref{tab:s2_struktur} lists all 36 cells.
+\input{\naskahdir/tabel_s2_struktur}
+
+\textbf{Predictions of round 49.} \tabref{tab:s2_pred49} lists the probabilistic predictions written in the plan before computation and their results; predictions that were missed are reported.
+\input{\naskahdir/tabel_s2_prediksi49}

@@ -1,0 +1,26 @@
+{\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{p{0.34\textwidth}cccc}
+\caption{AUC (percent) within year $\times$ device strata with an age caliper: only epilepsy--non-epilepsy patient pairs from the same cell and with an age difference of up to $k$ years. Scores were averaged over 10 repetitions; no model was retrained. The top rows give the number of pairs and the patient \textit{bootstrap} 95\% CI (2,000 replicates) for F2.}\label{tab:kaliper}\\
+\toprule
+ & $k=5$ & $k=10$ & $k=15$ & no limit \\
+\midrule
+\endfirsthead
+\toprule
+ & $k=5$ & $k=10$ & $k=15$ & no limit \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Effective pairs & 197 & 374 & 532 & 1,267 \\
+95\% CI of F2 & [59.5--84.3] & [61.5--82.9] & [61.2--81.7] & [68.2--84.5] \\
+\midrule
+F2 (adjustment + age/sex) & 72.6 & 73.0 & 72.0 & 77.0 \\
+I2 & 70.6 & 72.7 & 71.8 & 77.0 \\
+C1 (no adjustment) & 65.5 & 68.2 & 66.2 & 72.9 \\
+LaBraM-FT & 55.3 & 59.1 & 57.1 & 64.0 \\
+CBraMod-FT & 59.9 & 61.5 & 60.7 & 66.7 \\
+Metadata baseline & 44.2 & 44.7 & 45.3 & 43.2 \\
+Demographic baseline & 47.2 & 51.1 & 50.9 & 63.1 \\
+\end{longtable}
+}

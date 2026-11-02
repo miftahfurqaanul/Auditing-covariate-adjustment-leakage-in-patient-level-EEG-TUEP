@@ -1,0 +1,7 @@
+376ec72b2d7dfec47ef838da357acfa4b0dc50acab5a57c9ad684206ba65a4e9  PRAREGISTRASI_putaran35.md
+3c9cb567e9007f82d29120324360e678ba2b5c8a957dd0e4aacb6c1fa5ed6315  round35_rohira_v4t.py
+85aca1b40981b18b2ae78c19515c224b5046ebc9cfbeb0c3f6331191e138ff9e  round35_tang_v4t.py
+2b951a7b87a134e7434fb26f5da3f8b225dd48142d660c679392d870f718a3a4  round35_eval_tang.py
+984c43d03df8205ea6af68ad95185fc2f8cbdf62623a7366902eaaba2c8f732b  run_queue_35.sh
+2026-10-22T01:45:34+07:00
+(recorded before the run; only fold 0 of Rohira V4t (AUC 0.558) and the mandatory checks had been seen)

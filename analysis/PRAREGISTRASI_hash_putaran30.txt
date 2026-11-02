@@ -1,0 +1,28 @@
+ce33bb6385867aca1b58ddd137512814f65cd54282dc923d3636e0e2337e8120  PRAREGISTRASI_putaran30.md
+2026-10-21T15:09:59+07:00
+e4163bd6c3de399242352de53f3cbbbe9f31d0d7cc0eb809d035312805e7e30f  round30_nm.py
+2026-10-21T15:11:27+07:00
+(NM code recorded before the GPU queue was run)
+0bce216c8b338c6d9d4717bd9674d141964202024f8ef7a0cf2d671416d0c1b9  round30_p3.py
+2026-10-21T15:13:52+07:00
+(P3 code recorded before the full run; a one-replicate P3 dry run had been seen: V0 0.508, V4 0.528 on H1; it did not change the decision)
+820f5d1f49bc545df9a84c3fc8d01967d3eeca182cc2da0cf6d0b567ab8eed57  PRAREGISTRASI_putaran30.md
+2026-10-21T15:19:18+07:00
+(third hash: the document with addendum 1; written before the NM-V4 and P3 null results; the I2-V4 result of round 29 and the real P3 V4 (dry run) were already known)
+1960636cb716293b536ca0f640011c36da718b1f04104cf77f12669c9c9ff776  PRAREGISTRASI_putaran30.md
+2026-10-21T15:30:12+07:00
+(fourth hash: addendum 2; written after the interim look at 10 replicates of the P3 null and the diagnostic of 6 replicates)
+47dcd92344a9dd2a763511d767474ed1df98b85675bff36d27d9148293a1ae79  round30_p3_v5.py
+2026-10-21T15:31:30+07:00
+(P3-V5 code recorded before the full run; a one-replicate H1 dry run had been seen: 0.510)
+f10a2f74b0e93970858462ef8153ed618300d0168eb8f387ac76cee2d8becd93  round30_eval.py
+fcf94c689ebe050c101550a79da3fa47324bf77d619d79f4ae7605eeaa73a8b1  round30_eval2.py
+82d9fad09767f83627ef1e10c8acf278cee14ad1c83ece4e89fb99b354c16177  round30_audit_v2.py
+2026-10-21T21:44:05+07:00
+(evaluation and audit code recorded before being run on the final NM-V4 result; NM-V4 and P3-V5 had finished but had not been evaluated)
+
+122e59f530788b336062c7a9582bcb6b989aaba04ae4358c43be63666578f5ac  round30_cek_independen.py
+760ee41a030415fb0a6eec5b0a1ff216fa6c073fd2a548539b80bdbad9ef0186  buat_tabel_latex_30.py
+e45a8d5ceaac4f9deb8b87def4cd7a69c880582ff663b3e8bb273e6f00d600aa  run_gpu_queue_30.sh
+2026-10-21T22:18:54+07:00
+(recorded AFTER all runs finished, without waiting: the check scripts, the table builders, and the GPU queue do not produce analysis numbers; recorded so that the versions used can be verified)

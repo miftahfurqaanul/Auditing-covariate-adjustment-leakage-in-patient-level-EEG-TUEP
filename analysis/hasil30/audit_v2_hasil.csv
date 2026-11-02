@@ -1,0 +1,25 @@
+ok,check
+True,I2-V4 (lipatan 0): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 0): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 0): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 0): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 0): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 0): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 17): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 17): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 17): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 17): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 17): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 17): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 33): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 33): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 33): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 33): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 33): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 33): membalik label pasien uji tidak mengubah token siapa pun
+True,NM-V4: segmen yang dipakai memasang koefisien hanya milik pasien latih
+True,I2-V4: fitur pasien latih ortogonal terhadap matriks desain (koefisien regresi sisa maks 5.4e-15); pada V0 hanya kontrol yang ortogonal
+True,I2-V0: kontrol latih ortogonal terhadap desain (3.9e-15) tetapi epilepsi latih tidak (1.39): asimetri yang menjelaskan mengapa V0 dapat membocorkan kovariat
+True,"permutasi label global I2V4: 100 permutasi, rata-rata AUC 0.4927 (SE 0.0042), persentil 95 0.552"
+True,"permutasi label global P3V5: 100 permutasi, rata-rata AUC 0.5021 (SE 0.0041), persentil 95 0.569"
+True,"audit_kebocoran.py yang ada dijalankan ulang: 16 PASS, 0 FAIL"

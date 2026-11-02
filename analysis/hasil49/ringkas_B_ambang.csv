@@ -1,0 +1,9 @@
+,,berubah_ketat,berubah_ketat,berubah_longgar,berubah_longgar
+,,sum,count,sum,count
+sumber,aturan,,,,
+EEG,R1,2,18,2,18
+EEG,R2,1,5,1,5
+plasmode,R1,7,49,5,49
+plasmode,R2,11,49,6,49
+simulasi,R1,40,430,22,430
+simulasi,R2,52,366,31,366

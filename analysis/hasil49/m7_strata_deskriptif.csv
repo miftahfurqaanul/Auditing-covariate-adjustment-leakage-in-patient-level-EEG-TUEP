@@ -1,0 +1,5 @@
+k,pairs,epi_unique,non_unique,cells_with_pairs,epi_unpaired,non_unpaired,pairs_per_patient_median,pairs_per_patient_max,largest_cell_share,largest_cell,age_epi_median,age_non_median,absdiff_median
+5.0,197,65,76,7,35,24,2.0,11,0.350253807106599,2012|X,53.0,58.0,3.0
+10.0,374,75,86,9,25,14,4.0,16,0.3663101604278075,2012|X,52.0,62.0,5.0
+15.0,532,81,92,9,19,8,5.0,18,0.3815789473684211,2012|X,52.0,60.0,7.0
+inf,1267,97,99,11,3,1,13.5,31,0.36306235201262826,2012|X,52.0,59.0,19.0

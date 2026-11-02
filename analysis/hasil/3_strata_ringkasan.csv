@@ -1,0 +1,6 @@
+strata,n_strata,n_strata_both_classes,patients_in_both_class_strata,same_stratum_pairs,same_stratum_pairs_pct,smallest_cell
+year,5,5,200,1902,19.02,31
+device (3 grup),3,3,200,5304,53.04,22
+year x device,13,11,196,1267,12.67,1
+year x montage,8,8,200,1508,15.08,4
+age3,3,3,200,3643,36.43,34

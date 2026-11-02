@@ -1,0 +1,9 @@
+{
+ "prereg_sha256": "e90211a198684b78764e0811138f8c355b1b0d963639199c0148cc0ab7769601",
+ "code_sha256": "bc0a2dae26a9297aaeb4fd03a7136697fa2784c4401e8a1566c2661dd914d352",
+ "versions": {
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1"
+ }
+}

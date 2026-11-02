@@ -1,0 +1,21 @@
+\begin{table}[t]
+\caption{F2-Clean (without age and sex in the final classifier; rank-normal before V4; age$^2$ term) and inverse-propensity weighting (IPW) as a comparator. Per-fold AUC (percent; Nadeau--Bengio 95\% CI). $r^2$ and $p$: Spis\'ak partial test for age on the score averaged over 10 repetitions (2,000 permutations); ``passed'' means $r^2<0.02$ and $p>0.10$ (rule set in the plan). IPW: weights $1/P(y\mid\text{covariates})$ clipped at the 5th and 95th percentiles.}\label{tab:f2clean}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.44\textwidth}cccc}
+\toprule
+Model & Per-fold AUC [CI] & Age $r^2$ & $p$ & Passed \\
+\midrule
+F2 (adjustment + age/sex) & 69.7 [61.0--78.5] & 0.1322 & $<$0.001 & no \\
+I2 (adjustment + age/sex) & 68.0 [59.2--76.9] & 0.1664 & $<$0.001 & no \\
+C1 (no adjustment) & 67.5 [59.0--76.0] & 0.1438 & $<$0.001 & no \\
+I2 rank-normal + V4 with age$^2$, without age/sex & 67.2 [59.9--74.5] & 0.0015 & 0.74 & yes \\
+P3 rank-normal + V4 with age$^2$, without age/sex & 62.3 [55.1--69.5] & 0.0035 & 0.51 & yes \\
+NM V4 with age$^2$, without age/sex & 67.3 [58.4--76.2] & 0.0211 & 0.15 & no \\
+\textbf{F2-Clean} (I2 + P3 + NM without age/sex) & 69.4 [61.8--77.0] & 0.0101 & 0.39 & yes \\
+F2-Clean without NM (I2 + P3) & 66.8 [60.1--73.6] & 0.0027 & 0.65 & yes \\
+I2 with IPW (raw features, without age/sex) & 65.3 [57.5--73.1] & 0.0074 & 0.36 & yes \\
+Rohira \textit{random forest} with IPW & 55.4 [46.2--64.6] & 0.0057 & 0.31 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

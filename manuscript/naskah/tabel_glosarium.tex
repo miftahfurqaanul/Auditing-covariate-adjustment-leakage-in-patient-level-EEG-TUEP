@@ -1,0 +1,34 @@
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{0.20\textwidth}p{0.74\textwidth}}
+\caption{Glossary of the codes used in the main text and the supplement.}\label{tab:glosarium}\\
+\toprule
+Code & Meaning \\
+\midrule
+\endfirsthead
+\toprule
+Code & Meaning \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+I2 & Spectral view: log relative power of five bands and log total power on 19 channels (114 features), patient median, covariate adjustment V4, age and sex, L2 logistic regression \\
+P3 & Spatial view: band covariances in the tangent space, PCA 50, adjustment V5, age and sex, L2 logistic regression \\
+NM & Temporal view (NormMamba): adjusted 4 s segments, two bidirectional Mamba layers, attention pooling \\
+F2 & Arithmetic mean of the I2, P3, and NM probabilities; the object of the audit, not a validated final pipeline \\
+F2 without NM & Mean of the I2 and P3 probabilities (linear classifiers only) \\
+F2-Clean & F2 without age and sex in the final classifiers, with rank-normal before adjustment and a squared age term \\
+C1 & Spectral model without covariate adjustment (same 114 features, age and sex) \\
+Metadata baseline & L2 logistic regression on acquisition metadata only (sampling frequency, number of signals, log duration, year, montage, device); no EEG \\
+Demographic baseline & Age and sex only \\
+N0, N1, N2 & Metadata, age, and sex (N0); N0 plus the adjusted I2 features (N1); N0 plus the unadjusted band powers (N2) \\
+V0 & Covariate adjustment fitted on training controls only (the original, label-dependent reference; leaked) \\
+V1, V2, V3 & Variants of V0: half of the training controls, cross-fitted, without era \\
+V4, V5 & Covariate adjustment fitted on all training patients for I2 and NM (V4) and for P3 after PCA (V5) \\
+H1, H2a, H2b & Null experiments: EEG permuted across all patients, within era, within year $\times$ device cells (\tabref{tab:definisi_null}) \\
+R1, R2 & Absolute and paired decision rules of the leakage audit (Subsection~\ref{sec:sensitivitas}) \\
+$\gamma$ & Plasmode strength of the covariate--label association (0, 0.5, 1; 1 mimics TUEP) \\
+Per-fold, pooled, $A_{\mathrm{avg}}$ & The three AUC estimands of S1.3 \\
+Round & One iteration of the analysis with its own plan; 49 rounds in total \\
+\end{longtable}
+}

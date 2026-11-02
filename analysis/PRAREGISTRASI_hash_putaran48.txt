@@ -1,0 +1,4 @@
+31d683c689085fb443864cc4b1cd65174406a0aa2018603400ac41e42fd59c6f  PRAREGISTRASI_putaran48.md
+2026-10-27T12:14:47+07:00
+cef46ba3557ddeef35181209e51a1bcf9ba559f9348a2df91e3b9e5a9a3eb8b7  round48_audit_lipatan.py
+(document and code recorded before the full run; only --timing on fold 0 (6 of 6 passed) had been seen)

@@ -1,0 +1,4 @@
+cc4baac7599450aaaace74ff221855754610f390f497c477aeea6b0e197ee45b  PRAREGISTRASI_putaran46.md
+2026-10-27T10:51:11+07:00
+b35535e4de9fe40c4cea63137ed09fd7c54ba03a9742c62d68f61f490b2c7b45  round46_per_lipatan.py
+(document and code recorded before the full run; only the timing of one replicate (r = 0) and the reproduction of the pooled AUC of round 29 had been seen; per-fold values were neither printed nor saved)

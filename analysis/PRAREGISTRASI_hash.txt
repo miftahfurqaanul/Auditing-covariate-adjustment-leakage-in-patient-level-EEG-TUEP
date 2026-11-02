@@ -1,0 +1,9 @@
+8ad5abea3006bdc5ff69651d350cb89ec9517add78e5720b66479bb7fbc57c8e  PRAREGISTRASI_analisis_tambahan.md
+2026-10-21T12:38:35+07:00
+e90211a198684b78764e0811138f8c355b1b0d963639199c0148cc0ab7769601  PRAREGISTRASI_analisis_tambahan.md
+bc0a2dae26a9297aaeb4fd03a7136697fa2784c4401e8a1566c2661dd914d352  round28_analisis.py
+2026-10-21T12:41:39+07:00
+(second hash: the document with addendum 1 and the code, recorded before the full run)
+e3518807fffaff6bfd58962cd72951dd1a37828a4f227395639b74069ffb57e1  PRAREGISTRASI_analisis_tambahan.md
+2026-10-21T12:55:30+07:00
+(third hash: the document with addendum 2, before the post hoc analysis was run)

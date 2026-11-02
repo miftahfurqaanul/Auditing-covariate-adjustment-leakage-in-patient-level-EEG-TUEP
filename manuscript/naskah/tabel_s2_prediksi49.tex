@@ -1,0 +1,38 @@
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{0.44\textwidth}cp{0.40\textwidth}}
+\caption{Predictions written in the plan of round 49 and their results.}\label{tab:s2_pred49}\\
+\toprule
+Prediction & Probability & Result \\
+\midrule
+\endfirsthead
+\toprule
+Prediction & Probability & Result \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+49A: |strict $-$ original| $\leq 1.0$ pp for I2, C1, and the metadata baseline & 75\% & met (0.0, +0.1, +0.1 pp) \\
+49A: the same for P3 & 60\% & met ($-$0.1 pp) \\
+49A: the same for NM & 50\% & met (+0.3 pp) \\
+49A: the strict F2 still not different from the strict metadata baseline and C1 & 90\% & met ($p$ 0.44 and 0.45) \\
+49B: R1 ``leakage'' in at most 5\% of draws for $n \geq 20$ in every null pool with mean AUC $\geq 50$ & 70\% & missed narrowly (1 of 326 combinations, 7.0\%) \\
+49B: R1 ``no evidence'' in at least 80\% of draws of 100 replicates for C1 & 75\% & met (99.9\%) \\
+49B: R1 ``leakage'' in at least 80\% of draws for V0 with $n \geq 30$ & 65\% & met (92.4\%--99.6\%) \\
+49B: R2 ``leakage'' in at most 5\% of draws in null pools ($n = 20$) & 80\% & missed (simulation 1 of 41 cells above 5\%; plasmode 4 of 18, up to 48.0\%) \\
+49B: patient-sampling SD of the mean null AUC above 3 times its Monte Carlo SE ($n = 100$) & 85\% & missed (0.34 vs 0.43 pp) \\
+49B: at least one published decision changes under stricter or looser thresholds & 80\% & met (3 of 23 on the real EEG pools) \\
+49C: N0 per-fold AUC within 64--69 & 65\% & met (66.1) \\
+49C: N1 $-$ N0 positive & 65\% & met (+7.6 pp) \\
+49C: its Nadeau--Bengio CI includes zero & 70\% & met \\
+49C: N2 $-$ N0 positive & 55\% & met (+8.2 pp) \\
+49D: D1 positive and passing Holm & 55\% & missed ($-$1.8 pp; Holm 0.79) \\
+49D: D2 positive and passing Holm & 65\% & met (+8.9 pp; Holm $<0.001$) \\
+49D: A $-$ C narrows at ICC 0.95 compared with ICC 0 & 55\% & met (lognormal, $m = 50$: 8.9 to 0.1 pp) \\
+49D: logistic regression $|\Delta| \leq 1$ pp in every cell & 80\% & missed (11 of 36 cells above 1 pp; largest 3.3 pp) \\
+49D: normal features $|\Delta| \leq 1$ pp for every arm & 75\% & missed (cells above 1 pp: A 1, C 3, LR 2 of 12) \\
+49D: $\Delta$ of A rises with $m$ at ICC 0 & 40\% & missed (lognormal: 10.8, 9.4, 11.0 pp at $m = 10, 50, 200$) \\
+49E: F2 AUC with equal weight per stratum above 60 at $k = 10$ & 70\% & met (73.6) \\
+49E: without the largest stratum, the lower CI bound of F2 above 50 & 55\% & met ($k = 5, 10, 15$: 58.2, 64.3, 63.9) \\
+\end{longtable}
+}

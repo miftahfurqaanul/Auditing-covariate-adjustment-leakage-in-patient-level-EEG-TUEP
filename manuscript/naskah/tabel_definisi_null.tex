@@ -1,0 +1,17 @@
+\begin{table}[t]
+\caption{Null experiments of the audit. In every experiment the permuted data replace the real data once, before the split, without using labels; the complete pipeline is then run on the same folds with and without adjustment (paired control). Each donor block is used once, so no block appears in both training and test data. Pseudocode: S1.1.}\label{tab:definisi_null}
+\centering\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{p{0.15\textwidth}p{0.27\textwidth}p{0.24\textwidth}p{0.22\textwidth}}
+\toprule
+Experiment & What is permuted (unit) & Kept & Used in \\
+\midrule
+H1, column variant & Each patient-level feature separately across all patients & Label, age, sex, era with the patient & I2 and C1, rounds 28--29 \\
+H1, block variant & The whole EEG block of a patient (all windows or segments and all features) across all patients & Label and covariates with the patient; within-patient structure and feature correlations & P3, NM, Rohira, Tang, plasmode, equal treatment, rounds 30--48 \\
+H2a & As H1 but only within recording era & Also the era association of the EEG (only R1 applies) & Same as H1 \\
+H2b & As H1 but only within year $\times$ device cells & Also the year and device associations & I2 and C1, round 28 \\
+Plasmode & Labels replaced by labels generated from covariates with strength $\gamma$; EEG permuted as in H1 or H2a & Real EEG feature distributions & Round 42 \\
+Simulation & Features generated without a disease signal & Covariate structure similar to TUEP & Rounds 39--40 and 49 \\
+\bottomrule
+\end{tabular}
+\end{table}

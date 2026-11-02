@@ -1,0 +1,13 @@
+\begin{table}[t]
+\caption{Selection-optimism correction and max-T test on stored out-of-fold predictions (patient \textit{bootstrap} with 2,000 replicates, class-stratified; pooled AUC, percent). Optimism is the mean difference between the in-bag AUC and the out-of-sample AUC for the in-bag winner; the corrected AUC is the full AUC minus optimism. Max-T test (studentized Reality Check): no candidate is better than the reference; Holm over two references 0.72 (main set) and 1.00 (all).}\label{tab:optimisme}
+\centering\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{p{0.20\textwidth}ccccccc}
+\toprule
+Set & Candidates & Winner & AUC & Optimism & Corrected AUC & max-T $p$ vs metadata & max-T $p$ vs C1 \\
+\midrule
+Main set & 15 & F2-adj & 69.4 & 2.0 & 67.4 & 0.44 & 0.36 \\
+All stored candidates & 50 & F2-adj & 69.4 & 3.8 & 65.6 & 0.58 & 0.56 \\
+\bottomrule
+\end{tabular}
+\end{table}

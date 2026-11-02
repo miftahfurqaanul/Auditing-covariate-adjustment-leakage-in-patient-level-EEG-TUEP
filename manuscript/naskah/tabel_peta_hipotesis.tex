@@ -1,0 +1,33 @@
+{\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{p{0.20\textwidth}p{0.17\textwidth}p{0.24\textwidth}p{0.13\textwidth}p{0.17\textwidth}}
+\caption{Questions, endpoints, contrasts, analysis status, and multiplicity control. Every analysis is a follow-up analysis on the same 200 patients and 50 folds. Holm within one round controls the family-wise error only within that family, not across the 49 rounds; with respect to the whole analysis history every inference is exploratory. BH: Benjamini--Hochberg.}\label{tab:peta_hipotesis}\\
+\toprule
+Question (round) & Endpoint & Contrast & Status & Family and correction \\
+\midrule
+\endfirsthead
+\toprule
+Question (round) & Endpoint & Contrast & Status & Family and correction \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Performance against baselines (29--30) & Per-fold AUC & F2 and I2 against C1 and metadata; I2 against C1; combined adjustment effect & Follow-up & None; BH $q$ over 22 tests as an approximation \\
+F2 against fine-tuned foundation models (30) & Per-fold AUC & F2 $-$ LaBraM-FT, F2 $-$ CBraMod-FT & Follow-up & Holm, 2 tests \\
+Leakage audit (28--48) & Mean replicate AUC; paired $\Delta$ & R1 (absolute), R2 (paired) & Follow-up; R1 retrospective in rounds 28--29 & Decision rules, not tests; properties in round 49 \\
+Within strata, age caliper (41) & Pair-weighted $A_{\mathrm{avg}}$ & AUC $>50$ and against metadata at $k=5,10,15$ & Follow-up & Holm, 6 tests \\
+Plasmode mitigation (42) & Per-fold AUC & Raw $-$ rank-normal (\textit{random forest}, XGBoost, Tang) & Follow-up & Holm, 3 tests \\
+Equal-treatment comparators (43) & Per-fold AUC & LaBraM, CBraMod, BENDR, compression $-$ I2 & Follow-up & Holm, 4 tests \\
+Selection optimism (43) & Pooled AUC & Max-$T$ against metadata and against C1 & Follow-up & Holm over 2 references \\
+F2-Clean (44) & Per-fold AUC; caliper $A_{\mathrm{avg}}$ & F2-Clean $-$ F2, $-$ C1, $-$ metadata; caliper AUC $>50$ & Follow-up & Holm, 4 tests \\
+Review follow-ups (45) & Caliper $A_{\mathrm{avg}}$; pooled AUC & F2-Clean $-$ F2 within strata; patient-bootstrap differences & Follow-up, exploratory & Holm within each analysis \\
+F2 without NM (47) & Per-fold AUC & $-$ F2, $-$ C1, $-$ metadata & Follow-up & Holm, 3 tests \\
+Equivalence test (TOST) & Per-fold AUC & 12 pairs at margins of 2, 3, and 5 pp & Post hoc & Holm per margin \\
+Strict nesting (49) & Per-fold AUC & Strict $-$ original, per model & Follow-up & None (descriptive) \\
+EEG over non-EEG predictors (49) & Per-fold AUC & N1 $-$ N0, N2 $-$ N0 & Follow-up & Holm, 2 tests \\
+Properties of R1/R2 (49) & Decision frequencies & -- & Follow-up & None (Monte Carlo CI) \\
+Within-patient structure (49) & Pooled AUC $\Delta$ (simulation) & D1, D2 & Follow-up & Holm, 2 tests \\
+Strata weighting (49) & $A_{\mathrm{avg}}$ & Cell-weighted; largest cell removed & Follow-up & None (descriptive) \\
+Registry of 89 tests under V0 (3--26) & Various & Various & Superseded (leaking pipeline) & Holm per round; kept in the repository as an analysis trail \\
+\end{longtable}
+}

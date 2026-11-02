@@ -1,0 +1,6 @@
+4ece65d348e8f6de32525545a261f36f9e82ad881fb113cb08976c5c6eb732a7  PRAREGISTRASI_putaran29.md
+2026-10-21T14:29:35+07:00
+cfbbdf8ee5b1bb198f758216488503c69d86b4d12a2b2119181834255b8bf22b  PRAREGISTRASI_putaran29.md
+2d05f2b9786059e766b64954da17ec5534d72fc58e5b62bfe1ceaddacc68175d  round29_sensitivitas.py
+2026-10-21T14:31:46+07:00
+(second hash: the document with addendum 1 and the code, before the full run; the V4 dry run was run after the addendum was written)

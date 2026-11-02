@@ -1,0 +1,431 @@
+dist,scen,n,m,p,imb,s,sig,cfrac,cscale,clf,transform,adjust,R1_auc,R1_fold_mean,R2_auc,R2_fold_mean,R1_berganti,R2_berganti
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+chi2,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+contam,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+contam,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak pasti,tidak pasti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+contam,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,LSTM,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,LSTM,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,LSTM,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,MLP,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,MLP,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,MLP,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.003,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.003,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.003,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.003,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.003,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.003,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,kebocoran,kebocoran,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.003,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.003,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,10.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak ada bukti,False,True
+contam,H1,200,50,50,False,1.0,1.0,0.01,10.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,10.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,10.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,10.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,10.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,10.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,10.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,raw,pat,tidak pasti,kebocoran,kebocoran,kebocoran,True,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlog,pat,tidak pasti,tidak pasti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlogc,pat,tidak pasti,tidak pasti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,1000.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,1000.0,LRpat,raw,pat,tidak pasti,tidak ada bukti,kebocoran,tidak pasti,True,True
+contam,H1,200,50,50,False,1.0,1.0,0.01,1000.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,1000.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,1000.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,1000.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,1000.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.01,1000.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.03,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.03,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.03,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.03,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.03,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.03,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+contam,H1,200,50,50,False,1.0,1.0,0.03,100.0,RF,symlog,pat,tidak ada bukti,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+contam,H1,200,50,50,False,1.0,1.0,0.03,100.0,RF,symlogc,pat,tidak pasti,tidak pasti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,raw,win,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak pasti,False,True
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,raw,pat,tidak pasti,tidak pasti,kebocoran,kebocoran,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,raw,win,tidak pasti,tidak pasti,kebocoran,kebocoran,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+contam,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak pasti,tidak pasti,tidak pasti,kebocoran,False,True
+contam,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak pasti,tidak pasti,kebocoran,kebocoran,False,False
+contam,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,tidak pasti,tidak pasti,tidak pasti,tidak pasti,False,False
+contam,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,tidak pasti,tidak pasti,kebocoran,kebocoran,False,False
+contam,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+contam,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,10.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,10.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,10.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,10.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,10.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,10.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,10.0,RF,symlog,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,10.0,RF,symlogc,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak pasti,tidak pasti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak pasti,tidak pasti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,1000.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,1000.0,LRpat,raw,pat,tidak pasti,tidak pasti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,1000.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,1000.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,1000.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,1000.0,RF,raw,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,1000.0,RF,symlog,pat,tidak pasti,tidak pasti,n/a (H2a),n/a (H2a),False,False
+contam,H2a,200,50,50,False,1.0,1.0,0.01,1000.0,RF,symlogc,pat,tidak pasti,tidak pasti,n/a (H2a),n/a (H2a),False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,100,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,10,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak pasti,tidak pasti,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,10,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak pasti,tidak pasti,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LSTM,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LSTM,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LSTM,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,LSTM,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,MLP,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,MLP,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,MLP,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,MLP,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,0.0,1.0,0.01,100.0,XGB,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,raw,pat,tidak pasti,kebocoran,kebocoran,kebocoran,True,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,symlog,pat,tidak pasti,tidak pasti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,0.5,1.0,0.01,100.0,RF,symlogc,pat,tidak pasti,tidak pasti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.25,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.5,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,RF,symlog,pat,tidak pasti,tidak pasti,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,0.75,0.01,100.0,RF,symlogc,pat,tidak pasti,kebocoran,kebocoran,kebocoran,True,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,log,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,rank,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,log,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,rank,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,1.5,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,False,1.0,2.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,raw,win,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,raw,win,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,50,True,1.0,1.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak ada bukti,False,True
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak ada bukti,False,True
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,50,200,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,200,200,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H1,500,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,kebocoran,kebocoran,False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,RF,symlog,pat,tidak pasti,tidak pasti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,0.5,0.01,100.0,RF,symlogc,pat,tidak pasti,kebocoran,n/a (H2a),n/a (H2a),True,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,1.5,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,log,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,raw,pat,tidak pasti,tidak pasti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,RF,log,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,RF,raw,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,RF,symlog,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+lognormal,H2a,200,50,50,False,1.0,2.0,0.01,100.0,RF,symlogc,pat,kebocoran,kebocoran,n/a (H2a),n/a (H2a),False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlog,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+normal,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak pasti,tidak pasti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,LRpat,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,LSTM,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,MLP,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,RF,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,rank,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,raw,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlog,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+t3,H1,200,50,50,False,1.0,1.0,0.01,100.0,XGB,symlogc,pat,tidak ada bukti,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False

@@ -1,0 +1,96 @@
+\renewcommand{\topfraction}{0.92}\renewcommand{\textfraction}{0.05}
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,font=\sffamily\scriptsize,line width=0.5pt,
+  panel/.style={font=\sffamily\scriptsize\bfseries,anchor=north west},
+  bx/.style={draw=black,inner sep=2.6pt,align=left,anchor=north west},
+  dat/.style={bx,fill=black!8},
+  prc/.style={bx,fill=white},
+  stp/.style={anchor=north west,align=left,inner sep=2pt},
+  mk/.style={anchor=east,align=right,font=\sffamily\scriptsize\itshape,text=black!75,inner sep=1pt},
+  sn/.style={anchor=north east,font=\sffamily\scriptsize\bfseries,inner sep=0pt},
+  flow/.style={-{Stealth[length=1.6mm,width=1.2mm]},line width=0.6pt},
+  frz/.style={-{Stealth[length=1.6mm,width=1.2mm]},line width=0.6pt,dashed},
+  lbl/.style={font=\sffamily\scriptsize,inner sep=1pt}]
+
+% ================= (a) =================
+\node[panel] at (0,0.1) {(a)\hspace{4pt}Data and label-free feature extraction, per recording};
+\node[dat,text width=2.85cm,minimum height=2.44cm] (a1) at (0,-0.5) {\textbf{TUEP v2.0.1}\\200 patients (100 with, 100 without epilepsy), first session only, 19 channels};
+\node[prc,text width=3.15cm,minimum height=2.44cm] (a2) at (3.55,-0.5) {\textbf{Preprocessing}\\average reference, 200 Hz, 0.5--45 Hz; clean 10 s windows (26,968)};
+\node[prc,text width=4.1cm] (v1) at (7.6,-0.5) {\textbf{I2} spectral: 114 log band-power features, median per patient};
+\node[prc,text width=4.1cm] (v2) at (7.6,-1.46) {\textbf{P3} spatial: $18\times18$ covariance, tangent space (855), PCA (50)};
+\node[prc,text width=4.1cm] (v3) at (7.6,-2.42) {\textbf{NM} temporal: 4 s segments, Mamba};
+\node[dat,text width=2.8cm,minimum height=2.44cm] (a5) at (12.95,-0.5) {\textbf{Per patient}\\features $\mathbf{x}_p$; covariates $\mathbf{d}_p$ (age, sex, era); label $y_p$};
+\draw[flow] (a1.east) -- (a2.west);
+\draw[flow] (a2.east) -- ++(0.27,0) |- (v1.west);
+\draw[flow] (a2.east) -- ++(0.27,0) |- (v2.west);
+\draw[flow] (a2.east) -- ++(0.27,0) |- (v3.west);
+\draw[flow] (v1.east) -- ++(0.35,0) |- (a5.west);
+\draw[flow] (v2.east) -- ++(0.35,0) |- (a5.west);
+\draw[flow] (v3.east) -- ++(0.35,0) |- (a5.west);
+
+% ================= (b) =================
+\node[panel] at (0,-3.2) {(b)\hspace{4pt}Patient-level nested evaluation, one prediction per patient};
+\node[prc,text width=15.2cm] (sp) at (0,-3.7) {\textbf{Patient-level split}: 10 repetitions $\times$ 5 stratified folds = 50 splits, identical for every model};
+\draw[flow] (a5.south) -- (a5.south |- sp.north);
+
+\begin{scope}[yshift=0.3cm]
+% training container
+\draw[line width=0.8pt,fill=black!6] (0,-5.0) rectangle (9.05,-8.85);
+\node[anchor=north west,font=\sffamily\scriptsize\bfseries] at (0.12,-5.07) {Outer training fold: 160 patients};
+\node[stp,text width=6.3cm] at (0.5,-5.55) {\textbf{Covariate adjustment}: V4 (I2, NM) or V5 (P3), fitted on all training patients};
+\node[stp,text width=6.3cm] at (0.5,-6.45) {\textbf{Scaler, reference covariance, PCA}, same patients};
+\node[stp,text width=6.3cm] at (0.5,-7.05) {\textbf{Inner selection}: $C$ by 5-fold CV (I2, P3); NM: 80/20 split for configuration and early stopping};
+\node[stp,text width=6.3cm] at (0.5,-7.95) {\textbf{Final classifier} fitted on the 160 patients};
+\node[sn] at (0.45,-5.62) {1}; \node[sn] at (0.45,-6.52) {2}; \node[sn] at (0.45,-7.12) {3}; \node[sn] at (0.45,-8.02) {4};
+\node[mk] at (8.95,-5.78) {no labels}; \node[mk] at (8.95,-6.58) {no labels};
+\node[mk] at (8.95,-7.2) {uses labels}; \node[mk] at (8.95,-8.1) {uses labels};
+\node[anchor=north west,text width=8.6cm,font=\sffamily\scriptsize,text=black!75,inner sep=1pt] at (0.12,-8.38) {Strict-nesting sensitivity: steps 1--2 refitted in each inner split.};
+
+% boundary
+\draw[line width=1.0pt,dash pattern=on 4pt off 2.5pt] (9.4,-4.95) -- (9.4,-9.35);
+\node[font=\sffamily\scriptsize,rotate=90,fill=white,inner sep=1.5pt] at (9.4,-7.95) {training--test boundary};
+
+% test container
+\draw[line width=0.8pt,fill=white] (9.75,-5.0) rectangle (15.95,-9.3);
+\node[anchor=north west,font=\sffamily\scriptsize\bfseries] at (9.87,-5.07) {Outer test fold: 40 patients};
+\node[stp,text width=5.0cm] (s5) at (10.5,-5.55) {\textbf{Frozen transforms and classifier} from steps 1--4; no refitting};
+\node[stp,text width=5.0cm] (s6) at (10.5,-6.35) {\textbf{One probability per patient} and view: $p_{\mathrm{I2}}$, $p_{\mathrm{P3}}$, $p_{\mathrm{NM}}$};
+\node[sn] at (10.45,-5.62) {5}; \node[sn] at (10.45,-6.42) {6};
+\node[prc,text width=5.5cm] (f2) at (9.95,-7.35) {\textbf{F2} = mean of the three probabilities};
+\node[prc,text width=5.5cm] (auc) at (9.95,-7.95) {\textbf{Per-fold AUC} over 50 folds (primary estimand); Nadeau--Bengio 95\% CI};
+\draw[flow] (10.2,-6.95) -- (10.2,-7.33);
+\draw[flow] ([xshift=0.25cm]f2.south west) -- ([xshift=0.25cm]auc.north west);
+\node[anchor=north west,text width=5.8cm,font=\sffamily\scriptsize,text=black!75,inner sep=1pt] at (9.87,-8.95) {Never used for fitting or selection.};
+\draw[frz] (9.05,-5.78) -- (10.2,-5.78);
+
+% split to containers
+\draw[flow] (1.0,-4.62) -- (1.0,-5.0);
+\draw[flow] (12.8,-4.62) -- (12.8,-5.0);
+\node[lbl,anchor=west] at (1.1,-4.8) {160 patients};
+\node[lbl,anchor=west] at (12.9,-4.8) {40 patients};
+
+% ================= (c) =================
+\begin{scope}[yshift=0.3cm]
+\node[panel] at (0,-9.8) {(c)\hspace{4pt}Audit layer: four questions on the same pipeline};
+\draw[line width=0.8pt] (0,-10.45) -- (15.95,-10.45);
+\node[lbl,anchor=south east] at (15.95,-10.43) {same 50 splits and the same out-of-fold predictions};
+\newcommand{\acard}[3]{%
+  \draw[line width=0.5pt,fill=white] (#1,-10.7) rectangle ++(3.7,-3.1);
+  \node[anchor=north west,align=left,inner sep=2.5pt,text width=3.4cm] at (#1+0.05,-10.74) {\textbf{#2}\\#3};
+  \draw[line width=0.5pt] (#1+1.85,-10.7) -- (#1+1.85,-10.45);}
+\acard{0}{Null experiments}{EEG blocks permuted between patients (H1) or within era (H2a) before the split; label and covariates stay. Paired runs with and without adjustment $\to$ rules R1, R2 (\tabref{tab:definisi_null})}
+\acard{4.1}{Non-EEG baselines}{C1 (no adjustment), acquisition metadata, age and sex. N0 = non-EEG; N1 = N0 + adjusted I2; N2 = N0 + raw band power $\to$ EEG information beyond non-EEG predictors}
+\acard{8.2}{Matched strata}{Epilepsy--non-epilepsy pairs within year $\times$ device strata, age caliper 5, 10, 15 y; patient-level bootstrap $\to$ discrimination that persists in pairs}
+\acard{12.25}{Selection optimism}{15 or 50 stored candidates; 2,000 class-stratified bootstraps; in-bag winner vs out-of-bag AUC $\to$ corrected AUC, conditional on stored candidates}
+
+% legend
+\begin{scope}[yshift=-14.25cm]
+  \draw[flow] (9.4,0) -- (10.2,0); \node[lbl,anchor=west] at (10.3,0) {data flow};
+  \draw[frz] (12.0,0) -- (12.8,0); \node[lbl,anchor=west] at (12.9,0) {frozen parameters};
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+\caption{Audit workflow with the training--test boundaries. (a) Preprocessing and feature extraction are label-free and per recording. (b) Steps that estimate statistics from several patients (steps 1--2) are fitted inside the outer training fold, labels enter only in steps 3--4, and the outer test fold is never used for fitting or selection. (c) The audit layer evaluates the same pipeline, splits, and predictions under null experiments, against non-EEG baselines, within matched strata, and after selection over stored candidates. V4 and V5 are covariate adjustments; H1 and H2a permute the EEG between patients or within era; R1 and R2 are the decision rules; N0--N2 are the models of Subsection~\ref{sec:validasi}.}\label{fig:alur}
+\end{figure}

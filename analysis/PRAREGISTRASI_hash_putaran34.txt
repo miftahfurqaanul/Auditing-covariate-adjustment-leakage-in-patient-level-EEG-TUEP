@@ -1,0 +1,6 @@
+
+ac5f255355d8e9f7c2db19d0e0510847bcb3d99edd230abd73c273c9e9e253a4  PRAREGISTRASI_putaran34.md
+cdc6f199b93877c4e0dd3cea7a52f5b98f2b7d3d3bfecc9772e00ecc0da142fb  round34_tang_v4.py
+960ac79279094f224bc74ed1a746ce8806c19a918e2e87a5d2ac96591e61571e  round34_eval_tang.py
+2026-10-21T23:04:57+07:00
+(recorded before the GPU run; only the --check on a small CPU subset and the smoke evaluation had been seen)

@@ -1,0 +1,25 @@
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{p{0.36\textwidth}cccccc}
+\caption{Equal-treatment pipeline for frozen embeddings and anatomical compression (round 43; 50 canonical folds): standardization and PCA 50 (except BP-rank and compression), rank-normal, V4 adjustment, age and sex (column ``+ age/sex''), then L2 logistic regression with $C$ from six values chosen by inner cross-validation; all steps were refitted in each inner fold. The column ``without age/sex'' omits age and sex. Differences in pp against I2 with adjustment and age/sex (68.0; Nadeau--Bengio corrected $t$-test); Holm only for the primary family of four tests (LaBraM, CBraMod, BENDR, compression).}\label{tab:setara43}\\
+\toprule
+Input & + age/sex [CI] & Without age/sex & Difference vs I2 & $p$ & Holm \\
+\midrule
+\endfirsthead
+\toprule
+Input & + age/sex [CI] & Without age/sex & Difference vs I2 & $p$ & Holm \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Band power 114 features, rank-normal + V4 (no PCA) & 68.5 [60.8--76.3] & 66.2 & +0.5 & 0.85 & -- \\
+Band power, PCA 50 (equal-treatment pipeline) & 65.9 [58.7--73.0] & 63.6 & $-$2.2 & 0.44 & -- \\
+Frozen LaBraM & 63.6 [54.2--73.0] & 61.5 & $-$4.4 & 0.35 & 0.69 \\
+Frozen CBraMod (layer 12) & 66.2 [58.7--73.6] & 63.6 & $-$1.9 & 0.66 & 0.69 \\
+Frozen CBraMod (layer 8; descriptive) & 66.0 [57.6--74.4] & 63.9 & $-$2.0 & 0.69 & -- \\
+Frozen CBraMod (layer 4; descriptive) & 61.2 [53.6--68.8] & 58.3 & $-$6.8 & 0.077 & -- \\
+Frozen BENDR & 53.2 [44.9--61.4] & 48.8 & $-$14.9 & 0.007 & 0.03 \\
+Anatomical compression, 50 features & 58.8 [50.8--66.9] & 54.2 & $-$9.2 & 0.082 & 0.25 \\
+Anatomical compression, median only (descriptive) & 61.8 [53.6--70.1] & 58.1 & $-$6.2 & 0.13 & -- \\
+\end{longtable}
+}

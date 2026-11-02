@@ -1,0 +1,22 @@
+{\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{p{0.34\textwidth}ccccc}
+\caption{Leakage map on simulated data without a disease signal (round 39), recomputed on the per-fold AUC (round 40). Each row summarizes simulation cells in the H1 scenario with a label--covariate association $s>0$ and per-patient adjustment; the second column is the number of cells (distribution, size, and classifier) combined. The nonlinear classifiers are the \textit{random forest}, XGBoost, \textit{multilayer perceptron}, and Bi-LSTM; delta (pp) is the AUC with adjustment minus the AUC without adjustment on the same pipeline and replicate (or raw without adjustment for trees). Decisions follow rule R2 as set beforehand (leakage if the mean $>3$ pp; no evidence if the mean $\leq 1$ pp and the one-sided 95\% upper bound $\leq 3$ pp).}\label{tab:peta_sim}\\
+\toprule
+Feature transformation & Cells & Mean delta & Maximum delta & Leakage (\%) & No evidence (\%) \\
+\midrule
+\endfirsthead
+\toprule
+Feature transformation & Cells & Mean delta & Maximum delta & Leakage (\%) & No evidence (\%) \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+raw & 45 & +6.5 & +17.1 & 60.0 & 28.9 \\
+symlog ($c=1$) & 35 & +3.9 & +13.3 & 37.1 & 22.9 \\
+symlog (median scale) & 45 & +3.1 & +13.4 & 28.9 & 35.6 \\
+log (lognormal only) & 17 & +0.2 & +1.8 & 0.0 & 88.2 \\
+rank-normal & 45 & $-$0.1 & +1.9 & 0.0 & 95.6 \\
+logistic regression (all transformations) & 134 & 0.0 & +2.6 & 0.0 & 93.3 \\
+\end{longtable}
+}

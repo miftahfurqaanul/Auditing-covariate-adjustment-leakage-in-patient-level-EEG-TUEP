@@ -1,0 +1,76 @@
+\setcounter{table}{0}\setcounter{figure}{0}\setcounter{equation}{0}
+\renewcommand{\thetable}{S1.\arabic{table}}
+\renewcommand{\thefigure}{S1.\arabic{figure}}
+\renewcommand{\theequation}{S1.\arabic{equation}}
+
+\section*{Supplementary Material S1: audit definitions, fitting flow, estimands, and analysis status}\label{sec:s1}
+
+\subsection*{S1.1 Null experiments: objects, units, and timing}
+The null experiments are defined in \tabref{tab:definisi_null} of the main text; this subsection gives the procedure as pseudocode.
+{\footnotesize
+\begin{verbatim}
+Input: patients P (200; 199 for Tang), labels y, covariates c = (age, sex, era),
+       EEG block X_p of each patient (rows = windows, segments, or seconds; columns = features),
+       scenario s in {H1, H2a, H2b}, replicate seed r.
+1. Draw a permutation pi of P with seed r: over all patients (H1), within era
+   groups (H2a), or within year x device cells (H2b). No label is used.
+2. Block variant (rounds 30-48 and 49B pools):
+       X'_p <- X_pi(p) for every p (all rows and all features move together;
+       the number of rows travels with the block; every donor block is used once).
+   Column variant (rounds 28-29; patient-level I2 features, one row per patient):
+       for every feature j, draw pi_j and set X'_(p,j) <- X_(pi_j(p), j).
+3. y_p and c_p stay with patient p. The permuted data replace the real data once,
+   before the split; the full pipeline (split, adjustment, classifier) is run
+   unchanged on the same folds, with and without adjustment (paired control).
+4. Record the AUC; repeat for r = 1..n.
+\end{verbatim}
+}
+Because every donor block appears exactly once, no block is present in both a training and a test fold. H1 removes the association of the EEG with the label and with the covariates while the label--covariate association is preserved; an AUC above chance after adjustment can then come only from the adjustment, from Monte Carlo variation, or from the small downward bias of the pooled AUC. H2a keeps the era association of the EEG, so a legitimate era effect remains and only R1 applies. The column variant also removes correlations between features, whereas the block variant keeps them and keeps the within-patient structure.
+
+\subsection*{S1.2 Fitting flow and nesting}
+{\footnotesize
+\begin{verbatim}
+for repetition r = 1..10, fold k = 1..5:
+    outer training T (160 patients), outer test V (40); assert T and V disjoint
+    I2, P3, C1, metadata baseline:
+        fit on T: V4 coefficients and residual SD (I2); reference covariance,
+        tangent map, PCA (50 components) and V5 coefficients (P3); scaler
+        choose C (nine values) by inner StratifiedKFold(5) on T
+        refit on T with the chosen C; predict V
+        [round 49 sensitivity: every transform refitted in each inner split]
+    NM:
+        split T into training (80%) and validation (20%) patients, class-stratified
+        fit on T: V4 coefficients (segment-weighted) and summary standardization
+        [round 49 sensitivity: fitted on the 80% only]
+        choose (d, L) in {32, 64} x {32, 96} by validation AUC
+        train five seeds with early stopping
+        on validation AUC (patience 10, at most 60 epochs); keep best-epoch
+        weights (no refit on T); average the five seeds' probabilities
+    F2 = arithmetic mean of the I2, P3, and NM probabilities
+\end{verbatim}
+}
+Weighting: the I2 adjustment (V4) and the P3 adjustment (V5) are fitted on one row per patient (patient median or mean); the NM adjustment is fitted on segments, so patients with more segments weigh more; in the Rohira diagnosis, \textit{win} variants are window-weighted and \textit{pat} variants patient-level. All transforms use only training-patient statistics; none uses labels except the classifier. In the main pipeline the label-free transforms were fitted on the whole outer training set, including the inner validation patients; the strict-nesting sensitivity analysis of round 49 refitted them inside the inner splits (\tabref{tab:s1_ketat}). Patient-index assertions check that no outer test patient enters any fitting set and, in the strict version, that no inner validation patient enters a transform fit.
+NM training used AdamW (learning rate $10^{-3}$, weight decay $10^{-2}$, batch 32). F2 averages probabilities from models that were not recalibrated, so a component with a wider probability range has more influence on the ranking.
+
+\subsection*{S1.3 Estimands and resampling}
+Three AUC quantities are used. With $\mathcal{V}_{rk}$ the test patients of fold $k$ in repetition $r$ and $\hat p_i^{(r)}$ the out-of-fold probability of patient $i$ in repetition $r$:
+\begin{align}
+\bar A_{\mathrm{fold}} &= \tfrac{1}{50}\textstyle\sum_{r=1}^{10}\sum_{k=1}^{5}\mathrm{AUC}\big(\{y_i,\hat p_i^{(r)}\}_{i\in\mathcal{V}_{rk}}\big)\label{eq:s1_fold}\\
+\bar A_{\mathrm{pool}} &= \tfrac{1}{10}\textstyle\sum_{r=1}^{10}\mathrm{AUC}\big(\{y_i,\hat p_i^{(r)}\}_{i=1}^{200}\big)\label{eq:s1_pool}\\
+A_{\mathrm{avg}} &= \mathrm{AUC}\big(\{y_i,\bar p_i\}_{i=1}^{200}\big),\qquad \bar p_i=\tfrac{1}{10}\textstyle\sum_{r}\hat p_i^{(r)}\label{eq:s1_avg}
+\end{align}
+$\bar A_{\mathrm{fold}}$ (unit: fold; Nadeau--Bengio corrected $t$) is the primary performance measure. $\bar A_{\mathrm{pool}}$ (unit: patient; class-stratified patient bootstrap with predictions held fixed) is used for the leakage replicates of rounds 28--38, the patient bootstrap of round 45, and the selection-optimism correction. $A_{\mathrm{avg}}$ is used for the within-strata and caliper analyses (pairwise concordance over eligible epilepsy--non-epilepsy pairs, each pair weighted equally; bootstrap that resamples patients within each year $\times$ device cell and rebuilds the pairs), the confounder tests, calibration, and decision curves. The three quantities are not identical: for the six main models, $\bar A_{\mathrm{pool}}$ was 0.2--1.4 pp below $\bar A_{\mathrm{fold}}$ and $A_{\mathrm{avg}}$ 0.5--3.2 pp above it (F2: 69.7, 69.4, and 72.2), because averaging over repetitions reduces the variance of each patient's score. Within-strata AUCs therefore use an estimand with higher values and are not directly comparable with per-fold AUCs.
+Selection-optimism correction (round 43): in each of 2,000 class-stratified bootstrap samples, the candidate with the highest in-bag $\bar A_{\mathrm{pool}}$ was chosen and its out-of-bag $\bar A_{\mathrm{pool}}$ computed (at least five patients per class out of bag); optimism is the mean in-bag minus out-of-bag difference of the in-bag winner, and the corrected AUC is the apparent AUC of the full-sample winner minus that optimism. The max-$T$ test studentized each candidate--reference difference by its bootstrap SD (floor $10^{-9}$ for candidates identical to the reference), centered the bootstrap distribution at the observed differences (null hypothesis of equal AUCs), and compared the observed maximum with the bootstrap maxima. With permuted labels (40 permutations) the corrected AUC of the winner was 48.9 and the max-$T$ test rejected in 5\% of permutations. The correction is conditional on the stored candidates and does not repeat the adaptive process that produced them (feature choice, preprocessing, fusion choice, or changes of question after results were seen).
+
+\subsection*{S1.4 Hypotheses, endpoints, and multiplicity}
+\input{\naskahdir/tabel_peta_hipotesis}
+
+\subsection*{S1.5 Status of the analysis plans}
+No analysis in this report was planned before the TUEP data were explored. Rounds 3--27 were planned in documents committed to Git before their code and results, and rounds 28--49 in documents hashed with SHA-256 before their runs; every plan was written after the results of earlier rounds were known, so all rounds are follow-up analyses. A hash identifies a document but does not establish when it was written; the timestamps are local log entries and cannot be verified by a third party, so we call these documents version-controlled analysis plans, not registrations. \tabref{tab:kronologi} lists the plans, addenda, and check groups; parts marked post hoc were formulated after the relevant results were seen.
+\input{\naskahdir/tabel_kronologi}
+
+\subsection*{S1.6 Glossary}
+\input{\naskahdir/tabel_glosarium}
+
+\subsection*{S1.7 Reproducibility and reporting}
+The analysis code (feature extraction, models, leakage tests, simulations, summaries, and table scripts), the software environment (exact package versions), the fold assignments (subject identifiers by repetition and fold), the random seeds (fixed in the scripts), the analysis plans with addenda and hashes, and the automated manuscript checks are kept in the project repository \ISI{repository link and licence}. TUEP v2.0.1 cannot be redistributed; licensed NEDC users can rebuild every table from the raw EDF files with these scripts. Code checks (second implementations, perturbation tests, reproduction of stored cells) verify the computations; they are not replication on independent patients. Reporting followed the relevant items of TRIPOD+AI \cite{collins2024tripod}.

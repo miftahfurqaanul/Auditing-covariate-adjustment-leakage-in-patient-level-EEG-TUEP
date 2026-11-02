@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+manuscript/build/out/
+manuscript/build/out_id/
+manuscript/build/tectonic
+.venv/
+workspace/
+*.pth
+*.pt
+*.h5
+*.edf

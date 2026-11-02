@@ -1,0 +1,4 @@
+995ef63ee65febeb4f53ec0df0f6c586d94c15989cec237f6dcbb6846fe01b5f  PRAREGISTRASI_putaran45.md
+1be25b1b2f5db6fd7718e1ebacd2b392161dfb5b1e07318d8ce9535c4d73b9b4  round45_tindaklanjut.py
+2026-10-24T15:30:06+07:00
+(recorded before the run; no summary of differences had been seen; the point estimates of F2-Clean vs F2 from hasil44/ringkas_strata.csv were already known and are written in the document)

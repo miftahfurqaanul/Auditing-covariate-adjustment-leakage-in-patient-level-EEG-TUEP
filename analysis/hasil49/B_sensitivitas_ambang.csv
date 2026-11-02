@@ -1,0 +1,918 @@
+sumber,kumpulan,aturan,ketat,asli,longgar,berubah_ketat,berubah_longgar
+EEG,r29 C1 H1 (gabungan),R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+EEG,r29 V0 H1 (gabungan),R1,kebocoran,kebocoran,kebocoran,False,False
+EEG,r29 V1 H1 (gabungan),R1,kebocoran,kebocoran,kebocoran,False,False
+EEG,r29 V2 H1 (gabungan),R1,kebocoran,kebocoran,tidak pasti,False,True
+EEG,r29 V3 H1 (gabungan),R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+EEG,r29 V4 H1 (gabungan),R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+EEG,r29 V0-C1 H1 (gabungan),R2,kebocoran,kebocoran,kebocoran,False,False
+EEG,r29 V4-C1 H1 (gabungan),R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+EEG,r29 C1 H2a (gabungan),R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+EEG,r29 V0 H2a (gabungan),R1,kebocoran,kebocoran,kebocoran,False,False
+EEG,r29 V1 H2a (gabungan),R1,kebocoran,kebocoran,kebocoran,False,False
+EEG,r29 V2 H2a (gabungan),R1,kebocoran,kebocoran,kebocoran,False,False
+EEG,r29 V3 H2a (gabungan),R1,tidak pasti,tidak pasti,tidak pasti,False,False
+EEG,r29 V4 H2a (gabungan),R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+EEG,r46 C1 H1 (per lipatan),R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+EEG,r46 V0 H1 (per lipatan),R1,kebocoran,kebocoran,kebocoran,False,False
+EEG,r46 V4 H1 (per lipatan),R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+EEG,r36c Rohira RF-none H1,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+EEG,r36c Rohira RF-logpat - RF-none H1,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+EEG,r37 Tang L H1,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+EEG,r37 Tang Lp - L H1,R2,kebocoran,kebocoran,tidak pasti,False,True
+EEG,r40 NM N0 H1 (per lipatan),R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+EEG,r40 NM V4 - N0 H1 (per lipatan),R2,tidak pasti,tidak pasti,tidak pasti,False,False
+plasmode,LR rank-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR rank-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR raw-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR raw-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR symlog-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR symlog-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR rank-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR rank-pat gamma=0.5,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,LR raw-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR raw-pat gamma=0.5,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR symlog-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR symlog-pat gamma=0.5,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR rank-pat gamma=1,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR rank-pat gamma=1,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR raw-pat gamma=1,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR raw-pat gamma=1,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+plasmode,LR symlog-pat gamma=1,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,LR symlog-pat gamma=1,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,NM rank-V4 gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,NM rank-V4 gamma=0,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+plasmode,NM raw-V4 gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,NM raw-V4 gamma=0,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,NM rank-V4 gamma=1,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,NM rank-V4 gamma=1,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,NM raw-V4 gamma=1,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,NM raw-V4 gamma=1,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF log-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF log-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF rank-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF rank-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF raw-pat gamma=0,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,RF raw-pat gamma=0,R2,kebocoran,tidak pasti,tidak pasti,True,False
+plasmode,RF raw-win gamma=0,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,RF raw-win gamma=0,R2,kebocoran,tidak pasti,tidak pasti,True,False
+plasmode,RF symlog-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF symlog-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF log-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF log-pat gamma=0.5,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF rank-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF rank-pat gamma=0.5,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF raw-pat gamma=0.5,R1,tidak pasti,tidak pasti,tidak pasti,False,False
+plasmode,RF raw-pat gamma=0.5,R2,kebocoran,kebocoran,tidak pasti,False,True
+plasmode,RF raw-win gamma=0.5,R1,tidak pasti,tidak pasti,tidak pasti,False,False
+plasmode,RF raw-win gamma=0.5,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,RF symlog-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF symlog-pat gamma=0.5,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF log-pat gamma=1,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF log-pat gamma=1,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,RF rank-pat gamma=1,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,RF rank-pat gamma=1,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,RF raw-pat gamma=1,R1,kebocoran,kebocoran,kebocoran,False,False
+plasmode,RF raw-pat gamma=1,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,RF raw-win gamma=1,R1,kebocoran,kebocoran,kebocoran,False,False
+plasmode,RF raw-win gamma=1,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,RF symlog-pat gamma=1,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,RF symlog-pat gamma=1,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+plasmode,Tang rank-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,Tang rank-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,Tang raw-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,Tang raw-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,Tang symlog-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,Tang symlog-pat gamma=0,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+plasmode,Tang rank-pat gamma=1,R1,kebocoran,kebocoran,tidak pasti,False,True
+plasmode,Tang rank-pat gamma=1,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,Tang raw-pat gamma=1,R1,kebocoran,kebocoran,kebocoran,False,False
+plasmode,Tang raw-pat gamma=1,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,Tang symlog-pat gamma=1,R1,tidak pasti,tidak pasti,tidak pasti,False,False
+plasmode,Tang symlog-pat gamma=1,R2,kebocoran,tidak pasti,tidak pasti,True,False
+plasmode,XGB log-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB log-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB rank-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB rank-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB raw-pat gamma=0,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,XGB raw-pat gamma=0,R2,kebocoran,tidak pasti,tidak pasti,True,False
+plasmode,XGB raw-win gamma=0,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,XGB raw-win gamma=0,R2,kebocoran,tidak pasti,tidak pasti,True,False
+plasmode,XGB symlog-pat gamma=0,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB symlog-pat gamma=0,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB log-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB log-pat gamma=0.5,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB rank-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB rank-pat gamma=0.5,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB raw-pat gamma=0.5,R1,kebocoran,kebocoran,tidak pasti,False,True
+plasmode,XGB raw-pat gamma=0.5,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,XGB raw-win gamma=0.5,R1,kebocoran,kebocoran,tidak pasti,False,True
+plasmode,XGB raw-win gamma=0.5,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,XGB symlog-pat gamma=0.5,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB symlog-pat gamma=0.5,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+plasmode,XGB log-pat gamma=1,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,XGB log-pat gamma=1,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,XGB rank-pat gamma=1,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+plasmode,XGB rank-pat gamma=1,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+plasmode,XGB raw-pat gamma=1,R1,kebocoran,kebocoran,kebocoran,False,False
+plasmode,XGB raw-pat gamma=1,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,XGB raw-win gamma=1,R1,kebocoran,kebocoran,kebocoran,False,False
+plasmode,XGB raw-win gamma=1,R2,kebocoran,kebocoran,kebocoran,False,False
+plasmode,XGB symlog-pat gamma=1,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+plasmode,XGB symlog-pat gamma=1,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,chi2|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|raw|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|LRpat|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|LRpat|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|LRpat|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|RF|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|RF|raw|pat,R2,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.003|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|RF|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|RF|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|RF|raw|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|10.0|RF|symlogc|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|raw|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.01|1000.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|RF|symlog|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|RF|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|RF|symlogc|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|False|1.0|1.0|0.03|100.0|RF|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|raw|win,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|raw|win,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|raw|win,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|raw|win,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|10.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|10.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|10.0|RF|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|10.0|RF|symlog|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|10.0|RF|symlogc|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|raw|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|1000.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|1000.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|1000.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|1000.0|RF|symlog|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,contam|H2a|200|50|50|False|1.0|1.0|0.01|1000.0|RF|symlogc|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|100|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|10|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|200|50|10|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|raw|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|LSTM|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|MLP|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|raw|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|symlog|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.0|1.0|0.01|100.0|XGB|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|symlog|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|0.5|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|log|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|rank|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|raw|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|symlog|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|LRpat|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|log|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|raw|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.25|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.5|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|symlog|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|0.75|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|log|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|log|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|log|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R2,tidak pasti,tidak pasti,tidak pasti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|1.5|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|raw|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|False|1.0|2.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|raw|win,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|raw|win,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|raw|win,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|raw|win,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|50|True|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|log|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|50|200|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|200|200|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H1|500|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|RF|symlog|pat,R1,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|0.5|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,tidak pasti,False,True
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|1.5|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|raw|pat,R1,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|RF|log|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|RF|raw|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|RF|symlog|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,lognormal|H2a|200|50|50|False|1.0|2.0|0.01|100.0|RF|symlogc|pat,R1,kebocoran,kebocoran,kebocoran,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak pasti,tidak pasti,tidak ada bukti,False,True
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R2,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,normal|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R2,kebocoran,tidak pasti,tidak pasti,True,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LRpat|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|LSTM|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|MLP|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R1,tidak pasti,tidak ada bukti,tidak ada bukti,True,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|RF|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|rank|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|raw|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlog|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R1,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False
+simulasi,t3|H1|200|50|50|False|1.0|1.0|0.01|100.0|XGB|symlogc|pat,R2,tidak ada bukti,tidak ada bukti,tidak ada bukti,False,False

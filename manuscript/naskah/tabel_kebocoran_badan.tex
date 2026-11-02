@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Test with uninformative features on I2 without age and sex (mean pooled AUC, percent; 100 replicates) and the partial era test (Spis\'ak) on scores with age and sex. R1: no evidence if the mean $\leq 52.0$ and the mean $+\,1.645\,\mathrm{SE} \leq 54.0$, leakage if the mean $> 55$, otherwise uncertain (SE over 100 replicates). Rounds 28 and 29 are separate replication series; the text uses round 28. C1 and V0--V4 are variants of the pipeline run on the same permuted features, not repetitions of one experiment. Raw $p$ (Holm V1 and V2: 0.0002 and 0.003). Per-fold H1: per-fold AUC on the replicates of round 29 (round 46), with the same R1 decision as the pooled AUC (\tabref{tab:s2_p46}); ``--'': not computed.}\label{tab:kebocoran_badan}
+\centering\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{p{0.34\textwidth}ccccccc}
+\toprule
+Variant & H1 & H2a & R1 (H1) & R1 (H2a) & Per-fold H1 & Era $r^2$ & $p$ \\
+\midrule
+\multicolumn{8}{l}{\textit{Round 28 (planned audit)}} \\
+C1 (no normative layer) & 50.8 & 50.1 & no evidence & no evidence & -- & 0.03 & 0.37 \\
+V0: original layer (training controls; I2) & 56.4 & 55.8 & leakage & leakage & -- & 0.11 & 0.0016 \\
+\midrule
+\multicolumn{8}{l}{\textit{Round 29 (normative-layer variants)}} \\
+C1 (no normative layer) & 50.6 & 51.6 & no evidence & no evidence & 50.4 & 0.03 & 0.37 \\
+V0: original layer (training controls) & 56.0 & 57.1 & leakage & leakage & 56.9 & 0.11 & 0.0012 \\
+V1: separate reference & 56.1 & 56.3 & leakage & leakage & 57.9 & 0.14 & $\leq 0.0001$ \\
+V2: \textit{cross-fitted} & 55.7 & 56.8 & leakage & leakage & 56.6 & 0.10 & 0.0030 \\
+V3: no era & 52.5 & 53.7 & uncertain & uncertain & 52.7 & 0.02 & 0.52 \\
+V4: regression on all training patients & 50.4 & 51.7 & no evidence & no evidence & 50.0 & 0.00 & 0.98 \\
+\bottomrule
+\end{tabular}
+\end{table}

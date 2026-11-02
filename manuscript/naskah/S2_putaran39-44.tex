@@ -1,0 +1,141 @@
+\setcounter{table}{0}\setcounter{figure}{0}
+\setlength{\LTpre}{6pt}\setlength{\LTpost}{6pt}
+\renewcommand{\thetable}{S2.\arabic{table}}
+\renewcommand{\thefigure}{S2.\arabic{figure}}
+
+\section*{Supplementary Material S2: rounds 39--49}\label{sec:s2}
+
+\subsection*{S2.1 Analysis-plan documents}
+The plan of each round was written and hashed with SHA-256 before the round was run. \tabref{tab:kronologi} lists the first 12 characters of the hash of each round and the number of independent check groups that passed (the files \path{PRAREGISTRASI_hash_putaran*.txt} contain the full hashes, addenda, and scripts). Hash procedure: the 12-character prefix of the SHA-256 of the plan document was computed on the content of the document up to the heading ``\#\# Adendum'' (the heading used in the registration documents) when the document contains addenda (verified in rounds 29, 36, and 39).
+Round 39 also recorded two addenda (addendum 2 added a follow-up stage after two negative-control cells in the pilot violated the threshold), round 40 three addenda, and round 42 two addenda (XGBoost hardware deviation).
+In rounds 3--27 (plans committed to Git before code and results) there were four exceptions: the addendum of round 4 was written after the results (post hoc negative control), the addendum of round 12 after the initial execution (the log of that execution was kept), the label-free feature extraction of round 24 was run before the \textit{commit}, and round 25 recorded one descriptive peek at 29 of 50 folds.
+
+\subsection*{S2.2 Predictions and results}
+The table below lists the probabilistic predictions written before execution and their results; predictions that were not met are reported.
+
+{\scriptsize
+\begin{longtable}{p{0.43\textwidth}cp{0.36\textwidth}}
+\caption{Predictions written in the plans and their results: rounds 40 and 41 (top), round 42 (plasmode; middle), and rounds 43 and 44 (bottom).}\label{tab:s2_pred1}\label{tab:s2_pred2}\label{tab:s2_pred3}\\
+\toprule
+Prediction & Probability & Result \\
+\midrule
+\endfirsthead
+\toprule
+Prediction & Probability & Result \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+H40-0: reproduction of the pooled AUC of round 39 & required & passed (maximum difference 0.0 on CPU, GPU, NM, and Rohira) \\
+H40-1: pooled-AUC bias explains the baseline below 50 (\textit{random forest}, logistic regression, NM) & 0.35, 0.30, 0.45 & not supported; the largest bias was +0.2 pp \\
+H40-2: at least 90\% of cells do not change category & 0.75 & met; 1.6\% (R1) and 1.6\% (R2) changed \\
+H40-2: changes concentrated in the ``uncertain'' category & 0.70 & met \\
+H40-3: skewness and quantiles explain $\Delta$ better than kurtosis & 0.35 & not supported ($R^2$ gain $-$21.418) \\
+H40-3: mass around the symlog kink explains symlog on normal features & 0.25 & not formally tested; values almost the same across three distributions \\
+\midrule
+A$_{15}$: F2 AUC $>$ 50 at the 15-year caliper (Holm) & 0.70 & passed (Holm 0.003--0.018 for the six tests) \\
+A$_{10}$ & 0.60 & passed \\
+A$_{5}$ & 0.35 & passed (prediction too pessimistic) \\
+B$_{10}$: difference against metadata & 0.65 & passed \\
+F2 AUC decreases monotonically with the caliper & 0.55 & not monotonic (72.6, 73.0, 72.0) \\
+Demographic baseline at the 5-year caliper within $[40, 60]$ & 0.85 & correct (47.2) \\
+\midrule
+$\gamma=0$ control met in all families & 0.60 & no: XGBoost 7 of 10 cells \\
+Raw \textit{random forest} with per-window adjustment leaks at $\gamma=1$ (positive control) & 0.85 & correct (61.1) \\
+\textit{Random forest}: rank-normal without evidence of leakage (R1) & 0.80 & correct (51.3) \\
+\textit{Random forest}: symlog without evidence of leakage & 0.40 & no (R2 ``uncertain'') \\
+XGBoost: rank-normal without evidence of leakage & 0.75 & R1 ``uncertain'' (51.1), R2 ``no evidence'' \\
+Tang: raw adjustment leaks & 0.80 & correct (63.6) \\
+Tang: symlog without evidence of leakage & 0.40 & no (R2 ``uncertain'') \\
+Tang: rank-normal without evidence of leakage & 0.55 & no (55.6; R1 ``leakage'') \\
+Logistic regression I2: no evidence of leakage by R1 in all pipelines & 0.90 & correct \\
+Raw--rank-normal difference passes Holm (RF, XGBoost, Tang) & 0.85, 0.80, 0.55 & passed for all three; claim rejected for Tang because of R1 \\
+\midrule
+Equal-treatment BENDR lower than I2 and passes Holm & 0.35 & occurred (Holm 0.03) \\
+Anatomical compression positive and passes Holm & 0.05 & no \\
+Anatomical compression within $\pm3$ pp of I2 & 0.60 & no (difference $-$9.2 pp) \\
+Anatomical compression AUC 66--70 & -- & no (58.8) \\
+Equalization narrows the gap of BENDR and LaBraM relative to round 31 & 0.55 & partly: LaBraM yes, BENDR widened \\
+No evidence of leakage by R1 in all equal-treatment pipelines & 0.70 & correct (10 of 10) \\
+Selection optimism of the main set 1.5--3.5 pp & 0.65 & correct (2.0) \\
+F2 winner of the main set & 0.40 & occurred (also the set of all) \\
+Max-T against metadata and C1 does not reject & 0.65, 0.90 & correct ($p$ 0.44, 0.36) \\
+\midrule
+F2-Clean without NM passes the age rule & 0.65 & correct ($r^2$ 0.0027) \\
+I2 and P3 without age/sex pass the age rule & 0.75, 0.70 & correct \\
+Squared age term lowers the age $r^2$ further & 0.55 & no ($r^2$ 0.0014 and 0.0015) \\
+Squared age term raises AUC & 0.20 & no \\
+IPW-I2 lower in AUC and higher in age $r^2$ than rank-normal + V4 & 0.60 & correct (65.3 and $r^2$ 0.0074) \\
+IPW-\textit{random forest} without evidence of leakage on the plasmode & 0.90 & correct (6 of 6) \\
+30 windows: difference of F2-Clean without NM up to 2 pp & 0.70 & correct (2.0 pp) \\
+\end{longtable}
+}
+
+\subsection*{S2.3 Deviations and control failures}
+\begin{itemize}[leftmargin=1.2em,itemsep=0pt]
+\item The $\gamma=0$ control for XGBoost was not met (7 of 10 cells with adjustment had the R1 decision ``no evidence''); the criterion was not relaxed.
+\item XGBoost in the plasmode was run on CPU (same histogram algorithm, same hyperparameters) because an environment variable hiding the GPU was inherited from an old module; the deviation was recorded in addenda 1 and 2 of round 42 before its results were seen.
+\item The IPW weights from the second implementation (\textit{statsmodels}) differed by up to $3\times10^{-3}$ from the main implementation because of the \textit{lbfgs} tolerance; the \textit{log-likelihood} difference was $2\times10^{-5}$.
+\item ET (\textit{extra trees}) was present only in the pilot of round 39 and was removed from the reproduction of round 40 (addendum 1).
+\end{itemize}
+
+\subsection*{S2.4 Plasmode under the H2a condition}
+{\scriptsize
+\begin{longtable}{p{0.52\textwidth}cccc}
+\caption{Plasmode, H2a condition (features swapped within era): per-fold AUC (percent) by $\gamma$ for pipelines with adjustment, and the R1 decision at $\gamma=1$. In H2a a legitimate era effect remains in the features, so only absolute R1 applies.}\label{tab:s2_h2a}\\
+\toprule
+Pipeline & $\gamma=0$ & $\gamma=0.5$ & $\gamma=1$ & R1 ($\gamma=1$) \\
+\midrule
+\endfirsthead
+\toprule
+Pipeline & $\gamma=0$ & $\gamma=0.5$ & $\gamma=1$ & R1 ($\gamma=1$) \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Logistic regression (I2), raw + per-patient adjustment & 48.9 & 48.8 & 50.2 & no evidence \\
+Logistic regression (I2), symlog + per-patient adjustment & 48.8 & 47.7 & 50.3 & no evidence \\
+Logistic regression (I2), rank + per-patient adjustment & 48.6 & 48.6 & 50.4 & no evidence \\
+\textit{Random forest}, raw + per-patient adjustment & 50.1 & 53.4 & 60.4 & leakage \\
+\textit{Random forest}, symlog + per-patient adjustment & 50.7 & 50.6 & 52.2 & uncertain \\
+\textit{Random forest}, rank + per-patient adjustment & 51.0 & 50.6 & 52.0 & no evidence \\
+\textit{Random forest}, log + per-patient adjustment & 51.1 & 50.5 & 52.1 & uncertain \\
+XGBoost, raw + per-patient adjustment & 52.2 & 54.1 & 61.1 & leakage \\
+XGBoost, symlog + per-patient adjustment & 52.2 & 52.0 & 54.4 & uncertain \\
+XGBoost, rank + per-patient adjustment & 52.0 & 51.8 & 53.3 & uncertain \\
+XGBoost, log + per-patient adjustment & 52.5 & 52.3 & 53.7 & uncertain \\
+\end{longtable}
+}
+
+\textbf{S2.5 Independent checks.} Each of rounds 39--48 was checked by a second implementation; the number of check groups that passed per round is given in \tabref{tab:kronologi}.
+
+\subsection*{S2.6 Leakage map in simulated data (rounds 39--40)}
+\input{\naskahdir/tabel_peta_sim}
+
+\subsection*{S2.7 Evaluation within strata with an age caliper (round 41)}
+\input{\naskahdir/tabel_kaliper}
+
+\subsection*{S2.8 Equal-treatment pipeline for comparators and anatomical compression (round 43)}
+\input{\naskahdir/tabel_setara43}
+
+\subsection*{S2.9 Follow-up analyses of the review (round 45)}
+Two small analyses were added after the simulation review, with a hashed plan before they were run (\tabref{tab:kronologi}) and four independent check groups, all of which passed. (A) The AUC difference within strata between F2-Clean and F2 (and between rank-normal I2 without age and I2) did not differ significantly at $k=5$, 10, and 15 (Table~\ref{tab:s2_p45a}); the prediction in the plan that the CI at $k=10$ would not include zero (probability 50\%) was not met. (B) The patient-level bootstrap gave narrower CIs than the corrected test because the model is treated as fixed; the conclusion was the same for F2 against I2, C1, and the metadata baseline, but the difference against CBraMod-FT differed significantly (Table~\ref{tab:s2_p45b}). The prediction in the plan that all CIs would include zero (probability 80\%) was not met.
+\input{\naskahdir/tabel_s2_putaran45_A}
+\input{\naskahdir/tabel_s2_putaran45_B}
+
+\subsection*{S2.10 R1 on the per-fold AUC (round 46)}
+Rule R1 was also applied to the per-fold AUC (mean of 50 folds) for C1 and V0--V4 on the 100 H1 replicates of round 29, with a hashed plan before the run (\tabref{tab:kronologi}). The pooled AUC of each replicate reproduced that of round 29 exactly, and an independent check passed (51 checks). The R1 decision was the same as the decision on the pooled AUC for all six variants (Table~\ref{tab:s2_p46}); the per-fold AUC was higher than the pooled AUC for V0--V3 (difference +0.2 to +1.8 pp) and lower for C1 and V4. The prediction in the plan that all differences would be at most 1.0 pp in absolute value (probability 90\%) was not met because of V1 (+1.8 pp); the six other predictions, including the same decision for the six variants (probability 65\%), were met.
+\input{\naskahdir/tabel_s2_putaran46}
+
+\subsection*{S2.11 F2 without NM (round 47)}
+Because NM (a nonlinear classifier) did not fully pass the leakage test, the F2 AUC was also computed without NM, that is, the probability average of I2 (V4) and P3 (V5) from stored out-of-fold predictions, with no new training. The plan of this analysis was hashed before it was computed (\tabref{tab:kronologi}) and passed three independent check groups. The per-fold AUC was 68.2 (95\% CI 60.0--76.4) and could not be distinguished from F2, C1, or the metadata baseline (Tables~\ref{tab:s2_p47a} and \ref{tab:s2_p47b}). The four predictions in the plan were met: per-fold AUC $\geq 67.0$ (probability 70\%), a difference from F2 of at most 3.0 pp in absolute value (85\%), no significant difference from metadata and C1 (90\%), and higher than F2-Clean without NM, 66.8 (60\%). Two contrasts of F2-Clean without NM: minus C1 was $-$0.7 pp ($p = 0.85$) and minus the metadata baseline was +1.3 pp ($p = 0.82$).
+\input{\naskahdir/tabel_s2_putaran47}
+
+\textbf{S2.12 F2 against the metadata baseline within strata.} Within year $\times$ device strata, the AUC of the acquisition-metadata baseline was 43.2, below chance (50); the difference of F2 against it was +33.8 pp (\textit{bootstrap} 95\% CI +22.0 to +46.5; Holm 0.020). Because the comparator is below 50, this difference is not a primary measure; the AUC against 50 is reported in the main text.
+
+\textbf{S2.13 Sensitivity to 30 windows per patient.} Limiting windows to at most 30 per patient lowered the per-fold AUC of F2-Clean without NM from 66.8 to 64.9; the number of clean windows differed between groups ($p = 0.027$; Table~\ref{tab:kohort} of the main text).
+
+\subsection*{S2.14 Dynamic leakage audit on 50 folds (round 48)}
+The perturbation test of round 30 (altering test data and flipping test labels) was repeated on all 50 canonical folds for I2 with V4, P3 with V5, and NM with V4 (six checks per fold, 300 checks; identical check code, only the list of folds extended). The repetition used a hashed plan before the run (\tabref{tab:kronologi}) and three independent check groups, all of which passed. All 300 checks passed; the prediction in the plan that all would pass (probability 90\%) was met. Residual orthogonality and the global label permutation (100 permutations) remain from round 30.
+
+\input{\naskahdir/S2_putaran49}

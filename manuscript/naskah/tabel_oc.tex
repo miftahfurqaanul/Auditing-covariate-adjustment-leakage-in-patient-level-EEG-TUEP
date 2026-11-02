@@ -1,0 +1,33 @@
+\begin{table}[t]
+\caption{Frequency of the audit decisions with 20 replicates (percent of 10,000 bootstrap draws from stored replicates; Monte Carlo 95\% CI from 500 resamples of the pool). Null controls have no adjustment or no label--covariate association; positive controls leak by design (long-run mean above the leakage threshold). Simulation rows give the mean over cells (maximum in brackets). AUC and differences in percent and pp; mean (SD) over the replicates of the pool. Decisions follow R1 (absolute) and R2 (paired): R1 is ``no evidence'' if the mean AUC $\leq 52.0$ and the mean $+\,1.645\,\mathrm{SE} \leq 54.0$ and ``leakage'' if the mean $> 55$; R2 is ``no evidence'' if the difference is $\leq 1.0$ pp with a one-sided 95\% upper bound $\leq 3.0$ pp and ``leakage'' if it is $> 3.0$ pp; otherwise ``uncertain''.}\label{tab:oc}
+\centering\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{p{0.37\textwidth}ccccc}
+\toprule
+Pool (replicates) & Mean (SD) & No evidence & Uncertain & Leakage [95\% CI] \\
+\midrule
+\multicolumn{5}{l}{\textit{R1, null controls}} \\
+C1, I2 features, H1 (100) & 50.6 (4.3) & 92.8 & 7.2 & 0.0 [0.0--0.0] \\
+\textit{Random forest}, Rohira, no adjustment (30) & 50.1 (5.1) & 93.5 & 6.5 & 0.0 [0.0--1.3] \\
+NM without covariate regression, per fold (50) & 50.4 (4.4) & 95.0 & 5.0 & 0.0 [0.0--0.0] \\
+Tang without adjustment (20) & 47.7 (4.2) & 100.0 & 0.0 & 0.0 [0.0--0.0] \\
+Simulation without leakage (396 cells) & -- & 91.3 & 8.6 & 0.1 [max 7.0] \\
+\multicolumn{5}{l}{\textit{R1, positive controls}} \\
+V0, I2 features, H1 (100) & 56.0 (3.9) & 0.0 & 12.2 & 87.8 [61.3--98.3] \\
+V0, I2 features, H1, per fold (100) & 56.9 (4.2) & 0.0 & 2.0 & 98.0 [87.6--99.9] \\
+Simulation, long-run AUC $>55$ (123 cells) & -- & 0.0 & 4.1 & 95.9 [max 100] \\
+\multicolumn{5}{l}{\textit{R2, null controls}} \\
+Simulation without label--covariate association (41 cells) & -- & 91.0 & 8.6 & 0.4 [max 8.9] \\
+Plasmode $\gamma=0$, trees on raw features (4 cells, 30 or 20) & +2.2--+3.0 (7.2--7.8) & 7.9--14.2 & 44.1--54.4 & 31.5--48.0 \\
+\multicolumn{5}{l}{\textit{R2, positive controls}} \\
+V0 $-$ C1, H1 (100) & +5.4 (2.5) & 0.0 & 0.0 & 100.0 [100.0--100.0] \\
+Simulation, long-run difference $>3$ pp (55 cells) & -- & 0.0 & 3.8 & 96.2 [max 100] \\
+\multicolumn{5}{l}{\textit{Audited pipelines (decision as reported)}} \\
+V4, I2 features, H1, R1 (100) & 50.4 (3.8) & 96.9 & 3.1 & 0.0 [0.0--0.0] \\
+V4 $-$ C1, H1, R2 (100) & $-$0.2 (2.2) & 99.1 & 0.9 & 0.0 [0.0--0.0] \\
+Rohira log, patient mean $-$ no adjustment, R2 (30) & +0.6 (2.6) & 78.1 & 21.9 & 0.0 [0.0--1.2] \\
+Tang symlog with adjustment $-$ without, R2 (20) & +3.7 (3.6) & 0.0 & 16.7 & 83.3 [12.7--99.9] \\
+NM V4 $-$ without regression, per fold, R2 (50) & +1.9 (4.3) & 16.1 & 71.1 & 12.8 [0.4--48.5] \\
+\bottomrule
+\end{tabular}
+\end{table}

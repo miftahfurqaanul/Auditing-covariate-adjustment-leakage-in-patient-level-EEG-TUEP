@@ -1,0 +1,41 @@
+cc77ba97df7a519bfa275f3c218d9bae2fb066c4a1de1dac9a755299d496f603  PRAREGISTRASI_putaran49.md
+538c395d158a8d912b47a6aee3e79f86d5f5bc838dce2425164293b8adf100e3  round49_nesting_ketat.py
+19937c5a73f4b9bd5f6bb896189d84f292b847bce0430b639555812bf8f15f16  round49_nm_ketat.py
+2026-11-01T10:15:23+07:00
+(document and code of 49A/49C recorded before the run; only --check (loose mode, reproduction of stored predictions) had been run for 49A CPU; no strict-version AUC had been computed or seen)
+
+# Second stage (49B, 49D, 49E/F) and addendum 1
+b007818e7addde4c2f516ed61b9eb098bae08e7c29785e0ac62ed633ed75f281  PRAREGISTRASI_putaran49.md
+3581d5b88b7754b5d1cfdcea3f860b528fda3967b268f1fef2c2dcfaad95a18b  round49_kalibrasi.py
+b1bf6ec7bcc3e7bc5acb064c0904a3a4689a443f53372cba02c759a6a9178dc4  round49_struktur.py
+20ebb799d19e14430515589149cf31032837c2dfeccdacd2ac0e452dacd0084f  round49_strata_kurtosis.py
+2026-11-01T10:22:45+07:00
+(only the --check mode had been run; no decision frequency, 49D simulation delta, or 49E weighted AUC had been computed or seen; 49A CPU and NM were running, their output had not been seen)
+
+# Addendum 2 (correction of the R1 simulation null classification; plasmode SD scenario for the R2 OC)
+9a8a88019578c33bf7ff12c4cd51c954b680234ea065e24343b40c4d20a1dca9  PRAREGISTRASI_putaran49.md
+c38fa339f462af4ef4ae0349a3dc24511a91cfbe758dbfddc24343c946598321  round49_kalibrasi.py
+2026-11-01T10:35:05+07:00
+
+# Addendum 4 (parallel execution)
+20b628338efd0f7ab20e1b2d0137d42571dc7caa06003202a9feaf395d722ebd  PRAREGISTRASI_putaran49.md
+c9570a6706814b8c7f91ff0041dfc348c3918c33bf0662f37923163d312930c9  round49_nm_ketat.py
+57fe65b3684de35f6b5f645560523239825a7ff79a3f3b6d31219261c8abcae8  round49_struktur.py
+2026-11-01T12:09:34+07:00
+
+# Addendum 5 (presentation; scripts recorded AFTER the results were seen)
+3cb9691a2e36a40199d4b7177134689e19e645cbffb44a87beabede27824a288  analisis_tambahan/PRAREGISTRASI_putaran49.md
+518fbe72974bea324b0e5f5ccde3f20d32c9d1a5d0fb1433864b6fe2b6c40fec  revisi_pakdwi/review_isi49/hitung_49D.py
+e74cdee3896d6f240f13df3966d2b08a519facf521a9471bc1006f4f01ea9e27  revisi_pakdwi/bangun_tabel_49D_prediksi.py
+75f5b81c2e41c0eb5bb62960e82bb1d7d44b5c52443d32983a6c8f4202aeebd1  revisi_pakdwi/bangun_tabel_putaran49.py
+073a9774220116a250d43d65ee108253155f510a389dee54c5fd3a4f2add1a26  figures/make_fig_struktur49.py
+232ec73fdbd92dd18e937a66903a4a0e800075a7efdef5c17f5e5f2745eaeeb5  analisis_tambahan/round49_cek_independen.py
+fc2a20ffeb399bbd7c6d3c85c914eba08e3928d55c45cf97c9b909f2b8e2947b  analisis_tambahan/round49_ringkas.py
+2026-11-01T15:25:53+07:00
+
+# Reporting correction note (2026-11-01, after a simulated-review report; no hash above was changed)
+# The manuscript originally mentioned four addenda; the plan (PRAREGISTRASI_putaran49.md) contains five (1 pre-run; 2 after the first 49B output; 3 descriptive 49F; 4 parallel execution; 5 presentation). The manuscript and the chronology table now mention five.
+# Addendum 3 (descriptive 49F) has no hash block of its own in this file: the plan hash was recorded only at Addendum 1 (10:22:45), Addendum 2 (10:35:05), Addendum 4 (12:09:34), and Addendum 5 (15:25:53). No copy of the plan from the time Addendum 3 was written exists in the project folder, so the hash at that time cannot be reconstructed and is not invented here.
+# The plan hash at Addendum 5 (3cb9691a...) equals the hash of the original plan file and contains the text of all five addenda.
+
+# Note on translation (2026-11-02): the plan documents, the notes in the hash files, and the comments and messages of the scripts in this repository were translated from Indonesian into English for publication. The SHA-256 values in these files were computed on the original Indonesian files and therefore refer to those originals; they do not match the English files of this repository. The originals can be provided to reviewers on request.

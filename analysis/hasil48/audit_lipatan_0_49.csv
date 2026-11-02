@@ -1,0 +1,301 @@
+ok,check
+True,I2-V4 (lipatan 0): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 0): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 0): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 0): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 0): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 0): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 1): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 1): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 1): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 1): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 1): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 1): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 2): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 2): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 2): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 2): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 2): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 2): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 3): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 3): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 3): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 3): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 3): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 3): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 4): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 4): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 4): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 4): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 4): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 4): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 5): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 5): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 5): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 5): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 5): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 5): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 6): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 6): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 6): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 6): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 6): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 6): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 7): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 7): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 7): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 7): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 7): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 7): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 8): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 8): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 8): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 8): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 8): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 8): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 9): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 9): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 9): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 9): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 9): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 9): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 10): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 10): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 10): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 10): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 10): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 10): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 11): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 11): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 11): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 11): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 11): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 11): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 12): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 12): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 12): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 12): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 12): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 12): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 13): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 13): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 13): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 13): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 13): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 13): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 14): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 14): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 14): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 14): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 14): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 14): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 15): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 15): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 15): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 15): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 15): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 15): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 16): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 16): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 16): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 16): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 16): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 16): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 17): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 17): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 17): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 17): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 17): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 17): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 18): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 18): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 18): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 18): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 18): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 18): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 19): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 19): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 19): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 19): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 19): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 19): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 20): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 20): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 20): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 20): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 20): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 20): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 21): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 21): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 21): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 21): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 21): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 21): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 22): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 22): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 22): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 22): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 22): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 22): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 23): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 23): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 23): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 23): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 23): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 23): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 24): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 24): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 24): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 24): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 24): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 24): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 25): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 25): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 25): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 25): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 25): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 25): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 26): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 26): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 26): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 26): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 26): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 26): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 27): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 27): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 27): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 27): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 27): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 27): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 28): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 28): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 28): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 28): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 28): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 28): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 29): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 29): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 29): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 29): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 29): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 29): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 30): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 30): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 30): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 30): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 30): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 30): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 31): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 31): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 31): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 31): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 31): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 31): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 32): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 32): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 32): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 32): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 32): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 32): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 33): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 33): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 33): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 33): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 33): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 33): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 34): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 34): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 34): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 34): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 34): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 34): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 35): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 35): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 35): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 35): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 35): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 35): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 36): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 36): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 36): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 36): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 36): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 36): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 37): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 37): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 37): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 37): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 37): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 37): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 38): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 38): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 38): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 38): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 38): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 38): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 39): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 39): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 39): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 39): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 39): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 39): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 40): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 40): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 40): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 40): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 40): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 40): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 41): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 41): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 41): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 41): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 41): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 41): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 42): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 42): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 42): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 42): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 42): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 42): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 43): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 43): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 43): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 43): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 43): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 43): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 44): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 44): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 44): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 44): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 44): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 44): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 45): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 45): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 45): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 45): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 45): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 45): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 46): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 46): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 46): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 46): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 46): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 46): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 47): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 47): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 47): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 47): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 47): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 47): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 48): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 48): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 48): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 48): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 48): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 48): membalik label pasien uji tidak mengubah token siapa pun
+True,I2-V4 (lipatan 49): mengubah data pasien uji tidak mengubah fitur pasien latih maupun indeks pelatihan
+True,I2-V4 (lipatan 49): membalik label pasien uji tidak mengubah prediksi uji
+True,P3-V5 (lipatan 49): mengubah kovarians pasien uji tidak mengubah fitur pasien latih (referensi global hanya dari pasien latih)
+True,P3-V5 (lipatan 49): membalik label pasien uji tidak mengubah prediksi uji
+True,NM-V4 (lipatan 49): mengubah segmen pasien uji tidak mengubah token dan ringkasan pasien latih
+True,NM-V4 (lipatan 49): membalik label pasien uji tidak mengubah token siapa pun

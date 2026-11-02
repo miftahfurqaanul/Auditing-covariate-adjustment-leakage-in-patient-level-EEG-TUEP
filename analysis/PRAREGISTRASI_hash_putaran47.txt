@@ -1,0 +1,4 @@
+840e2e4d3f558010afa50ce271e98e51af4286c72b5253e2b63695909fb8820d  PRAREGISTRASI_putaran47.md
+2026-10-27T11:32:29+07:00
+186fc09045cea4f44c33238f9e0e06f4ad80dff9d458a26e18a1c2a8793dd9dd  round47_f2_tanpa_nm.py
+(document and code recorded before the run; only --cek-kunci (file shape and F2_adj = mean of the three views) had been run; the AUC of F2 without NM had not been computed or seen)

@@ -1,0 +1,25 @@
+\section{Introduction}\label{sec:intro}
+
+The diagnosis of epilepsy rests on clinical history and electroencephalography (EEG), but the diagnostic value of a single routine EEG is limited.
+The sensitivity of routine EEG after a first unprovoked seizure has been reported at only 17\% in adults \cite{lemoine2024}, only a small proportion of routine EEGs show interictal epileptiform discharges, and misdiagnosis of epilepsy has been reported at 20\% to 30\% \cite{myers2025}.
+Computer analysis of routine EEG has been proposed to find markers that readers cannot see, but a systematic review of 37 studies concluded that none has entered clinical practice and that only 6 studies (16\%) used at least 100 subjects \cite{lemoine2024}.
+For health informatics, the question is whether performance figures computed on recordings already stored in clinical archives can be trusted before model outputs are connected to clinical information workflows.
+The intended readers are researchers and managers of clinical EEG archives who evaluate such figures, not clinicians making decisions about patients.
+
+The public \textit{Temple University Hospital} (TUH) corpus and its epilepsy subset (TUEP) provide heterogeneous clinical EEG that is available to researchers for evaluation \cite{obeid2016,veloso2017}.
+Studies on TUEP have reported accuracies above 95\% with a random forest on power spectra, using a random 67/33 split with no stated patient-level separation \cite{rohira2023}, and with a recurrent network on trajectory signatures, using five-fold cross-validation in which each segment is tested once \cite{tang2024}.
+Such figures are difficult to interpret as disease information when segments from the same patient are in both the training and the test data: in EEG of patients with Alzheimer's disease, an accuracy of 99.8\% under a segment-wise split fell to 53.0\% under a subject-wise split \cite{brookshire2024}, and per-sample validation on a pathology task reached a balanced accuracy of almost 100\% where subject-wise schemes gave much lower values \cite{delpup2025}.
+Routine clinical data also contain acquisition biases that correlate with the label, which models learn as shortcuts and which internal cross-validation does not detect \cite{ongly2024}. In TUEP, the epilepsy group is younger and was recorded more often in particular eras and on particular devices (Subsection~\ref{sec:populasi}). TUEP is also not a first-seizure population: patients with epilepsy have a median of three sessions in the corpus, and the label takes medication at the time of recording into account.
+
+A common response is to remove these covariates from the features, for example by regression or normative modeling \cite{rutherford2022,rutherford2023,bayer2022neuroimage}.
+Removing confounders by per-feature regression can, however, move confounder information into non-normal residuals that nonlinear classifiers exploit, so that a null or moderate result becomes almost perfect; Hamdan et al. showed this on tabular data and proposed to shuffle the features before removal to reveal it \cite{hamdan2023}. Statistical tests for confounding bias in predictive models are also available \cite{spisak2022}.
+Clinical EEG differs from that setting in three ways that matter for an audit: each patient contributes many windows, so the data are clustered; the test produces a distribution of AUCs over replicates that has to be turned into a decision, and in the references reviewed the error frequencies of such a decision have not been reported; and the representations range from patient-level spectra to sequence models, for which the mitigations have not been compared there.
+When a method is then chosen after many rounds on the same patients, selection optimism adds to these problems \cite{varma2006}.
+
+This study asks one primary question: when the EEG carries no information about the label, how much discrimination does covariate adjustment create in patient-level EEG classification, and how reliably do explicit decision rules detect it?
+The main effect size is the paired difference in AUC between the same pipeline with and without adjustment under a null experiment (in percentage points); \tabref{tab:plasmode} answers it on real EEG features and \tabref{tab:oc} gives the error frequencies of the rules.
+The case study is TUEP version 2.0.1 (200 patients, first sessions only, the same 50 patient-level splits for all case-study models), and the object of the audit is a three-view fusion pipeline with covariate adjustment (F2), whose originally planned adjustment turned out to leak.
+Secondary aims were to place the audited pipeline against non-EEG baselines and within matched strata, to measure the EEG information beyond all non-EEG predictors, and to estimate selection optimism conditional on the stored candidates. The study does not claim a better model or clinical value.
+\tabref{tab:matriks} separates what was known from what this study adds.
+
+\input{\naskahdir/tabel_matriks_kontribusi}

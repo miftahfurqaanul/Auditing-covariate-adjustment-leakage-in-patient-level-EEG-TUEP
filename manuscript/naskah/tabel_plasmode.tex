@@ -1,0 +1,31 @@
+\begin{table}[t]
+\caption{Plasmode: real EEG features with synthetic labels derived from covariates alone (H1: features swapped between patients). Per-fold AUC (percent; replicate mean) by label--covariate association strength $\gamma$ ($\gamma=1$ mimics the real association). The last two columns: the R1 decision and the paired difference in pp (R2 decision) at $\gamma=1$ against the raw pipeline without adjustment. R1: no evidence if the mean $\leq 52.0$ and the mean $+\,1.645\,\mathrm{SE} \leq 54.0$, leakage if $> 55$; R2: no evidence if the difference $\leq 1.0$ pp (upper bound $\leq 3.0$ pp), leakage if $> 3.0$ pp; otherwise uncertain; ``--'': baseline row, no decision. Replicates: 30 (\textit{random forest}, logistic regression) and 20 (XGBoost, Bi-LSTM, NM); Bi-LSTM and NM only $\gamma\in\{0,1\}$. $^{\ddagger}$ CPU, same histogram algorithm (S2).}\label{tab:plasmode}
+\centering\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{p{0.40\textwidth}ccccc}
+\toprule
+Pipeline & $\gamma=0$ & $\gamma=0.5$ & $\gamma=1$ & R1 ($\gamma=1$) & $\Delta$; R2 ($\gamma=1$) \\
+\midrule
+\multicolumn{6}{l}{\textit{Random forest (Rohira window)}} \\
+\quad raw, no adjustment & 49.1 & 49.7 & 50.4 & -- & -- \\
+\quad raw + per-patient adjustment & 51.3 & 53.5 & 60.9 & leakage & +10.5; leakage \\
+\quad rank-normal + per patient & 48.8 & 49.8 & 51.3 & no evidence & +0.9; no evidence \\
+\multicolumn{6}{l}{\textit{XGBoost$^{\ddagger}$ (Rohira window)}} \\
+\quad raw, no adjustment & 49.0 & 50.6 & 50.5 & -- & -- \\
+\quad raw + per-patient adjustment & 51.7 & 55.4 & 62.4 & leakage & +11.9; leakage \\
+\quad rank-normal + per patient & 49.0 & 49.7 & 51.1 & uncertain & +0.6; no evidence \\
+\multicolumn{6}{l}{\textit{Bi-LSTM (Tang, per-second features)}} \\
+\quad raw, no adjustment & 51.2 & -- & 51.7 & -- & -- \\
+\quad raw + per-patient adjustment & 50.3 & -- & 63.6 & leakage & +11.9; leakage \\
+\quad rank-normal + per patient & 50.3 & -- & 55.6 & leakage & +4.1; leakage \\
+\multicolumn{6}{l}{\textit{Logistic regression (I2, patient level)}} \\
+\quad raw, no adjustment & 48.0 & 49.9 & 48.2 & -- & -- \\
+\quad raw + per-patient adjustment & 48.0 & 50.3 & 49.3 & no evidence & +1.0; uncertain \\
+\quad rank-normal + per patient & 48.4 & 50.1 & 48.8 & no evidence & $-$0.3; no evidence \\
+\multicolumn{6}{l}{\textit{NormMamba (NM)}} \\
+\quad no covariate regression (N0) & 49.5 & -- & 50.5 & -- & -- \\
+\quad V4 adjustment & 50.1 & -- & 50.9 & no evidence & +0.4; no evidence \\
+\quad rank-normal + V4 & 50.5 & -- & 50.3 & no evidence & $-$0.3; no evidence \\
+\bottomrule
+\end{tabular}
+\end{table}
