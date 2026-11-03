@@ -63,6 +63,7 @@ $\bar A_{\mathrm{fold}}$ (unit: fold; Nadeau--Bengio corrected $t$) is the prima
 Selection-optimism correction (round 43): in each of 2,000 class-stratified bootstrap samples, the candidate with the highest in-bag $\bar A_{\mathrm{pool}}$ was chosen and its out-of-bag $\bar A_{\mathrm{pool}}$ computed (at least five patients per class out of bag); optimism is the mean in-bag minus out-of-bag difference of the in-bag winner, and the corrected AUC is the apparent AUC of the full-sample winner minus that optimism. The max-$T$ test studentized each candidate--reference difference by its bootstrap SD (floor $10^{-9}$ for candidates identical to the reference), centered the bootstrap distribution at the observed differences (null hypothesis of equal AUCs), and compared the observed maximum with the bootstrap maxima. With permuted labels (40 permutations) the corrected AUC of the winner was 48.9 and the max-$T$ test rejected in 5\% of permutations. The correction is conditional on the stored candidates and does not repeat the adaptive process that produced them (feature choice, preprocessing, fusion choice, or changes of question after results were seen).
 
 \subsection*{S1.4 Hypotheses, endpoints, and multiplicity}
+\tabref{tab:peta_hipotesis} maps each question to its endpoint, contrast, analysis status, and multiplicity control.
 \input{\naskahdir/tabel_peta_hipotesis}
 
 \subsection*{S1.5 Status of the analysis plans}
@@ -70,6 +71,7 @@ No analysis in this report was planned before the TUEP data were explored. Round
 \input{\naskahdir/tabel_kronologi}
 
 \subsection*{S1.6 Glossary}
+\tabref{tab:glosarium} defines the codes used in the main text and the supplement.
 \input{\naskahdir/tabel_glosarium}
 
 \subsection*{S1.7 Reproducibility and reporting}

@@ -52,7 +52,7 @@ File and folder names, CSV columns, and decision labels were kept as they were p
 | 47 | F2 without NM | `round47_*.py` |
 | 48 | Dynamic leakage audit on all 50 folds | `round48_*.py` |
 | 49 | Strict nesting (49A), operating characteristics of R1/R2 (49B), EEG over non-EEG predictors (49C), within-patient structure (49D), strata weighting and kurtosis table (49E/F) | `round49_*.py`, `table_builders/hitung_49D.py` |
-| 50 | Plasmode replicates for raw-feature trees extended to 120 per cell (50A); plasmode repeated on the independent Emotiv cohort (50B); reporting completeness from stored results (50C) | `round50_*.py`, `run_chain_50.sh`, `hasil50/deskriptif_120_semua_pipeline.py`, `table_builders/bangun_tabel_putaran50.py` |
+| 50 | Plasmode replicates for raw-feature trees extended to 120 per cell (50A); plasmode repeated on the independent Emotiv cohort (50B); reporting completeness from stored results (50C); addendum 2: descriptive bootstrap CI of the Kural demographic baseline | `round50_*.py` (including `round50_kural_demografi_ci.py`), `run_chain_50.sh`, `hasil50/deskriptif_120_semua_pipeline.py`, `table_builders/bangun_tabel_putaran50.py` |
 
 Each plan lists its hypotheses, decision rules, predictions (written before the results), and the checks that were promised. Every round has an independent check (`*_cek_independen.py`) that recomputes the main numbers with a second implementation.
 

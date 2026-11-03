@@ -1,5 +1,5 @@
 \begin{table}[h]
-\caption{Transfer of predictions to two public cohorts. AUC in percent, subject-level \textit{bootstrap} 95\% CI (2,000 replicates); the difference in pp, with two-sided \textit{bootstrap} $p$. Emotiv: 290 of the 313 subjects had an eyes-closed window that passed the label-free artifact thresholds. Frozen: the TUEP model with its own preprocessing statistics; per-cohort: each cohort standardized with its own unlabeled features (transductive adaptation). ``--'': no CI in the source.}\label{tab:transfer}
+\caption{Transfer of predictions to two public cohorts. AUC in percent, subject-level \textit{bootstrap} 95\% CI (2,000 replicates); the difference in pp, with two-sided \textit{bootstrap} $p$. Emotiv: 290 of the 313 subjects had an eyes-closed window that passed the label-free artifact thresholds. Frozen: the TUEP model with its own preprocessing statistics; per-cohort: each cohort standardized with its own unlabeled features (transductive adaptation). $^{\dagger}$ Age and sex only, $10\times5$ cross-validation within Kural (not a transfer of the TUEP model); its CI was computed afterwards by subject-level \textit{bootstrap} (2,000 replicates), descriptively and outside the plan (S2.16).}\label{tab:transfer}
 \centering\scriptsize
 \setlength{\tabcolsep}{3pt}\begin{tabular}{@{}llccc@{}}
 \toprule
@@ -7,7 +7,7 @@ Cohort ($n$; epilepsy/non-epilepsy) & Direction and model & AUC & 95\% CI & $p$ 
 \midrule
 Kural (99; 54/45) & TUEP$\to$Kural, I2 + adjustment & 57.1 & 44.9--68.2 & \\
  & TUEP$\to$Kural, C1 & 62.2 & 50.7--73.0 & \\
- & Demographic baseline & 63.4 & -- & \\
+ & Demographic baseline$^{\dagger}$ & 63.4 & 52.7--73.8 & \\
  & Difference I2 $-$ C1 & $-5.1$ & $-10.9$ to $-0.6$ & 0.028 \\
 Emotiv (290 of 313; 157/133) & TUEP$\to$Emotiv, \textit{band-power}, frozen & 56.5 & 49.8--63.0 & \\
  & TUEP$\to$Emotiv, \textit{band-power}, per-cohort & 54.1 & 47.2--60.7 & \\

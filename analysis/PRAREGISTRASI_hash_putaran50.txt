@@ -22,4 +22,12 @@ f880667cdf99c8414db4df366891967db9285b457bf85f70a8da41abe0248319  PRAREGISTRASI_
 4b801b943fe3730eaf36e46877428a32d9de362b067eac15d8ad9df571712031  round50_cek_independen.py
 2026-11-03T00:37:15+07:00
 
-# Note on translation (2026-11-03): the plan document, the notes in this file, and the comments and messages of the scripts in this repository were translated from Indonesian into English for publication. The SHA-256 values above were computed on the original Indonesian files and therefore refer to those originals; they do not match the English files of this repository. run_chain_50.sh contains no Indonesian text and is byte-identical to the hashed original. The originals can be provided to reviewers on request.
+# Addendum 2 (DESCRIPTIVE, OUTSIDE the plan; after the third automated-reviewer output): bootstrap CI of the Kural demographic baseline; script hashed BEFORE it ran
+60cb5b99605c18e8f81ccfa59123c468069779ec2acf44f1056e4a80f97a6d09  round50_kural_demografi_ci.py
+2026-11-03T07:20:55+07:00
+
+# Addendum 2 written in PRAREGISTRASI_putaran50.md (after the script output: AUC 63.4, 95% CI 52.7--73.8; no AUC changed)
+29e609e484bf1a907f924070a78e04e6000ae4fe2e66f28280065fccb42a88ca  PRAREGISTRASI_putaran50.md
+2026-11-03T07:21:52+07:00
+
+# Note on translation (2026-11-03): the plan document, the notes in this file, and the comments and messages of the scripts in this repository were translated from Indonesian into English for publication. The SHA-256 values above were computed on the original Indonesian files and therefore refer to those originals; they do not match the English files of this repository. run_chain_50.sh contains no Indonesian text and is byte-identical to the hashed original. The hash of round50_kural_demografi_ci.py refers to the Indonesian original. The originals can be provided to reviewers on request.
