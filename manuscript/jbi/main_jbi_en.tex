@@ -1,0 +1,457 @@
+%% Journal of Biomedical Informatics -- submission source (single file). Compile: pdflatex main_jbi_en; bibtex main_jbi_en; pdflatex x2.
+%% Cross-references to the Supplementary Material are read from supl_jbi_en.aux (package xr-hyper).
+\documentclass[final,1p,times]{elsarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\hyphenation{ep-i-lep-sy ep-i-lep-tic}   %
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{caption}
+\captionsetup[table]{position=above}   %
+\usepackage{url}
+\makeatletter\g@addto@macro\UrlBreaks{\do\-\do\.}\makeatother\Urlmuskip=0mu plus 2mu
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\renewcommand{\eqref}[1]{Eq.~(\ref{#1})}
+\usepackage{xr-hyper}\externaldocument{supl_jbi_en}   %
+\biboptions{sort&compress}
+
+\journal{Journal of Biomedical Informatics}
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Covariate-adjustment leakage in patient-level EEG classification: effects of fitting population, repeated measurements, and audit replication}
+
+\author[a]{Miftah Furqaanul Haq}
+\author[a]{Dwi Sunaryono\corref{cor1}}
+\ead{dwi@its.ac.id}
+\author[a]{Muhammad Hasan Basri}
+\cortext[cor1]{Corresponding author: Dwi Sunaryono, Department of Informatics, Institut Teknologi Sepuluh Nopember (ITS), Surabaya 60117, East Java, Indonesia.}
+
+\affiliation[a]{organization={Department of Informatics, Institut Teknologi Sepuluh Nopember (ITS)},
+            city={Surabaya 60117},
+            state={East Java},
+            country={Indonesia}}
+
+\begin{abstract}
+\textbf{Objective:} Regressing covariates such as age or recording era out of clinical features can itself create spurious discrimination (Hamdan et al., 2023). This study extends the finding to repeated EEG measurements and to references fitted on controls, quantifying the error frequencies of explicit audit rules.
+\textbf{Methods:} The audit ran a feature-shuffle test with and without adjustment on identical partitions and used two explicit decision rules. It was applied to simulations with known truth and to semi-synthetic data (real EEG features, labels generated from covariates alone) from 200 patients of the Temple University Hospital EEG Epilepsy Corpus (TUEP) and an independent cohort (299 subjects). Adjustment references of controls, all training patients, or equally many random training patients were compared. Analyses were exploratory, although the replication and reference experiments were planned before computation.
+\textbf{Results:} At the observed label--covariate association, adjusting raw features added about 11 percentage points (pp) to the area under the ROC curve (AUC) of nonlinear classifiers in both cohorts. Logistic regression fitted on windows gained 6.6 pp in TUEP (2.8 pp with a matched training configuration), but at most 1.1 pp in either cohort when fitted on patient-level features. An adjustment fitted only on training controls leaked even into this linear classifier (+5.4 pp over no adjustment), more than a random reference of equal size (+2.2 pp). In simulation, this leak grew with the label--covariate association and persisted with 1,000 reference controls. In independent simulation audits, the frozen rules raised no false alarm in 48 leakage-free audits and detected all 48 leaking ones.
+\textbf{Conclusion:} Whether adjustment creates discrimination depends on its fitting population and fitting unit, not on the classifier alone. Performance figures from clinical archives should be reported with a shuffle test run with and without adjustment, a replicate number planned from pilot variance, and an acquisition-metadata baseline.
+\end{abstract}
+
+\begin{keyword}
+electroencephalography \sep data leakage \sep covariate adjustment \sep normative modeling \sep model validation \sep confounding \sep epilepsy
+\end{keyword}%
+
+\end{frontmatter}
+
+\section{Introduction}\label{sec:intro}
+
+Machine learning on routine electroencephalography (EEG) has been proposed to support the diagnosis of epilepsy, but none of its markers has entered clinical practice, and only 6 of 37 studies in a systematic review used at least 100 subjects \cite{lemoine2024}. Large clinical archives offer far more patients, yet recordings made for clinical care differ between patient groups in ways unrelated to disease, and a classifier can learn those differences instead \cite{ongly2024}. In the public Temple University Hospital (TUH) EEG Epilepsy Corpus (TUEP) \cite{obeid2016,veloso2017}, patients with epilepsy are younger and were recorded more often in particular eras and on particular devices (Section~\ref{sec:populasi}).
+
+A common response is covariate adjustment, which regresses age, sex, or recording era out of the features, as in normative modeling, age-dependent quantitative EEG Z-scores, or ComBat harmonization \cite{marquand2016,rutherford2022,li2022harmnqeeg,jaramillojimenez2024}. Because adjustment is itself a fitted model, it can create the discrimination it is meant to remove \cite{hamdan2023}. This was shown for tabular data with one row per subject and an adjustment fitted on all subjects. Clinical EEG pipelines depart from both conditions, and whether a performance figure computed after adjustment reflects disease information therefore remains unknown.
+
+Three issues determine whether the leak appears and whether an audit detects it. Two depart from those conditions: classifiers are often fitted on windows, whereas adjustment is fitted on patients, and normative references are fitted on controls rather than on all training patients. The third is that audits have rested on few shuffles, although a single null area under the ROC curve (AUC) with 100 patients per class has an SD of about 4 percentage points (pp, Section~\ref{sec:sensitivitas}). None of the three appears to have been measured (Section~\ref{sec:related}).
+
+This study audits adjustment-induced discrimination at the patient level in repeated EEG measurements and shows how fitting population, fitting unit, and audit replication affect its conclusions. The audit assembles established components rather than a new estimator: a feature-shuffle test run with and without adjustment on identical partitions, two explicit decision rules, and a rule for the number of shuffles. Simulations with known truth and semi-synthetic data (plasmode, with real EEG features and labels generated from covariates alone) in two cohorts supply the measurements, and a fusion pipeline planned for TUEP is the real test case. No new adjustment method or diagnostic claim is made. The contributions address the three issues in turn:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=2pt]
+\item (i) Leak size and fitting unit. Adjusting raw EEG features without label information added about 11 pp of discrimination to nonlinear classifiers in two cohorts and 6.6 pp to window-level logistic regression in TUEP (2.8 pp with a matched training configuration), but at most 1.1 pp to patient-level logistic regression.
+\item (ii) Reference sample. An adjustment fitted only on training controls leaked even into a linear patient-level classifier (+5.4 pp), more than a random reference of equal size (+2.2 pp), and in simulation it persisted with 1,000 reference controls.
+\item (iii) Decision rules. On new simulation runs, the frozen rules raised no false alarm in 48 leakage-free audits and detected all 48 leaking ones, and a rule based on the mean and SD of pilot shuffles sets their number (Section~\ref{sec:sensitivitas}).
+\end{itemize}
+\tabref{tab:signifikansi} summarizes the significance of the study.
+
+\begin{table}[t]
+\caption{Statement of Significance.}\label{tab:signifikansi}
+\centering\small
+\begin{tabular}{p{0.27\textwidth}p{0.66\textwidth}}
+\toprule
+Problem or Issue & Covariate adjustment of clinical EEG features can create spurious discrimination, and performance figures from clinical archives may then reflect the adjustment instead of the disease. \\
+What is Already Known & Regressing confounders out of tabular features can leak the label into nonlinear classifiers, and shuffling features before removal can reveal it. \\
+What this Paper Adds & A patient-level audit showing that the fitting population (controls), fitting unit (windows), and audit replication change whether adjustment appears to create discrimination, with rule error frequencies checked on independent simulation runs. \\
+Who would benefit from the new knowledge in this paper & Researchers who build or evaluate clinical EEG and other patient-clustered models, and managers of clinical data archives. \\
+\bottomrule
+\end{tabular}
+\end{table}%
+\section{Related work}\label{sec:related}
+
+\textbf{Splitting and shortcuts in clinical EEG.} Accuracies above 95\% have been reported on TUEP under a random 67/33 split \cite{rohira2023} and under segment-wise five-fold cross-validation \cite{tang2024}. Such figures mislead when segments of one patient fall on both sides of the split. In EEG of patients with Alzheimer's disease, an accuracy of 99.8\% under a segment-wise split fell to 53.0\% under a subject-wise split \cite{brookshire2024}, and pathology classification showed a similar gap \cite{delpup2025}. Splitting by patient removes this inflation but not acquisition shortcuts, which internal cross-validation misses \cite{ongly2024}.
+
+\textbf{Covariate adjustment and its failures.} Adjustment can err in two directions. It can remove real signal. Harmonization may remove biological variance confounded with site \cite{bayer2022frontneurol}, and covariate regression fitted on training and test data together lowered the performance of connectome-based models \cite{rosenblatt2024}. It can also add spurious signal. Hamdan et al. showed on tabular data that removing confounders by per-feature regression, even inside the folds, can move confounder information into non-normal residuals that nonlinear classifiers exploit \cite{hamdan2023}. They fitted the removal on all training subjects, analyzed one row per subject, and found no evidence of leakage in linear models, although they did not exclude it. Normative models, in contrast, are trained on controls only \cite{rutherford2022,bayer2022neuroimage} and can be adapted to a new site from a few of its healthy participants \cite{kia2022}. Within one clinical archive, controls are the patients without the disease, which means that the fitting patients are selected by the label.
+
+\textbf{Tests for confounding and leakage.} Hamdan et al. proposed shuffling the features before removal and comparing performance with and without removal. Their main analyses used a single shuffle, whereas a 1,000-iteration permutation test appeared only in a supplementary analysis, and they were not aware of a procedure to definitively exclude this leakage \cite{hamdan2023}. The partial confounder test controls its type I error but asks whether predictions depend on a confounder given the label \cite{spisak2022}, not whether an adjustment creates discrimination. \tabref{tab:diketahui} lists what was known and what this study adds.
+
+\begin{table}[t]
+\caption{What was known and what this study adds. Numerals match the contributions in Section~\ref{sec:intro}. All analyses are exploratory (Section~\ref{sec:validasi}), and the full matrix is Table~\ref{tab:matriks}.}\label{tab:diketahui}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.30\textwidth}p{0.42\textwidth}p{0.20\textwidth}}
+\toprule
+Known before & Added here & Evidence \\
+\midrule
+Regression adjustment leaks into nonlinear models on tabular data with one row per subject \cite{hamdan2023} & (i) Leak size on real EEG features in two cohorts by classifier, fitting level (windows or patients), and transformation & Fig.~\ref{fig:peta}, Fig.~\ref{fig:plasmode} \\
+Normative references are fitted on controls \cite{rutherford2022,kia2022}, and linear models showed no evidence of leakage when removal used all subjects \cite{hamdan2023} & (ii) A control-referenced adjustment leaks into a linear classifier, more than a random reference of equal size. In simulation, the leak grows with the label--covariate association and shrinks only slowly with more controls & \tabref{tab:kebocoran_badan}, Fig.~\ref{fig:referensi} \\
+Shuffling features reveals the leak, but no decision rule or error rate was given \cite{hamdan2023} & (iii) Two rules with false-alarm and detection frequencies from replicate pools, checked on independent simulation runs, and a replicate-number rule & \tabref{tab:oc} \\
+\bottomrule
+\end{tabular}
+\end{table}%
+\section{Methods}\label{sec:methods}
+
+\figref{fig:alur} shows the audit and its training--test boundaries. Internal codes appear only in tables, figures, and the Supplementary Material (S1.6).
+
+\renewcommand{\topfraction}{0.92}\renewcommand{\textfraction}{0.05}
+\begin{figure}[t]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\definecolor{aksen}{RGB}{190,85,0}
+\begin{tikzpicture}[x=1cm,y=1cm,font=\sffamily\scriptsize,line width=0.5pt,
+  panel/.style={font=\sffamily\scriptsize\bfseries,anchor=north west,inner sep=0pt},
+  bx/.style={draw=black,inner sep=2.6pt,align=left,anchor=north west},
+  dat/.style={bx,fill=black!8},
+  prc/.style={bx,fill=white},
+  adj/.style={bx,draw=aksen,line width=0.8pt,fill=aksen!7},
+  frm/.style={draw=black,anchor=north west,inner sep=0pt},
+  hd/.style={anchor=north west,align=left,inner sep=1.5pt},
+  mk/.style={anchor=east,align=right,font=\sffamily\scriptsize\itshape,text=black!70,inner sep=1pt},
+  tg/.style={anchor=north east,font=\sffamily\scriptsize\bfseries,inner sep=1.5pt},
+  nt/.style={anchor=north west,align=left,font=\sffamily\scriptsize,text=black!70,inner sep=1pt},
+  flow/.style={-{Stealth[length=1.6mm,width=1.2mm]},line width=0.6pt},
+  frz/.style={-{Stealth[length=1.6mm,width=1.2mm]},line width=0.6pt,dashed},
+  lbl/.style={font=\sffamily\scriptsize,inner sep=1pt},
+  every node/.append style={execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}}]
+
+\node[panel] at (0,0) {(a)\hspace{4pt}Data and label-free feature extraction, per recording};
+\node[dat,text width=2.72cm,minimum height=2.3cm] (a1) at (0,-0.45) {\textbf{TUEP v2.0.1}\\200 patients (100 with, 100 without epilepsy), first session only, 19 channels};
+\node[prc,text width=2.92cm,minimum height=2.3cm] (a2) at (3.45,-0.45) {\textbf{Preprocessing}\\average reference, 200~Hz, 0.5--45~Hz; clean 10~s windows (26,968)};
+\node[prc,text width=4.62cm,minimum height=2.3cm] (a3) at (7.1,-0.45) {\textbf{Three feature views}\\[1pt]\textbf{I2} spectral: 114 log band-power features, median per patient\\[1pt]\textbf{P3} spatial: $18\times18$ covariance, tangent space (855), PCA (50)\\[1pt]\textbf{NM} temporal: 4~s segments, Mamba};
+\node[dat,text width=3.32cm,minimum height=2.3cm] (a4) at (12.45,-0.45) {\textbf{Per patient}\\features $\mathbf{x}_p$, covariates $\mathbf{d}_p$ (age, sex, era), label $y_p$};
+\draw[flow] (a1.east) -- (a2.west);
+\draw[flow] (a2.east) -- (a3.west);
+\draw[flow] (a3.east) -- (a4.west);
+
+\node[panel] at (0,-3.05) {(b)\hspace{4pt}Patient-level nested evaluation, one prediction per patient};
+\node[prc,text width=15.77cm] (sp) at (0,-3.55) {\textbf{Patient-level split}: 10 repetitions $\times$ 5 stratified folds = 50 splits, identical for every model; all windows of a patient stay in one fold};
+\draw[flow] (a4.south) -- (a4.south |- sp.north);
+\draw[fill=black!15] (0,-4.02) rectangle (9.05,-4.42);
+\foreach \xx in {2.2625,4.525,6.7875} \draw (\xx,-4.02) -- (\xx,-4.42);
+\draw[fill=white] (9.75,-4.02) rectangle (15.95,-4.42);
+\node[lbl,fill=black!15,inner sep=2pt] at (4.525,-4.22) {training folds (4 of 5)};
+\node[lbl] at (12.85,-4.22) {test fold (1 of 5)};
+\draw[flow] (4.525,-4.42) -- (4.525,-4.85); \node[lbl,anchor=west] at (4.6,-4.635) {160 patients};
+\draw[flow] (12.85,-4.42) -- (12.85,-4.85); \node[lbl,anchor=west] at (12.925,-4.635) {40 patients};
+
+\draw[line width=0.8pt,fill=black!4] (0,-4.85) rectangle (9.05,-9.5);
+\node[hd,font=\sffamily\scriptsize\bfseries] at (0.08,-4.9) {Outer training fold: 160 patients};
+\node[adj,text width=6.0cm,minimum height=0.85cm] (s1) at (0.35,-5.3) {\textbf{1\enspace Covariate adjustment} (Eq.~(1)), fitted on all training patients: V4 (I2, NM) or V5 (P3)};
+\node[prc,text width=6.0cm,minimum height=0.5cm] (s2) at (0.35,-6.45) {\textbf{2\enspace Scaler, reference covariance, PCA}, same patients};
+\node[prc,text width=6.0cm,minimum height=0.85cm] (s3) at (0.35,-7.25) {\textbf{3\enspace Inner selection}: $C$ by 5-fold CV (I2, P3); NM: 80/20 split for configuration and early stopping};
+\node[prc,text width=6.0cm,minimum height=0.5cm] (s4) at (0.35,-8.4) {\textbf{4\enspace Final classifier} fitted on the 160 patients};
+\draw[flow] (s1.south) -- (s2.north);
+\draw[flow] (s2.south) -- (s3.north);
+\draw[flow] (s3.south) -- (s4.north);
+\node[mk] at (8.95,-5.725) {no labels}; \node[mk] at (8.95,-6.7) {no labels};
+\node[mk] at (8.95,-7.675) {uses labels}; \node[mk] at (8.95,-8.65) {uses labels};
+\node[nt,text width=8.7cm] at (0.08,-9.05) {Strict-nesting sensitivity: steps 1--2 refitted in each inner split.};
+
+\draw[line width=1.0pt,dash pattern=on 4pt off 2.5pt] (9.4,-4.02) -- (9.4,-9.75);
+\node[font=\sffamily\scriptsize,rotate=90,fill=white,inner sep=1.5pt] at (9.4,-8.3) {training--test boundary};
+
+\draw[line width=0.8pt,fill=white] (9.75,-4.85) rectangle (15.95,-9.5);
+\node[hd,font=\sffamily\scriptsize\bfseries] at (9.83,-4.9) {Outer test fold: 40 patients};
+\node[prc,text width=5.52cm,minimum height=0.85cm] (s5) at (10.05,-5.3) {\textbf{5\enspace Frozen transforms and classifier} from steps 1--4; no refitting};
+\node[prc,text width=5.52cm,minimum height=0.5cm] (s6) at (10.05,-6.45) {\textbf{6\enspace One probability per patient} and view: $p_{\mathrm{I2}}$, $p_{\mathrm{P3}}$, $p_{\mathrm{NM}}$};
+\node[prc,text width=5.52cm,minimum height=0.5cm] (f2) at (10.05,-7.25) {\textbf{F2}: mean of the three probabilities};
+\node[prc,text width=5.52cm,minimum height=0.85cm] (auc) at (10.05,-8.05) {\textbf{Per-fold AUC} over 50 folds (real label); Nadeau--Bengio 95\% CI};
+\draw[flow] (s5.south) -- (s6.north);
+\draw[flow] (s6.south) -- (f2.north);
+\draw[flow] (f2.south) -- (auc.north);
+\node[nt,text width=5.9cm] at (9.83,-9.05) {Never used for fitting or selection.};
+\draw[frz] (9.05,-5.725) -- (s5.west);
+
+\node[panel] at (0,-10.0) {(c)\hspace{4pt}Audit layer: feature-shuffle test, run with and without adjustment};
+\node[frm,minimum width=3.0cm,minimum height=3.3cm] (c1) at (0,-10.45) {};
+\node[frm,minimum width=3.7cm,minimum height=3.3cm] (c2) at (3.45,-10.45) {};
+\node[frm,minimum width=2.8cm,minimum height=3.3cm] (c3) at (7.6,-10.45) {};
+\node[frm,minimum width=5.1cm,minimum height=3.3cm] (c4) at (10.85,-10.45) {};
+\draw[flow] (c1.east) -- (c2.west);
+\draw[flow] (c2.east) -- (c3.west);
+\draw[flow] (c3.east) -- (c4.west);
+\node[hd,text width=2.8cm] at (0.03,-10.5) {\textbf{Null data}\\[1pt]Each patient keeps label $y_p$ and covariates $\mathbf{d}_p$; EEG features $\mathbf{x}_p$ are permuted between patients (H1) or within era (H2a). Age and sex are not classifier inputs.};
+\node[tg,anchor=south east] at (3.0,-13.75) {(i)};
+\node[hd,text width=3.5cm] at (3.48,-10.5) {\textbf{Pipeline, run twice}\\same permutation, folds, and classifier};
+\node[adj,text width=3.3cm,minimum height=0.62cm] (cw) at (3.56,-11.55) {with adjustment\\(Eq.~(1)): AUC $A_r$};
+\node[prc,text width=3.3cm,minimum height=0.62cm] (co) at (3.56,-12.5) {without adjustment:\\AUC $A_r^{0}$};
+\node[tg,anchor=south east] at (7.15,-13.75) {(i), (ii)};
+\draw[fill=white] (7.9,-10.75) rectangle (10.25,-13.2);
+\draw[fill=white] (7.8,-10.85) rectangle (10.15,-13.3);
+\draw[fill=white] (7.7,-10.95) rectangle (10.05,-13.4);
+\node[hd,text width=2.2cm] at (7.73,-11.05) {\textbf{Replicates}\\$r=1,\dots,n$\\[3pt]$\Delta_r=A_r-A_r^{0}$\\[3pt]means $\bar{A}$ and $\bar{\Delta}$ with Monte Carlo SE (Eq.~(2))};
+\node[hd,text width=4.9cm] at (10.88,-10.5) {\textbf{Decision per rule} (Eq.~(3))};
+\fill[black!12] (11.1,-11.2) rectangle (12.5,-11.45);
+\fill[aksen!30] (14.4,-11.2) rectangle (15.75,-11.45);
+\draw (11.1,-11.2) rectangle (15.75,-11.45);
+\foreach \xx/\lab in {12.5/\ell,13.45/u,14.4/\lambda} {\draw (\xx,-11.12) -- (\xx,-11.53); \node[lbl,anchor=south] at (\xx,-11.12) {$\lab$};}
+\node[lbl,font=\sffamily\tiny] at (11.8,-11.65) {no evidence};
+\node[lbl,font=\sffamily\tiny] at (13.45,-11.65) {uncertain};
+\node[lbl,font=\sffamily\tiny] at (15.075,-11.65) {leakage};
+\node[hd,text width=4.9cm] at (10.88,-11.85) {no evidence: $m\leq\ell$ and $m+1.645\,\mathrm{SE}\leq u$\\leakage: $m>\lambda$; uncertain otherwise\\[2pt]\begin{tabular}{@{}l@{\ }l@{}}absolute:&$m=\bar{A}$, $(\ell,u,\lambda)=(52.0,54.0,55)$\\paired:&$m=\bar{\Delta}$, $(1.0,3.0,3.0)$ pp\end{tabular}\\[2pt]combined: leakage if any rule declares it};
+\node[tg,anchor=south east] at (15.95,-13.75) {(iii)};
+\draw[line width=0.5pt] (0,-14.25) -- (15.95,-14.25);
+\node[lbl,anchor=south west] at (0,-14.23) {Claims tested with this audit; tags (i)--(iii) above mark the stage each claim varies};
+\node[lbl,anchor=south east] at (15.95,-14.23) {real-label checks: S3.5};
+\node[prc,text width=4.92cm,minimum height=1.2cm] at (0,-14.45) {\textbf{(i) Leak size}: simulation with a known truth and plasmode on real EEG features of TUEP and Emotiv; classifier, fitting unit, and transformation varied};
+\node[prc,text width=4.92cm,minimum height=1.2cm] at (5.42,-14.45) {\textbf{(ii) Reference sample}: $\mathcal{P}_{\mathrm{tr}}$ = training controls, all training patients, or equally many random training patients; reference size varied in simulation};
+\node[prc,text width=4.92cm,minimum height=1.2cm] at (10.85,-14.45) {\textbf{(iii) Rule errors}: absolute (R1) and paired (R2) rules, alone and combined, on stored replicates and on new simulation runs; false alarms and detections};
+
+\draw[flow] (6.9,-16.0) -- (7.7,-16.0); \node[lbl,anchor=west] at (7.8,-16.0) {data flow};
+\draw[frz] (9.3,-16.0) -- (10.1,-16.0); \node[lbl,anchor=west] at (10.2,-16.0) {frozen parameters};
+\node[adj,minimum width=0.6cm,minimum height=0.25cm,inner sep=0pt,anchor=west] at (12.55,-16.0) {}; \node[lbl,anchor=west] at (13.25,-16.0) {covariate adjustment};
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Audit workflow. (a) Label-free preprocessing per recording. (b) The split separates the 160 training patients, on which steps 1--4 are fitted, from the 40 test patients, which receive the frozen transforms and classifier. Labels enter only in steps 3--4. (c) The shuffle test runs the pipeline with and without adjustment on the same permutation and folds, and two rules judge the replicate means. I2, P3, and NM, spectral, spatial, and temporal views; F2, fusion; V4 and V5, all-patient adjustments; H1 and H2a, shuffles; R1 and R2, rules.}\label{fig:alur}
+\end{figure}%
+
+\subsection{Data and ethics}\label{sec:desain}
+
+This study used TUEP v2.0.1 from the Neural Engineering Data Consortium (NEDC) and represented each of its 200 patients (100 with and 100 without epilepsy) by the first session in the corpus (2003--2013, 19 scalp electrodes) \cite{veloso2017,obeid2016}. Patients without epilepsy (``controls'') also underwent clinical EEG and are not healthy volunteers. Labels came from TUEP curation based on the session report, clinical history, medication, and EEG features \cite{veloso2017}. Age, sex (female or male as recorded in the corpus; gender was not available), and recording era ($\leq$2009, 2010, 2011, 2012, 2013) served as covariates. An independent Emotiv cohort (Zenodo 1252141, 313 subjects, consumer-grade resting-state EEG \cite{vanhees2018}) was used to repeat the plasmode.
+
+Both datasets are public and de-identified. NEDC distributes TUEP under its data use terms, collection of the TUH corpus was approved by the Temple University institutional review board \cite{obeid2016}, and the Emotiv recordings were released on Zenodo \cite{vanhees2018}. Because this was a secondary analysis of public, de-identified data, it did not require approval from the authors' institutional ethics committee. No patient was contacted, and no attempt was made to re-identify patients or to link records (S1.7).
+
+\subsection{Preprocessing, features, and adjustment}\label{sec:praproses}
+
+Signals were average-referenced, resampled to 200 Hz, and filtered at 0.5--45 Hz. Windows of 10 s exceeding 800~$\mu$V peak to peak were rejected without using labels (2.3\%) \cite{gemein2020,kiessner2024,poziomska2026}. The spectral view used log relative power in five bands and log total power on 19 channels (114 features, Welch's method), summarized per patient as the median over windows and classified with L2 logistic regression (balanced class weights, $C$ chosen from nine values by inner 5-fold cross-validation). A planned fusion pipeline averaged the probabilities of this view, a spatial view, and a temporal view (S3.5).
+
+\label{sec:model}Adjustment regressed the feature vector $\mathbf{x}_p$ of each patient $p$ on the design vector $\mathbf{d}_p=[1,\mathrm{age},\mathrm{sex},\text{era indicators}]^{\top}$ by ordinary least squares over a fitting set $\mathcal{P}_{\mathrm{tr}}$ of training patients and divided the residuals element-wise ($\oslash$) by their training standard deviations $\hat{\mathbf{s}}$ (\eqref{eq:norm}).
+\begin{equation}\label{eq:norm}
+\hat{\mathbf{B}}=\arg\min_{\mathbf{B}}\sum_{q\in\mathcal{P}_{\mathrm{tr}}}\left\|\mathbf{x}_q-\mathbf{B}^{\top}\mathbf{d}_q\right\|^{2},\qquad
+\mathbf{z}_p=\left(\mathbf{x}_p-\hat{\mathbf{B}}^{\top}\mathbf{d}_p\right)\oslash\hat{\mathbf{s}}
+\end{equation}
+The planned pipeline used only the training controls as $\mathcal{P}_{\mathrm{tr}}$ (control-referenced adjustment), as normative references do \cite{rutherford2022,rutherford2023}, whereas the all-patient adjustment used all training patients. Variants used half of the training controls, cross-fitting, a design without era, or a random reference (Section~\ref{sec:metode_referensi}). Recording device entered only the acquisition-metadata baseline.
+
+\subsection{The audit procedure}\label{sec:sensitivitas}
+
+The feature-shuffle test followed Hamdan et al. \cite{hamdan2023}. EEG features were permuted between patients before the split, each patient keeping its label and covariates, and the complete pipeline was run with and without adjustment on identical folds (S1.1). Under this between-patient shuffle, EEG carries no information about the label or the covariates, while the label--covariate association is preserved, and any AUC above chance after adjustment indicates adjustment-induced leakage. A within-era shuffle keeps the associations of EEG with era and of era with the label, and its AUC therefore lacks a universal chance level of 50. It serves only as a conditional stress test, read as a change in discrimination between adjusted and unadjusted pipelines. Age and sex were removed from the classifier inputs in every null experiment. ``Leak'' denotes the measured excess discrimination in pp, and ``leakage'' the phenomenon and the decision label.
+
+For shuffle replicates $r=1,\dots,n$, let $A_r$ and $A_r^{0}$ be the AUCs (in percent) with and without adjustment on the same permutation and folds (per-fold or pooled, S1.3), $\Delta_r=A_r-A_r^{0}$, and $s_{\Delta}$ the sample SD of the $\Delta_r$. The audit summarizes
+\begin{equation}\label{eq:bocor}
+\bar{A}=\frac{1}{n}\sum_{r=1}^{n}A_r,\qquad
+\bar{\Delta}=\frac{1}{n}\sum_{r=1}^{n}\Delta_r,\qquad
+\mathrm{SE}(\bar{\Delta})=\frac{s_{\Delta}}{\sqrt{n}},
+\end{equation}
+with $\mathrm{SE}(\bar{A})$ analogous, the Monte Carlo error over replicates. Both rules operate on replicate means, because a single null AUC with 100 patients per class has an SD of 4.1 pp (Mann--Whitney variance, S1.1). The absolute rule ($m=\bar{A}$) and the paired rule ($m=\bar{\Delta}$, between-patient shuffle only) share one form,
+\begin{equation}\label{eq:aturan}
+\text{decision}(m)=
+\begin{cases}
+\text{no evidence of leakage}, & m\leq\ell \text{ and } m+1.645\,\mathrm{SE}(m)\leq u,\\
+\text{leakage}, & m>\lambda,\\
+\text{uncertain}, & \text{otherwise},
+\end{cases}
+\end{equation}
+with $(\ell,u,\lambda)=(52.0,54.0,55)$ for the absolute rule and $(1.0,3.0,3.0)$ pp for the paired rule, where $m+1.645\,\mathrm{SE}(m)$ is the one-sided 95\% upper bound. In the combined decision, a pipeline is leaking when any rule computed for it declares leakage, and it shows no evidence of leakage only when every such rule says so. ``No evidence'' means within the stated tolerance, not zero leakage. These thresholds are margin-test conventions, as in equivalence testing. Mean thresholds of 52 and 55 were fixed before the first audit, and the upper-bound condition was added retrospectively (S1.5). Decision frequencies were measured on stored replicates of null and leaking controls (S2.17) and then on 2,000 new simulation replicates with unused seeds, split into non-overlapping audits (S2.18). If paired null differences have mean $b$ and SD $s_{\Delta}$, the false-alarm frequency of the paired rule with margin $c=3$ pp under a normal model is
+\begin{equation}\label{eq:n}
+\Pr\left(\bar{\Delta}>c\right)=1-\Phi\left(\frac{(c-b)\sqrt{n}}{s_{\Delta}}\right)<1\%\quad\text{if } n\geq\left(\frac{2.33\,s_{\Delta}}{c-b}\right)^{2},\ b<c,
+\end{equation}
+where $\Phi$ is the standard normal distribution function. This planning rule was formulated after the decision frequencies had been measured (Section~\ref{sec:oc}).
+
+\subsection{Simulation and plasmode}\label{sec:metode_peta}
+
+The simulation generated clustered data without a disease signal (base cell of 200 patients, 50 windows, and 50 features) from normal, lognormal, $t$, chi-squared, or contaminated distributions, with TUEP-like covariates and a label--covariate association $s\in\{0,0.5,1\}$, varying one factor at a time. Four transformations (raw, symlog, rank-normal, log), adjustment of windows or of patient means, and five classifiers (logistic regression, random forest, XGBoost, a multilayer perceptron, and a bidirectional LSTM [Bi-LSTM]) were compared on identical data and folds (S1.8).
+
+The plasmode, a semi-synthetic design, combined real EEG features with synthetic labels
+\begin{equation}\label{eq:plasmode}
+\tilde{y}_i=\mathbf{1}\left[\gamma\eta_i+\epsilon_i\geq\tau_{\gamma}\right],\qquad \epsilon_i\sim\mathrm{Logistic}(0,1),\qquad \gamma\in\{0,0.5,1\},
+\end{equation}
+where $\eta_i$ is the linear predictor of a logistic regression of the real label on age, sex, and era, $\tau_{\gamma}$ is the $\lfloor N/2\rfloor$-th largest score (100 of the 200 TUEP patients are labeled 1), and $\gamma=1$ mimics the real association. Features were the spectral view, the window features of Rohira et al. \cite{rohira2023}, the per-second features of Tang et al. \cite{tang2024}, and temporal-view segments. The primary family (Holm) compared raw with rank-normal adjustment for the random forest, XGBoost, and the Tang Bi-LSTM, and a check required ``no evidence'' in at least 95\% of cells at $\gamma=0$. Raw tree pools were later extended from 20 or 30 to 120 replicates (S2.11). Follow-ups planned before computation repeated the plasmode on the 299 Emotiv subjects with at least five clean windows, with labels from that cohort's acquisition covariates. Further follow-ups fitted logistic regression to the raw window features of the trees, either as patient medians or as windows with the tree training configuration (80\% of the training patients, windows weighted equally, S2.12). A factorial variant crossed training patients (80\% or 100\%), window weights (equal or per patient), and aggregation (mean probability or mean logit, S2.16). Transformed pipelines without adjustment allowed adjustment to be compared within each transformation (S2.15).
+
+\subsection{Reference experiments}\label{sec:metode_referensi}
+
+A simulation planned before computation (S2.13) tested the control-referenced adjustment against a known truth. Labels were balanced, TUEP covariate rows were resampled, and 114 normal features with the correlation of the spectral features were independent of label and covariates. The simulation crossed the number of training controls per fold (20, 40, 80, 200, or 1,000), the era design, and $s\in\{0,0.5,1\}$, with 100 replicates per cell. In the sparse design, about 6\% of controls fell into the earliest era, as in TUEP. In the mirror design, the classes swapped their source rows, preserving the association but moving the sparse cell to the cases. The primary family (Holm, three one-sided Welch tests) compared 80 with 1,000 controls, the sparse with the mirror design, and $s=1$ with $s=0$. A second experiment (S2.14) repeated the real null test of the spectral view on the same 100 permutations with a random reference of 80 training patients drawn regardless of label, matching the number of training controls. Its frozen contrast was the paired difference from the control reference.
+
+\subsection{Validation and statistics}\label{sec:validasi}
+
+Real-data null experiments used 10 repetitions of five stratified patient-level folds (160 training, 40 test patients), and simulations and plasmode one new split per replicate. All windows of a patient stayed in one fold, and every step that estimates statistics across patients was fitted on the training patients of the fold \cite{varma2006,rosenblatt2024,delpup2025,brookshire2024}. Automated leakage checks passed on all 50 folds (S2.9). The per-fold AUC averages test-fold AUCs, and the pooled AUC uses all out-of-fold scores of a repetition (S1.3). Differences over replicates were tested with $t$-tests (one-sided where the plan fixed a direction) and Holm correction within each family \cite{holm1979}. These tests are conditional on the same patients \cite{bates2024}. Label-free transforms were fitted on the whole outer training fold before the inner selection of $C$, leaving inner selection not fully nested. A strict-nesting analysis changed the per-fold AUC of every model by at most 0.3 pp (S2.10). Label-based choice of control-reference patients was not repeated within inner splits, because that adjustment entered only the null experiments.
+
+Design choices were iterated over 53 rounds of analysis on the same patients and folds without a hidden test set. Each round was planned in a version-controlled or SHA-256-hashed document written after earlier results were known, making all analyses exploratory (S1.5). By contrast, the Emotiv replication, the reference experiments, and the follow-ups of rounds 55--60 were planned before computation. Hyperparameters are listed in Table~\ref{tab:hiper}, code and materials under Data availability, and reporting followed TRIPOD+AI \cite{collins2024tripod}.%
+\section{Results}\label{sec:results}
+
+AUCs are in percent (per-fold unless labeled pooled), differences in pp, and intervals over replicates on the same patients are Monte Carlo intervals. References beginning with S point to the Supplementary Material.
+
+\subsection{Cohort}\label{sec:populasi}
+
+In TUEP, patients with epilepsy were younger (median age 52 versus 59 years, Mann--Whitney $p = 0.002$) and were recorded in different eras and on different devices (chi-squared $p = 0.0013$ and $p = 0.0096$, Table~\ref{tab:kohort}). The earliest era held 25 patients with epilepsy and only 6 without.
+
+\subsection{Size of the leak in simulation and on real EEG features}\label{sec:peta}
+
+Because the TUEP label is associated with age and era, the first question was what adjusting for them creates without label information. Every adjustment in this subsection was fitted on all training patients.
+
+\textbf{Simulation.} Without a disease signal, adjustment of patient means raised the AUC of nonlinear classifiers when features were heavy-tailed (\figref{fig:peta}). Mean per-fold differences were +6.5 pp for raw features (60.0\% of cells ``leakage''), +3.9 pp for symlog, +0.2 pp for log, and $-$0.1 pp for rank-normal. Patient-level logistic regression changed by at most +2.6 pp per fold across 134 cells (+3.4 pp in one cell on the pooled AUC). The leak of a window-level random forest did not grow with the intraclass correlation of the windows ($-$1.8 pp, Holm-adjusted $p = 0.79$, S2.10). Real band-power features were heavy-tailed (median over features of the excess kurtosis across windows, 8,481 in TUEP and 75.9 in Emotiv, \tabref{tab:kurtosis}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{Fig2.pdf}
+\caption{Leak created by adjusting patient means in simulation without a disease signal (200 patients, 50 windows, 50 features): paired difference in pooled AUC (pp) on (a) raw and (b) rank-normal features, labeled only above the 3-pp paired-rule threshold. LR, patient-level logistic regression; RF, random forest; XGB, XGBoost; MLP, multilayer perceptron. Symlog and log, \tabref{tab:peta_sim}.}\label{fig:peta}
+\end{figure}
+
+\textbf{Plasmode.} At $\gamma=1$, where the covariate AUC of the synthetic labels was 70.7 against 71.0 for the real label, adjusting raw features made three nonlinear classifiers appear informative in TUEP (\figref{fig:plasmode}a): +11.1 pp (95\% CI +9.7 to +12.6) for the random forest, +11.6 pp (+10.2 to +13.0) for XGBoost, and +11.9 pp for the Tang Bi-LSTM. This leak grew with $\gamma$ (+3.8 pp at $\gamma=0.5$ for the random forest). Patient-level logistic regression changed by +1.0 pp. After a log, symlog, or rank-normal transformation, adjustment still added +0.7 to +1.5 pp to the trees against the same transformation without adjustment, and +4.1 pp to the Bi-LSTM after rank-normal. For rank-normal, the tree estimates were +0.9 pp for the random forest (95\% CI +0.3 to +1.4) and +0.8 pp for XGBoost (+0.2 to +1.3), with Holm-adjusted $p \leq 0.008$ (S2.15). In the pre-planned family, raw and rank-normal adjustment differed by +9.6, +11.3, and +8.0 pp for the random forest, XGBoost, and Bi-LSTM (Holm-adjusted $p<0.001$), although the Bi-LSTM still leaked after rank-normal. The $\gamma=0$ check failed for XGBoost (7 of 10 cells ``no evidence''), and only its large leak at $\gamma=1$ is therefore interpretable.
+
+In the independent Emotiv cohort (\figref{fig:plasmode}b), raw adjustment again leaked into the random forest (+12.7 pp, 95\% CI +10.4 to +15.0) and XGBoost (+11.6 pp, +9.0 to +14.2, Holm-adjusted $p<0.001$). Subject-level logistic regression stayed within 0.3 pp, and after a transformation adjustment added +1.3 to +2.8 pp to the trees (S2.15).
+
+\textbf{Same raw features, linear classifier.} Fitted on windows with the training configuration of the trees, logistic regression leaked in TUEP (+6.6 pp, 95\% CI +5.4 to +7.9, ``leakage'' under both rules) but not clearly in Emotiv (+1.2 pp, ``uncertain''). Its leak was 4.5 pp smaller than that of the random forest in TUEP and 11.6 pp in Emotiv (one-sided Holm-adjusted $p<0.001$). A configuration matched to the adjustment (all training patients, per-patient window weights, averaged logits) lowered the TUEP leak by 3.9 pp (95\% CI 2.7 to 5.0, $p<0.001$) to +2.8 pp (+1.5 to +4.0, ``uncertain''), mostly through training on all rather than 80\% of the training patients (2.3 pp) and through window weights (1.2 pp, S2.16). In Emotiv, every variant stayed at or below +1.2 pp. After a transformation, adjustment no longer changed window-level logistic regression ($-$0.2 to 0.0 pp in TUEP against the same transformation, S2.15). Fitted on patient medians of the same raw features, logistic regression changed by +0.2 pp in TUEP and +1.1 pp in Emotiv.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{Fig3.pdf}
+\caption{Leak created by covariate adjustment in the plasmode (between-patient shuffle, $\gamma=1$) in (a) TUEP and (b) Emotiv: replicate means of the per-fold AUC difference between each pipeline with adjustment and the same pipeline and transformation without it, with Monte Carlo 95\% CIs. Shading, paired-rule thresholds; LR, logistic regression. Values, \tabref{tab:plasmode} and \tabref{tab:s2_p57}.}\label{fig:plasmode}
+\end{figure}
+
+\subsection{Leak of the control-referenced adjustment}\label{sec:kebocoran}
+
+The planned pipeline instead fitted its reference on the training controls (pooled AUCs, \tabref{tab:kebocoran_badan}). Under the shuffle test, this adjustment lifted the spectral view from near chance to 56.4 (5th--95th percentile 51.1--62.4), above the preset threshold of 55, and it also leaked in the within-era stress test. In the variant series, the paired difference over 100 replicates was +5.4 pp (SD 2.5). Neither a half reference nor cross-fitting removed the leak, removing era gave ``uncertain'', and all-patient adjustment returned near chance. A per-era alignment fitted on training controls also leaked in the spatial view (55.5 versus 49.8, Table~\ref{tab:sensitivitas}), and fitting on all training patients again removed it.
+
+\begin{table}[t]
+\caption{Feature-shuffle test of the spectral view without age and sex (mean pooled AUC in percent, 100 replicates) and absolute-rule (R1) decisions. H1, between-patient shuffle; H2a, within-era shuffle (conditional stress test with descriptive decisions). Per-fold H1, per-fold AUC of the variant series (\tabref{tab:s2_p46}); ``--'', not computed.}\label{tab:kebocoran_badan}
+\centering\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{p{0.34\textwidth}ccccc}
+\toprule
+Variant & H1 & H2a & \shortstack{Absolute\\rule (H1)} & \shortstack{Absolute\\rule (H2a)} & Per-fold H1 \\
+\midrule
+\multicolumn{6}{l}{\textit{Planned audit}} \\
+C1 (no adjustment) & 50.8 & 50.1 & no evidence & no evidence & -- \\
+V0: control-referenced adjustment (I2) & 56.4 & 55.8 & leakage & leakage & -- \\
+\midrule
+\multicolumn{6}{l}{\textit{Variant series (alternative adjustments)}} \\
+C1 (no adjustment) & 50.6 & 51.6 & no evidence & no evidence & 50.4 \\
+V0: control-referenced adjustment & 56.0 & 57.1 & leakage & leakage & 56.9 \\
+V1: separate half reference & 56.1 & 56.3 & leakage & leakage & 57.9 \\
+V2: cross-fitted & 55.7 & 56.8 & leakage & leakage & 56.6 \\
+V3: no era & 52.5 & 53.7 & uncertain & uncertain & 52.7 \\
+VR: random reference, equal size & 52.8 & -- & uncertain & -- & 53.2 \\
+V4: all-patient adjustment & 50.4 & 51.7 & no evidence & no evidence & 50.0 \\
+\bottomrule
+\end{tabular}
+\end{table}%
+
+\textbf{Control-reference simulation.} With a known truth (\figref{fig:referensi}), 80 training controls, a sparse era cell, and the observed association $s=1$ reproduced the TUEP leak (+6.9 pp, null AUC 57.7). Leakage required a label--covariate association, with a leak 7.1 pp larger at $s=1$ than at $s=0$ (95\% CI +6.0 to +8.3, Holm-adjusted $p<0.001$), and all cells at $s=0$ returned ``no evidence''. The leak shrank by 2.7 pp from 80 to 1,000 controls (95\% CI +1.7 to +3.8, Holm-adjusted $p<0.001$) but remained +4.2 pp with 1,000 (``leakage'', predicted below 2 pp). Contrary to the pre-specified prediction, the sparse era cell was not necessary. The mirror design leaked by +6.1 pp, 0.8 pp less than the sparse design (95\% CI $-$0.5 to +2.2, Holm-adjusted $p = 0.11$). The all-patient adjustment returned ``no evidence'' in 28 of 30 cells (S2.13).
+
+\textbf{Random reference of equal size.} On the same 100 real permutations, a reference of 80 training patients drawn regardless of label reached 52.8, +2.2 pp above no adjustment, and both rules rated it ``uncertain'', 3.2 pp below the control reference (95\% CI 2.9 to 3.6, $p<0.001$). Label selection thus added to the leak beyond reference size, although it came with thinner coverage of the smallest era cell (4.8 versus 10.9 patients) and higher maximum leverage (0.25 versus 0.16, S2.14), neither of which was isolated.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{Fig4.pdf}
+\caption{Leak of the control-referenced adjustment in the control-reference simulation (patient-level logistic regression, 100 replicates per point): mean paired difference in pooled AUC (pp) with Monte Carlo 95\% CIs by number of reference controls and label--covariate association $s$. (a) Sparse design, as in TUEP. (b) Mirror design, sparse era cell among the cases. Dashed, all-patient adjustment at $s=1$; shading and dotted line, paired-rule thresholds.}\label{fig:referensi}
+\end{figure}
+
+\subsection{Properties of the audit rules}\label{sec:oc}
+
+The next question was how often the two rules misjudge such leaks (\tabref{tab:oc}). With 20 replicates, the absolute rule almost never declared leakage in null controls. Its detection of the control-referenced adjustment (87.8\% of draws of 20, 99.6\% of 100) measures power, because these pool means lay above the threshold.
+
+The paired rule rarely raised false alarms in simulation, but on real features its frequencies depended on the pool. For raw tree pipelines in the plasmode at $\gamma=0$, where no leakage is possible, pools extended to 120 replicates had means of +0.9 to +1.1 pp and gave false alarms in 10.7\%--13.9\% of draws of 20 replicates, 2.7\%--4.2\% of 50, and 0.3\%--0.8\% of 100 (S2.11). The higher frequencies of the smaller planned pools reflected their means rather than a weakness of the paired design.
+
+Under the normal model of \eqref{eq:n}, a null mean $b=0$ with the largest pool SD (7.8 pp) requires 37 replicates, $b=1$ requires 2.25 times as many, and for $b \geq 3$ no number suffices. These pools could not attribute the residual means of +0.9 to +1.1 pp to Monte Carlo error or to pipeline bias (robustness checks in S2.10).
+
+The combined decision inherited the false alarms of the paired rule, with 3.1\% of draws of 20 on average in the plasmode null pools (maximum 14.6\%) and 1.4\% of draws of 50. It detected the control-referenced adjustment in all draws, against 88.4\% for the absolute rule alone in this joint resampling, and returned ``no evidence'' in 68.9\% of those null draws with 20 replicates and 77.2\% with 50 (S2.17). In independent audits of 2,000 new simulation replicates, the frozen rules raised no false alarm in 48 audits of null cells, and the combined decision detected all 48 audits of leaking cells (absolute rule alone, 20 of 30 audits of 20). Near-margin cells (new means 1.7--2.4 pp) were mostly ``uncertain'', with ``leakage'' in 4 of 40 audits of 20 and none of 50 or 100, whereas the stored pools had predicted 4.6\%--36.4\% per cell (S2.18).
+
+\begin{table}[t]
+\caption{Frequency of the audit decisions with 20 replicates (percent of 10,000 bootstrap draws from stored replicates, Monte Carlo 95\% CIs from 500 pool resamples). Null controls have no adjustment or no label--covariate association. CIs reflect finite-pool resampling only, and 0.0--0.0 does not mean zero risk. Simulation rows give the mean over cells (maximum), and Mean (SD) is over replicates, in percent or pp. R1 and R2, absolute and paired rules; C1, no adjustment; V0, control-referenced adjustment; V4, all-patient adjustment; I2, spectral view; NM, temporal view; H1, between-patient shuffle.}\label{tab:oc}
+\centering\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{0.37\textwidth}ccccc}
+\toprule
+Pool (replicates) & Mean (SD) & No evidence & Uncertain & Leakage [95\% CI] \\
+\midrule
+\multicolumn{5}{l}{\textit{Absolute rule, null controls}} \\
+C1, I2 features, H1 (100) & 50.6 (4.3) & 92.8 & 7.2 & 0.0 [0.0--0.0] \\
+Random forest, Rohira, no adjustment (30) & 50.1 (5.1) & 93.5 & 6.5 & 0.0 [0.0--1.3] \\
+NM without adjustment, per fold (50) & 50.4 (4.4) & 95.0 & 5.0 & 0.0 [0.0--0.0] \\
+Tang without adjustment (20) & 47.7 (4.2) & 100.0 & 0.0 & 0.0 [0.0--0.0] \\
+Simulation without leakage (396 cells) & -- & 91.3 & 8.6 & 0.1 [max 7.0] \\
+\multicolumn{5}{l}{\textit{Absolute rule, positive controls}} \\
+V0, I2 features, H1 (100) & 56.0 (3.9) & 0.0 & 12.2 & 87.8 [61.3--98.3] \\
+V0, I2 features, H1, per fold (100) & 56.9 (4.2) & 0.0 & 2.0 & 98.0 [87.6--99.9] \\
+Simulation, long-run AUC $>55$ (123 cells) & -- & 0.0 & 4.1 & 95.9 [max 100] \\
+\multicolumn{5}{l}{\textit{Paired rule, null controls}} \\
+Simulation without label--covariate association (41 cells) & -- & 91.0 & 8.6 & 0.4 [max 8.9] \\
+Plasmode $\gamma=0$, trees on raw features (4 cells, 30 or 20) & +2.2--+3.0 (7.2--7.8) & 7.9--14.2 & 44.1--54.4 & 31.5--48.0 \\
+Same 4 cells, pools of 120 replicates & +0.9--+1.1 (7.5--8.0) & 28.1--33.4 & 55.3--58.2 & 10.7--13.9 \\
+\multicolumn{5}{l}{\textit{Paired rule, positive controls}} \\
+V0 $-$ C1, H1 (100) & +5.4 (2.5) & 0.0 & 0.0 & 100.0 [100.0--100.0] \\
+Simulation, long-run difference $>3$ pp (55 cells) & -- & 0.0 & 3.8 & 96.2 [max 100] \\
+\multicolumn{5}{l}{\textit{Audited pipelines (decision as reported)}} \\
+V4, I2 features, H1, absolute rule (100) & 50.4 (3.8) & 96.9 & 3.1 & 0.0 [0.0--0.0] \\
+V4 $-$ C1, H1, paired rule (100) & $-$0.2 (2.2) & 99.1 & 0.9 & 0.0 [0.0--0.0] \\
+Rohira log, patient mean $-$ no adjustment, paired rule (30) & +0.6 (2.6) & 78.1 & 21.9 & 0.0 [0.0--1.2] \\
+Tang symlog with adjustment $-$ without, paired rule (20) & +3.7 (3.6) & 0.0 & 16.7 & 83.3 [12.7--99.9] \\
+NM with V4 $-$ without adjustment, per fold, paired rule (50) & +1.9 (4.3) & 16.1 & 71.1 & 12.8 [0.4--48.5] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}%
+
+\subsection{The audited pipeline on the real label}\label{sec:kinerja}
+
+Finally, the audit was applied to a real-label performance figure. With all-patient adjustment, the fusion pipeline reached a per-fold AUC of 69.7 on the real label but did not significantly exceed an acquisition-metadata baseline (65.5, $p = 0.45$, Nadeau--Bengio corrected $t$-test \cite{nadeau2003}). An added benefit of EEG was not detected, which does not establish equivalence (S3.5).%
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Main findings and mechanisms}\label{sec:disk_temuan}
+
+Covariate adjustment made uninformative EEG features look informative only for some combinations of classifier, fitting level, feature distribution, and reference sample. Least-squares adjustment fitted on units $F$ with weights $w_q$ yields residuals satisfying $\sum_{q\in F} w_q\mathbf{z}_q\mathbf{d}_q^{\top}=\mathbf{0}$. A linear classifier trained on units $T$ with weights $v_q$, however, sees the covariates through $\sum_{q\in T} v_q\mathbf{z}_q\mathbf{d}_q^{\top}$, which is generally nonzero unless $T=F$ and $v=w$. This property is orthogonality on the fitting units, not independence from covariates or label, and does not guarantee a test AUC of 50. It also requires equal weights, which balanced class weights provide only for balanced training classes (80 per class in the TUEP folds but not in Emotiv), and median-based features computed after mean-based adjustment break it. It is best read as a limited condition, consistent with Hamdan et al. \cite{hamdan2023}, rather than as a general protection of linear classifiers. Leakage appeared where the condition was broken (windows versus patient means, controls versus all training patients, nonlinear functions of the residuals), but these configurations also differed in tails, sample sizes, weights, and pooling. For window-level logistic regression, matching the training configuration to the adjustment removed about 60\% of the leak, yet +2.8 pp remained, showing that fitting on windows itself contributed in TUEP.
+
+In nonlinear classifiers, covariate information can persist in the spread and tails of heavy-tailed features \cite{hamdan2023}. Leaks were largest for raw, skewed features and small after symmetrizing transformations. Because the Bi-LSTM still leaked +4.1 pp after rank-normal, the leak does not reside in the marginal tails alone. A transformation modifies the regression rather than replacing it, as stratification would \cite{hamdan2023}, and cannot substitute for the shuffle test.
+
+Control-referenced adjustment broke the condition through its reference sample. In one training fold, the largest residual-on-design coefficient was $3.9\times10^{-15}$ for the training controls, versus 1.39 for the training patients with epilepsy (S2.9). A plausible explanation is that coefficient error adds a linear function of the covariates to the features of every patient outside the reference, which a classifier can exploit because the label is associated with them. Consistent with this, the simulated leak vanished without a label--covariate association and shrank as the reference grew, and the half-reference variant, whose reference controls were not used for classifier training, leaked as well. A random reference holding both classes leaked less (+2.2 versus +5.4 pp). When the reference excludes one class, the injected shift separates the classes directly in training. Label selection, confounded with thinner era coverage and higher leverage, thus added to the leak beyond reference size, whereas a sparse era cell was not necessary. The leak's slow decline (+4.2 pp with 1,000 controls and 114 features) suggests that the injected signal accumulates over features, which was not tested.
+
+The two rules complement each other. While rarely raising false alarms, the absolute rule detected only 20 of 30 leaking audits of 20 replicates, because it judges the adjusted AUC rather than its change. The paired rule was more sensitive, but its false alarms depended on the pool. Combined, the rules detected every leaking audit without false alarms in null cells, and near-margin leaks stayed ``uncertain'', calling for more replicates rather than a verdict.
+
+\subsection{Implications for audits of clinical data}\label{sec:implikasi}
+
+Besides splitting by patient \cite{delpup2025,brookshire2024,rosenblatt2024}, developers and archive managers can apply four provisional checks before reading archive performance as disease information.
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=2pt]
+\item (1) Run the feature-shuffle test with and without adjustment for nonlinear and window-level classifiers, even after a transformation \cite{hamdan2023}, and judge the result with both rules combined. It complements the partial confounder test \cite{spisak2022}.
+\item (2) Test likewise any adjustment whose reference differs from the training patients of the classifier, as in normative-style adjustment \cite{rutherford2022,kia2022}, because a reference of 1,000 controls per fold still leaked in simulation.
+\item (3) Plan the replicates from a pilot: with the pilot mean $b$ and SD $s_{\Delta}$ of the paired null differences, $n \geq (2.33\,s_{\Delta}/(3-b))^2$ (\eqref{eq:n}) keeps false alarms below 1\% under a normal model. In the pools studied, 50--100 replicates improved stability without guaranteeing an error rate across datasets.
+\item (4) Report an acquisition-metadata baseline beside each performance figure.
+\end{itemize}
+Other patient-clustered data, such as electrocardiogram beats, can face the same mismatches, but this was not tested.
+
+\subsection{Limitations}\label{sec:batasan}
+
+The real EEG features come from one retrospective archive ($n = 200$) and one public cohort, and no result supports clinical use. All analyses were exploratory (53 rounds without a hidden test set, with Holm only within a round). Both rules use conventional thresholds, their validation covered ten simulation cells, and only the control-referenced adjustment and its variants served as real positive controls. Emotiv replicated the nonlinear plasmode leak but not the reference findings. Leak sizes describe features without covariate or label information, and the reference experiments used one linear classifier and normal simulated features. Heteroscedastic normative models, ComBat, external references, and likelihood warping \cite{fraza2021} were not tested, and each leak rests on one hyperparameter configuration and artifact threshold \cite{kessler2025}. Healthcare professionals were not involved in the evaluation. S4.3 lists further limitations.%
+\section{Conclusion}\label{sec:conclusion}
+Covariate adjustment can manufacture discrimination from EEG that carries no label information, and whether it does depends on its fitting population and fitting unit, not on the classifier alone. (i) Adjusting raw EEG features added about 11 pp of AUC to nonlinear classifiers in two cohorts. In TUEP, it added 6.6 pp to logistic regression fitted on windows with the training configuration of tree classifiers (2.8 pp with a matched configuration), but in either cohort at most 1.1 pp when that classifier was fitted on patient-level features. (ii) Fitted only on the training controls, the adjustment leaked even into a linear patient-level classifier, more than a random reference of equal size, and in simulation the leak persisted with 1,000 reference controls. (iii) On independent simulation runs, the frozen rules raised no false alarm in leakage-free audits and detected every leaking one, and a pilot-based rule sets the number of shuffles that keeps paired-rule false alarms below 1\% under a normal model.
+
+A performance figure from stored clinical EEG recordings after covariate adjustment should therefore be reported with a feature-shuffle test run with and without adjustment, a replicate number planned from the pilot mean and SD of the pipeline, and an acquisition-metadata baseline. The evidence comes from simulations and two cohorts and does not support clinical claims.%
+\section*{CRediT authorship contribution statement}
+\textbf{Miftah Furqaanul Haq:} Conceptualization, Methodology, Software, Investigation, Writing -- original draft. \textbf{Dwi Sunaryono:} Supervision, Resources, Writing -- review \& editing. \textbf{Muhammad Hasan Basri:} Data curation, Formal analysis, Writing -- review \& editing.
+
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Funding}
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+\section*{Data availability}
+\begingroup\emergencystretch=2em TUEP v2.0.1 is distributed by the Neural Engineering Data Consortium to registered users under its data use terms \cite{obeid2016,veloso2017} and cannot be redistributed by the authors. The Emotiv cohort is a public release on Zenodo (1252141) \cite{vanhees2018}. The code, software environment, fold assignments, seeds, analysis plans, and table scripts are available at \url{https://github.com/miftahfurqaanul/Auditing-covariate-adjustment-leakage-in-patient-level-EEG-TUEP}.\par\endgroup
+
+\section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+During the preparation of this work the authors used Claude (Anthropic) to improve the language and readability of the manuscript and to draft the graphical abstract. After using this tool, the authors reviewed and edited the content as needed and take full responsibility for the content of the published article.%   %
+
+\bibliographystyle{elsarticle-num}
+\bibliography{referensi}
+
+\end{document}
+
+\endinput

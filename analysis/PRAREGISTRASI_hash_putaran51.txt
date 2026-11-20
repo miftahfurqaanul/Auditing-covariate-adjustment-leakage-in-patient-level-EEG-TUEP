@@ -1,0 +1,19 @@
+# Putaran 51: dokumen dan kode dicatat SEBELUM keluaran utama (hasil51/*.csv, nyata_prediksi.npz) ada; hanya --check yang sudah dijalankan
+# (reproduksi RF TUEP/Emotiv dan Bi-LSTM identik 5.6e-17; ringkasan diuji dengan data palsu; tidak ada AUC plasmode/nyata putaran 51 yang dihitung atau dilihat)
+c69b9a01826d571a9a6a4c05aaa70e5c9eed1393d6cc6ef33c8f024791cf9cfa  PRAREGISTRASI_putaran51.md
+2ab6264f937aa0264a99b68739ed52d18577cf7eafaef6937a53da89c2118755  round51_common.py
+b1fcae5c8d76e093e270efb54a2a2684952b4248051effb3dcf0aca820715d33  round51_plasmode.py
+e79d4d54e13c3468dfc14852eb0bcd9806ce03fc6f163a7d758084cf036d47ba  round51_tang.py
+5c97faab4ae895f551ef674b6bade4bc332d56b2e745e27435957ca4d2f99e4b  round51_nyata.py
+ab36276dc692343663c5a93b3ab2e5d5096b8c2019494b0933a590ec3e3c6967  round51_ringkas.py
+2026-11-03T21:02:13+07:00
+
+# Skrip rantai (dicatat sebelum run)
+a717a8c74c584a505ffa9d52a4545fe5d8d7a8cd50ba8dbc27c996fee31de212  run_chain_51.sh
+2026-11-03T21:02:30+07:00
+
+# Pembungkus eksekusi paralel dan rencana eksekusi ulang (2026-11-03; hanya cara eksekusi, bukan analisis; dicatat sebelum run)
+0df9ab3f7e710fb34314daf6067540ab495d2c7a47a2a8b708afe48216eeba47  round51_shard.py
+56ccea6243596c202fb0903c9e015f964df9d8f8e677f119a41a4cab242e9ade  run_chain_51b.sh
+2026-11-03T21:31:13+07:00
+# Koreksi: shard RF TUEP gagal (joblib tidak dapat memuat modul ber-argv); RF TUEP dijalankan langsung dengan round51_plasmode.py --run tuep RF (NJOBS 10) tanpa pembungkus. 2026-11-03T21:34:02+07:00

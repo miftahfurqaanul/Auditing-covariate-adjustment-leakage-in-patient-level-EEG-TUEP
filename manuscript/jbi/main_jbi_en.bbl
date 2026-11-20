@@ -1,0 +1,239 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{lemoine2024}
+{\'E}.~Lemoine, J.~N. Briard, B.~Rioux, O.~Gharbi, R.~Podbielski, B.~Nauche,
+  D.~Toffa, M.~Keezer, F.~Lesage, D.~K. Nguyen, E.~Bou~Assi, {Computer-assisted
+  analysis of routine EEG to identify hidden biomarkers of epilepsy: A
+  systematic review}, Computational and Structural Biotechnology Journal 24
+  (2024) 66--86.
+\newblock \href {https://doi.org/10.1016/j.csbj.2023.12.006}
+  {\path{doi:10.1016/j.csbj.2023.12.006}}.
+
+\bibitem{ongly2024}
+C.~Ong~Ly, B.~Unnikrishnan, T.~Tadic, T.~Patel, J.~Duhamel, S.~Kandel,
+  Y.~Moayedi, M.~Brudno, A.~Hope, H.~Ross, C.~McIntosh, {Shortcut learning in
+  medical AI hinders generalization: method for estimating AI model
+  generalization without external data}, npj Digital Medicine 7 (2024) Art.
+  124.
+\newblock \href {https://doi.org/10.1038/s41746-024-01118-4}
+  {\path{doi:10.1038/s41746-024-01118-4}}.
+
+\bibitem{obeid2016}
+I.~Obeid, J.~Picone, {The Temple University Hospital EEG Data Corpus},
+  Frontiers in Neuroscience 10 (2016) Art. 196.
+\newblock \href {https://doi.org/10.3389/fnins.2016.00196}
+  {\path{doi:10.3389/fnins.2016.00196}}.
+
+\bibitem{veloso2017}
+L.~Veloso, J.~McHugh, E.~von Weltin, S.~Lopez, I.~Obeid, J.~Picone, {Big data
+  resources for EEGs: Enabling deep learning research}, in: Proc. of 2017 IEEE
+  Signal Processing in Medicine and Biology Symposium (SPMB), 2017, pp. 1--3.
+\newblock \href {https://doi.org/10.1109/SPMB.2017.8257044}
+  {\path{doi:10.1109/SPMB.2017.8257044}}.
+
+\bibitem{marquand2016}
+A.~F. Marquand, I.~Rezek, J.~Buitelaar, C.~F. Beckmann, {Understanding
+  Heterogeneity in Clinical Cohorts Using Normative Models: Beyond Case-Control
+  Studies}, Biological Psychiatry 80~(7) (2016) 552--561.
+\newblock \href {https://doi.org/10.1016/j.biopsych.2015.12.023}
+  {\path{doi:10.1016/j.biopsych.2015.12.023}}.
+
+\bibitem{rutherford2022}
+S.~Rutherford, S.~M. Kia, T.~Wolfers, C.~Fraza, M.~Zabihi, R.~Dinga,
+  P.~Berthet, A.~Worker, S.~Verdi, H.~G. Ruhe, C.~F. Beckmann, A.~F. Marquand,
+  {The normative modeling framework for computational psychiatry}, Nature
+  Protocols 17~(7) (2022) 1711--1734.
+\newblock \href {https://doi.org/10.1038/s41596-022-00696-5}
+  {\path{doi:10.1038/s41596-022-00696-5}}.
+
+\bibitem{li2022harmnqeeg}
+M.~Li, Y.~Wang, C.~Lopez-Naranjo, S.~Hu, R.~C.~G. Reyes, D.~Paz-Linares,
+  A.~Areces-Gonzalez, A.~I.~A. Hamid, A.~C. Evans, A.~N. Savostyanov,
+  A.~Calzada-Reyes, A.~Villringer, C.~A. Tobon-Quintero, D.~Garcia-Agustin,
+  D.~Yao, L.~Dong, E.~Aubert-Vazquez, F.~Reza, F.~A. Razzaq, H.~Omar, J.~M.
+  Abdullah, J.~R. Galler, J.~F. Ochoa-Gomez, L.~S. Prichep, L.~Galan-Garcia,
+  L.~Morales-Chacon, M.~J. Valdes-Sosa, M.~Tr{\"o}ndle, M.~F.~M. Zulkifly,
+  M.~R.~B. Abdul~Rahman, N.~S. Milakhina, N.~Langer, P.~Rudych, T.~Koenig,
+  T.~A. Virues-Alba, X.~Lei, M.~L. Bringas-Vega, J.~F. Bosch-Bayard, P.~A.
+  Valdes-Sosa, {Harmonized-Multinational qEEG norms (HarMNqEEG)}, NeuroImage
+  256 (2022) Art. 119190.
+\newblock \href {https://doi.org/10.1016/j.neuroimage.2022.119190}
+  {\path{doi:10.1016/j.neuroimage.2022.119190}}.
+
+\bibitem{jaramillojimenez2024}
+A.~Jaramillo-Jimenez, D.~A. Tovar-Rios, Y.-J. Mantilla-Ramos, J.-F.
+  Ochoa-Gomez, L.~Bonanni, K.~Br{\o}nnick, {ComBat models for harmonization of
+  resting-state EEG features in multisite studies}, Clinical Neurophysiology
+  167 (2024) 241--253.
+\newblock \href {https://doi.org/10.1016/j.clinph.2024.09.019}
+  {\path{doi:10.1016/j.clinph.2024.09.019}}.
+
+\bibitem{hamdan2023}
+S.~Hamdan, B.~C. Love, G.~G. von Polier, S.~Weis, H.~Schwender, S.~B. Eickhoff,
+  K.~R. Patil, {Confound-leakage: confound removal in machine learning leads to
+  leakage}, GigaScience 12 (2023) Art. giad071.
+\newblock \href {https://doi.org/10.1093/gigascience/giad071}
+  {\path{doi:10.1093/gigascience/giad071}}.
+
+\bibitem{rohira2023}
+V.~Rohira, S.~Chaudhary, S.~Das, K.~P. Miyapuram, {Automatic Epilepsy Detection
+  from EEG signals}, in: Proc. of the 6th Joint International Conference on
+  Data Science \& Management of Data (CODS-COMAD 2023), Mumbai, 2023, pp.
+  272--273.
+\newblock \href {https://doi.org/10.1145/3570991.3570995}
+  {\path{doi:10.1145/3570991.3570995}}.
+
+\bibitem{tang2024}
+Y.~Tang, Q.~Wu, H.~Mao, L.~Guo, {Epileptic Seizure Detection Based on Path
+  Signature and Bi-LSTM Network With Attention Mechanism}, IEEE Transactions on
+  Neural Systems and Rehabilitation Engineering 32 (2024) 304--313.
+\newblock \href {https://doi.org/10.1109/TNSRE.2024.3350074}
+  {\path{doi:10.1109/TNSRE.2024.3350074}}.
+
+\bibitem{brookshire2024}
+G.~Brookshire, J.~Kasper, N.~Blauch, Y.~C. Wu, R.~Glatt, D.~A. Merrill,
+  S.~Gerrol, K.~J. Yoder, C.~Quirk, C.~Lucero, {Data leakage in deep learning
+  studies of translational EEG}, Frontiers in Neuroscience 18 (2024) Art.
+  1373515.
+\newblock \href {https://doi.org/10.3389/fnins.2024.1373515}
+  {\path{doi:10.3389/fnins.2024.1373515}}.
+
+\bibitem{delpup2025}
+F.~Del~Pup, A.~Zanola, L.~F. Tshimanga, A.~Bertoldo, L.~Finos, M.~Atzori, {The
+  role of data partitioning on the performance of EEG-based deep learning
+  models in supervised cross-subject analysis: A preliminary study}, Computers
+  in Biology and Medicine 196 (2025) Art. 110608.
+\newblock \href {https://doi.org/10.1016/j.compbiomed.2025.110608}
+  {\path{doi:10.1016/j.compbiomed.2025.110608}}.
+
+\bibitem{bayer2022frontneurol}
+J.~M.~M. Bayer, P.~M. Thompson, C.~R.~K. Ching, M.~Liu, A.~Chen, A.~C.
+  Panzenhagen, N.~Jahanshad, A.~Marquand, L.~Schmaal, P.~G. S{\"a}mann, {Site
+  effects how-to and when: An overview of retrospective techniques to
+  accommodate site effects in multi-site neuroimaging analyses}, Frontiers in
+  Neurology 13 (2022) Art. 923988.
+\newblock \href {https://doi.org/10.3389/fneur.2022.923988}
+  {\path{doi:10.3389/fneur.2022.923988}}.
+
+\bibitem{rosenblatt2024}
+M.~Rosenblatt, L.~Tejavibulya, R.~Jiang, S.~Noble, D.~Scheinost, {Data leakage
+  inflates prediction performance in connectome-based machine learning models},
+  Nature Communications 15 (2024) Art. 1829.
+\newblock \href {https://doi.org/10.1038/s41467-024-46150-w}
+  {\path{doi:10.1038/s41467-024-46150-w}}.
+
+\bibitem{bayer2022neuroimage}
+J.~M.~M. Bayer, R.~Dinga, S.~M. Kia, A.~R. Kottaram, T.~Wolfers, J.~Lv,
+  A.~Zalesky, L.~Schmaal, A.~F. Marquand, {Accommodating site variation in
+  neuroimaging data using normative and hierarchical Bayesian models},
+  NeuroImage 264 (2022) Art. 119699.
+\newblock \href {https://doi.org/10.1016/j.neuroimage.2022.119699}
+  {\path{doi:10.1016/j.neuroimage.2022.119699}}.
+
+\bibitem{kia2022}
+S.~M. Kia, H.~Huijsdens, S.~Rutherford, A.~de~Boer, R.~Dinga, T.~Wolfers,
+  P.~Berthet, M.~Mennes, O.~A. Andreassen, L.~T. Westlye, C.~F. Beckmann, A.~F.
+  Marquand, {Closing the life-cycle of normative modeling using federated
+  hierarchical Bayesian regression}, PLoS ONE 17~(12) (2022) Art. e0278776.
+\newblock \href {https://doi.org/10.1371/journal.pone.0278776}
+  {\path{doi:10.1371/journal.pone.0278776}}.
+
+\bibitem{spisak2022}
+T.~Spis{\'a}k, {Statistical quantification of confounding bias in machine
+  learning models}, GigaScience 11 (2022) Art. giac082.
+\newblock \href {https://doi.org/10.1093/gigascience/giac082}
+  {\path{doi:10.1093/gigascience/giac082}}.
+
+\bibitem{vanhees2018}
+V.~van Hees, W.~Otte, {[dataset] EEG data collected with Emotiv device in
+  people with epilepsy and controls in Guinea-Bissau and Nigeria}, Zenodo,
+  version 1.0 (2018).
+\newblock \href {https://doi.org/10.5281/zenodo.1252141}
+  {\path{doi:10.5281/zenodo.1252141}}.
+
+\bibitem{gemein2020}
+L.~A.~W. Gemein, R.~T. Schirrmeister, P.~Chrab{\k{a}}szcz, D.~Wilson,
+  J.~Boedecker, A.~Schulze-Bonhage, F.~Hutter, T.~Ball, {Machine-learning-based
+  diagnostics of EEG pathology}, NeuroImage 220 (2020) Art. 117021.
+\newblock \href {https://doi.org/10.1016/j.neuroimage.2020.117021}
+  {\path{doi:10.1016/j.neuroimage.2020.117021}}.
+
+\bibitem{kiessner2024}
+A.-K. Kiessner, R.~T. Schirrmeister, J.~Boedecker, T.~Ball, {Reaching the
+  ceiling? Empirical scaling behaviour for deep EEG pathology classification},
+  Computers in Biology and Medicine 178 (2024) Art. 108681.
+\newblock \href {https://doi.org/10.1016/j.compbiomed.2024.108681}
+  {\path{doi:10.1016/j.compbiomed.2024.108681}}.
+
+\bibitem{poziomska2026}
+M.~Poziomska, M.~Dovgialo, P.~Olbratowski, P.~Niedbalski, P.~Ogniewski,
+  J.~Zych, J.~Rogala, J.~{\.Z}ygierewicz, {Quantity versus diversity: Influence
+  of data on detecting EEG pathology with advanced ML models}, Neural Networks
+  193 (2026) Art. 108073.
+\newblock \href {https://doi.org/10.1016/j.neunet.2025.108073}
+  {\path{doi:10.1016/j.neunet.2025.108073}}.
+
+\bibitem{rutherford2023}
+S.~Rutherford, P.~Barkema, I.~F. Tso, C.~Sripada, C.~F. Beckmann, H.~G. Ruhe,
+  A.~F. Marquand, {Evidence for embracing normative modeling}, eLife 12 (2023)
+  Art. e85082.
+\newblock \href {https://doi.org/10.7554/eLife.85082}
+  {\path{doi:10.7554/eLife.85082}}.
+
+\bibitem{varma2006}
+S.~Varma, R.~Simon, {Bias in error estimation when using cross-validation for
+  model selection}, BMC Bioinformatics 7 (2006) Art. 91.
+\newblock \href {https://doi.org/10.1186/1471-2105-7-91}
+  {\path{doi:10.1186/1471-2105-7-91}}.
+
+\bibitem{holm1979}
+S.~Holm, \href{https://www.jstor.org/stable/4615733}{{A simple sequentially
+  rejective multiple test procedure}}, Scandinavian Journal of Statistics 6~(2)
+  (1979) 65--70.
+\newline\urlprefix\url{https://www.jstor.org/stable/4615733}
+
+\bibitem{bates2024}
+S.~Bates, T.~Hastie, R.~Tibshirani, {Cross-Validation: What Does It Estimate
+  and How Well Does It Do It?}, Journal of the American Statistical Association
+  119~(546) (2024) 1434--1445.
+\newblock \href {https://doi.org/10.1080/01621459.2023.2197686}
+  {\path{doi:10.1080/01621459.2023.2197686}}.
+
+\bibitem{collins2024tripod}
+G.~S. Collins, K.~G.~M. Moons, P.~Dhiman, R.~D. Riley, A.~L. Beam,
+  B.~Van~Calster, M.~Ghassemi, X.~Liu, J.~B. Reitsma, M.~van Smeden, A.-L.
+  Boulesteix, J.~C. Camaradou, L.~A. Celi, S.~Denaxas, A.~K. Denniston,
+  B.~Glocker, R.~M. Golub, H.~Harvey, G.~Heinze, M.~M. Hoffman, A.~P. Kengne,
+  E.~Lam, N.~Lee, E.~W. Loder, L.~Maier-Hein, B.~A. Mateen, M.~D. McCradden,
+  L.~Oakden-Rayner, J.~Ordish, R.~Parnell, S.~Rose, K.~Singh, L.~Wynants,
+  P.~Logullo, {TRIPOD+AI statement: updated guidance for reporting clinical
+  prediction models that use regression or machine learning methods}, BMJ 385
+  (2024) Art. e078378.
+\newblock \href {https://doi.org/10.1136/bmj-2023-078378}
+  {\path{doi:10.1136/bmj-2023-078378}}.
+
+\bibitem{nadeau2003}
+C.~Nadeau, Y.~Bengio, {Inference for the Generalization Error}, Machine
+  Learning 52~(3) (2003) 239--281.
+\newblock \href {https://doi.org/10.1023/A:1024068626366}
+  {\path{doi:10.1023/A:1024068626366}}.
+
+\bibitem{fraza2021}
+C.~J. Fraza, R.~Dinga, C.~F. Beckmann, A.~F. Marquand, {Warped Bayesian linear
+  regression for normative modelling of big data}, NeuroImage 245 (2021) Art.
+  118715.
+\newblock \href {https://doi.org/10.1016/j.neuroimage.2021.118715}
+  {\path{doi:10.1016/j.neuroimage.2021.118715}}.
+
+\bibitem{kessler2025}
+R.~Kessler, A.~Enge, M.~A. Skeide, {How EEG preprocessing shapes decoding
+  performance}, Communications Biology 8 (2025) Art. 1039.
+\newblock \href {https://doi.org/10.1038/s42003-025-08464-3}
+  {\path{doi:10.1038/s42003-025-08464-3}}.
+
+\end{thebibliography}

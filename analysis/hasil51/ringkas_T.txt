@@ -1,0 +1,16 @@
+
+===== Bi-LSTM (Tang), H1 (sekunder) =====
+ gamma     pipe  nrep    auc     se              R1   delta  delta_se              R2
+   0.0 rank-ash    20 0.5063 0.0102 tidak ada bukti -0.0056    0.0109 tidak ada bukti
+   0.0 rank-pat    20 0.5034 0.0112 tidak ada bukti -0.0086    0.0130 tidak ada bukti
+   0.0  raw-ash    20 0.5066 0.0121 tidak ada bukti -0.0053    0.0089 tidak ada bukti
+   0.0 raw-none    20 0.5120 0.0138              --     NaN       NaN             NaN
+   0.0  raw-pat    20 0.5027 0.0120 tidak ada bukti -0.0092    0.0131 tidak ada bukti
+   1.0 rank-ash    20 0.5159 0.0113 tidak ada bukti -0.0012    0.0145 tidak ada bukti
+   1.0 rank-pat    20 0.5557 0.0100       kebocoran  0.0386    0.0134       kebocoran
+   1.0  raw-ash    20 0.5583 0.0115       kebocoran  0.0412    0.0121       kebocoran
+   1.0 raw-none    20 0.5171 0.0132              --     NaN       NaN             NaN
+   1.0  raw-pat    20 0.6361 0.0113       kebocoran  0.1190    0.0189       kebocoran
+                                uji       d      se       p  p_holm
+  H1 gamma 1: raw-pat - raw-ash > 0 0.07783 0.01649 0.00007 0.00007
+H1 gamma 1: rank-pat - rank-ash > 0 0.03981 0.00766 0.00003 0.00005

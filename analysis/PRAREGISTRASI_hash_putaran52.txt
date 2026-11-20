@@ -1,0 +1,9 @@
+# Putaran 52: dokumen dan kode dicatat SEBELUM keluaran utama (hasil52/*) ada; hanya pemeriksaan CPU yang dijalankan (reproduksi V4 putaran 33/43 < 1e-8); pemeriksaan GPU NM menunggu putaran 51 selesai; tidak ada AUC putaran 52 yang dihitung atau dilihat
+b0c1421f35f738c20fdd1a748daef2fdf6680b6561f631885088dd3a4f3c4ce0  PRAREGISTRASI_putaran52.md
+3a278ce21ec2b2c389fbd24a25d53681ffca99a2e2e20967d1e2b5f34da1fc0b  round52_nm.py
+62b0d13b838f42b69483ca97877ddfecf1b24227bcd562857cb056ac7eb5936d  round52_cpu.py
+1fa28d7a588bc0966d6dd8a2b624663ebe4605009d461de3cefcb97488ce2e4a  round52_ringkas.py
+2026-11-03T22:03:00+07:00
+
+# Adendum 2026-11-04T03:46:17+07:00: putaran 51 lengkap (semua log selesai; XGB TUEP 540 unit, Tang 40, RF TUEP 540, Emotiv 480 x2, rho 60/90); pemeriksaan GPU round52_nm.py --check lulus (selisih maks 5.55e-17). Skrip rantai putaran 52 dicatat sebelum dijalankan:
+393103ea1f586d92dac9f6377642c955b7c0784c49b6c1d0554fbd127d3b60ce  run_chain_52.sh

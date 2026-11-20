@@ -1,0 +1,23 @@
+aec43b5fb15fb419ab38982c2a1a89e0bcdbc66156e6de50b4961ecfc8c052ca  PRAREGISTRASI_putaran53.md
+91b635ebbd06f6f10b31acf60b702739c7fafc29164f5aaec15b1ae5177cd1ff  round53_lr_mentah.py
+479789af1d3d20da87690c30a98511849abbf3c8ec5f068d5c569906d2c3ffee  round53_ringkas.py
+9199a82aa7568cbdac43071c844c519d07d8a3a00e7a9ed22d1364115f0ee946  round53_cek_independen.py
+2026-11-08T22:50:31+07:00
+(dokumen dan kode dicatat sebelum run; hanya mode --check yang sudah dijalankan: 28 pemeriksaan lulus, reproduksi RF putaran 42 dan 50B replikasi 0 identik (5.6e-17); waktu satu unit TUEP 28 s, Emotiv 8 s; tidak ada AUC putaran 53 yang dicetak atau dilihat)
+
+# Catatan komputasi (bukan perubahan rencana): atas perintah pemilik ('gunakan cpu dan gpu dengan maksimal') run TUEP dihentikan pada 96/270 unit lengkap (CSV utuh, tanpa NaN) dan dilanjutkan dengan NJOBS=22; benih tidak bergantung pada jumlah pekerja. GPU tidak dipakai: LR scikit-learn hanya CPU. Belum ada AUC putaran 53 yang dilihat.
+2026-11-08T23:11:08+07:00
+
+# Adendum 1 (SESUDAH keluaran pertama ringkasan terlihat): perbaikan dua bug round53_ringkas.py (kunci duplikat tanpa cond -> E2 TUEP n 90/100 alih-alih 120; E1.pipe metode pandas); titik akhir dan data tidak berubah
+d2a54f4fc24cd94c336fb5c28a6d1b6d6b41275437d7e044502196dfb972515a  PRAREGISTRASI_putaran53.md
+d0f8f5ac5f21b7d85f5bfba654042ba0bf25345f982b460fc6acb995937a7919  round53_ringkas.py
+479789af1d3d20da87690c30a98511849abbf3c8ec5f068d5c569906d2c3ffee  hasil53/round53_ringkas.sebelum_perbaikan.py
+766e0eb32ecf43deb62529535f99dd48d0bab90fc36534f1b4835f11fe90cebd  hasil53/ringkas_pertama_sebelum_perbaikan.log
+2026-11-08T23:30:03+07:00
+
+# Adendum 2 (PENYAJIAN, DI LUAR rencana; ditulis SESUDAH keluaran putaran 53 terlihat): baris tabel plasmode, tabel interaksi, dan data gambar dari CSV tersimpan; skrip di-hash SEBELUM dijalankan; tidak ada model yang dilatih
+0fdfb2d9f2fb402dbc4afc643150630a21ca36883cf081e4652294c4068b86db  round53_bahan_naskah.py
+2026-11-08T23:39:02+07:00
+# Adendum 2 tertulis di PRAREGISTRASI_putaran53.md (penyajian; tidak ada AUC yang berubah)
+a20ad6a41cc917501cee30629b188b8e9593c2c34e094723d765d15ce68fbab1  PRAREGISTRASI_putaran53.md
+2026-11-08T23:43:54+07:00

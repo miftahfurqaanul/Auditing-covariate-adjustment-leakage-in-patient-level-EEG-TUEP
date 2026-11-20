@@ -1,0 +1,229 @@
+
+===== E2 emotiv RF =====
+cond  gamma     pipe  nrep    auc     se              R1   delta  delta_se              R2
+   E    0.0  log-ash   120 0.5021 0.0039 tidak ada bukti -0.0000    0.0028             n/a
+   E    0.0   log-eb   120 0.5018 0.0038 tidak ada bukti -0.0003    0.0028             n/a
+   E    0.0  log-pat   120 0.5019 0.0040 tidak ada bukti -0.0002    0.0030             n/a
+   E    0.0 rank-ash   120 0.5038 0.0039 tidak ada bukti  0.0017    0.0026             n/a
+   E    0.0  rank-eb   120 0.5020 0.0041 tidak ada bukti -0.0001    0.0027             n/a
+   E    0.0 rank-pat   120 0.5029 0.0040 tidak ada bukti  0.0008    0.0028             n/a
+   E    0.0  raw-ash   120 0.5031 0.0038 tidak ada bukti  0.0010    0.0032             n/a
+   E    0.0 raw-none   120 0.5021 0.0038              --     NaN       NaN             NaN
+   E    0.0  raw-pat   120 0.5034 0.0037 tidak ada bukti  0.0012    0.0043             n/a
+   E    1.0  log-ash   120 0.5411 0.0037     tidak pasti  0.0058    0.0033             n/a
+   E    1.0   log-eb   120 0.5316 0.0038     tidak pasti -0.0038    0.0032             n/a
+   E    1.0  log-pat   120 0.5253 0.0040     tidak pasti -0.0101    0.0036             n/a
+   E    1.0 rank-ash   120 0.5362 0.0034     tidak pasti  0.0009    0.0030             n/a
+   E    1.0  rank-eb   120 0.5313 0.0035     tidak pasti -0.0040    0.0029             n/a
+   E    1.0 rank-pat   120 0.5221 0.0036     tidak pasti -0.0132    0.0032             n/a
+   E    1.0  raw-ash   120 0.5801 0.0043       kebocoran  0.0448    0.0037             n/a
+   E    1.0 raw-none   120 0.5353 0.0035              --     NaN       NaN             NaN
+   E    1.0  raw-pat   120 0.6148 0.0044       kebocoran  0.0795    0.0042             n/a
+  H1    0.0  log-ash   120 0.4995 0.0040 tidak ada bukti -0.0012    0.0010 tidak ada bukti
+  H1    0.0   log-eb   120 0.5002 0.0040 tidak ada bukti -0.0005    0.0011 tidak ada bukti
+  H1    0.0  log-pat   120 0.5019 0.0040 tidak ada bukti  0.0013    0.0021 tidak ada bukti
+  H1    0.0 rank-ash   120 0.5007 0.0041 tidak ada bukti  0.0000    0.0009 tidak ada bukti
+  H1    0.0  rank-eb   120 0.5014 0.0040 tidak ada bukti  0.0008    0.0011 tidak ada bukti
+  H1    0.0 rank-pat   120 0.5002 0.0039 tidak ada bukti -0.0005    0.0017 tidak ada bukti
+  H1    0.0  raw-ash   120 0.4997 0.0040 tidak ada bukti -0.0010    0.0021 tidak ada bukti
+  H1    0.0 raw-none   120 0.5007 0.0040              --     NaN       NaN             NaN
+  H1    0.0  raw-pat   120 0.5016 0.0037 tidak ada bukti  0.0009    0.0046 tidak ada bukti
+  H1    1.0  log-ash   120 0.5067 0.0036 tidak ada bukti  0.0041    0.0012 tidak ada bukti
+  H1    1.0   log-eb   120 0.5074 0.0037 tidak ada bukti  0.0048    0.0014 tidak ada bukti
+  H1    1.0  log-pat   120 0.5253 0.0040     tidak pasti  0.0227    0.0026     tidak pasti
+  H1    1.0 rank-ash   120 0.5044 0.0038 tidak ada bukti  0.0019    0.0009 tidak ada bukti
+  H1    1.0  rank-eb   120 0.5056 0.0038 tidak ada bukti  0.0030    0.0012 tidak ada bukti
+  H1    1.0 rank-pat   120 0.5144 0.0037 tidak ada bukti  0.0118    0.0021     tidak pasti
+  H1    1.0  raw-ash   120 0.5283 0.0049     tidak pasti  0.0257    0.0035     tidak pasti
+  H1    1.0 raw-none   120 0.5026 0.0036              --     NaN       NaN             NaN
+  H1    1.0  raw-pat   120 0.6246 0.0040       kebocoran  0.1220    0.0048       kebocoran
+
+===== E2 emotiv XGB =====
+cond  gamma     pipe  nrep    auc     se              R1   delta  delta_se              R2
+   E    0.0  log-ash   120 0.5002 0.0035 tidak ada bukti -0.0018    0.0029             n/a
+   E    0.0   log-eb   120 0.5006 0.0037 tidak ada bukti -0.0014    0.0030             n/a
+   E    0.0  log-pat   120 0.5011 0.0037 tidak ada bukti -0.0009    0.0032             n/a
+   E    0.0 rank-ash   120 0.5025 0.0038 tidak ada bukti  0.0005    0.0031             n/a
+   E    0.0  rank-eb   120 0.5029 0.0037 tidak ada bukti  0.0009    0.0029             n/a
+   E    0.0 rank-pat   120 0.5027 0.0038 tidak ada bukti  0.0007    0.0031             n/a
+   E    0.0  raw-ash   120 0.5037 0.0035 tidak ada bukti  0.0017    0.0032             n/a
+   E    0.0 raw-none   120 0.5020 0.0035              --     NaN       NaN             NaN
+   E    0.0  raw-pat   120 0.5035 0.0037 tidak ada bukti  0.0015    0.0043             n/a
+   E    1.0  log-ash   120 0.5426 0.0040     tidak pasti  0.0026    0.0035             n/a
+   E    1.0   log-eb   120 0.5361 0.0039     tidak pasti -0.0040    0.0035             n/a
+   E    1.0  log-pat   120 0.5257 0.0040     tidak pasti -0.0144    0.0037             n/a
+   E    1.0 rank-ash   120 0.5409 0.0036     tidak pasti  0.0008    0.0029             n/a
+   E    1.0  rank-eb   120 0.5346 0.0035     tidak pasti -0.0055    0.0030             n/a
+   E    1.0 rank-pat   120 0.5219 0.0036     tidak pasti -0.0181    0.0032             n/a
+   E    1.0  raw-ash   120 0.5816 0.0044       kebocoran  0.0415    0.0037             n/a
+   E    1.0 raw-none   120 0.5400 0.0035              --     NaN       NaN             NaN
+   E    1.0  raw-pat   120 0.6163 0.0045       kebocoran  0.0762    0.0041             n/a
+  H1    0.0  log-ash   120 0.5002 0.0038 tidak ada bukti  0.0004    0.0010 tidak ada bukti
+  H1    0.0   log-eb   120 0.4994 0.0038 tidak ada bukti -0.0003    0.0012 tidak ada bukti
+  H1    0.0  log-pat   120 0.5011 0.0037 tidak ada bukti  0.0013    0.0022 tidak ada bukti
+  H1    0.0 rank-ash   120 0.4993 0.0038 tidak ada bukti -0.0004    0.0013 tidak ada bukti
+  H1    0.0  rank-eb   120 0.5003 0.0038 tidak ada bukti  0.0005    0.0015 tidak ada bukti
+  H1    0.0 rank-pat   120 0.5022 0.0038 tidak ada bukti  0.0024    0.0019 tidak ada bukti
+  H1    0.0  raw-ash   120 0.4987 0.0038 tidak ada bukti -0.0011    0.0020 tidak ada bukti
+  H1    0.0 raw-none   120 0.4997 0.0036              --     NaN       NaN             NaN
+  H1    0.0  raw-pat   120 0.5025 0.0035 tidak ada bukti  0.0028    0.0039 tidak ada bukti
+  H1    1.0  log-ash   120 0.5037 0.0037 tidak ada bukti  0.0016    0.0014 tidak ada bukti
+  H1    1.0   log-eb   120 0.5072 0.0038 tidak ada bukti  0.0051    0.0016 tidak ada bukti
+  H1    1.0  log-pat   120 0.5257 0.0040     tidak pasti  0.0236    0.0028     tidak pasti
+  H1    1.0 rank-ash   120 0.5043 0.0037 tidak ada bukti  0.0022    0.0013 tidak ada bukti
+  H1    1.0  rank-eb   120 0.5040 0.0036 tidak ada bukti  0.0019    0.0014 tidak ada bukti
+  H1    1.0 rank-pat   120 0.5135 0.0035 tidak ada bukti  0.0114    0.0021     tidak pasti
+  H1    1.0  raw-ash   120 0.5256 0.0046     tidak pasti  0.0234    0.0034     tidak pasti
+  H1    1.0 raw-none   120 0.5021 0.0035              --     NaN       NaN             NaN
+  H1    1.0  raw-pat   120 0.6231 0.0041       kebocoran  0.1210    0.0049       kebocoran
+
+===== E2 tuep RF =====
+cond  gamma     pipe  nrep    auc     se              R1   delta  delta_se              R2
+   E    0.0  log-ash   120 0.4923 0.0047 tidak ada bukti -0.0009    0.0028             n/a
+   E    0.0   log-eb   120 0.4913 0.0047 tidak ada bukti -0.0020    0.0031             n/a
+   E    0.0  log-pat   120 0.4929 0.0046 tidak ada bukti -0.0003    0.0038             n/a
+   E    0.0 rank-ash   120 0.4919 0.0046 tidak ada bukti -0.0013    0.0028             n/a
+   E    0.0  rank-eb   120 0.4925 0.0047 tidak ada bukti -0.0008    0.0030             n/a
+   E    0.0 rank-pat   120 0.4950 0.0048 tidak ada bukti  0.0018    0.0037             n/a
+   E    0.0  raw-ash   120 0.4936 0.0046 tidak ada bukti  0.0004    0.0036             n/a
+   E    0.0 raw-none   120 0.4933 0.0047              --     NaN       NaN             NaN
+   E    0.0  raw-pat   120 0.5021 0.0050 tidak ada bukti  0.0088    0.0071             n/a
+   E    1.0  log-ash   120 0.5155 0.0054 tidak ada bukti -0.0056    0.0030             n/a
+   E    1.0   log-eb   120 0.5092 0.0054 tidak ada bukti -0.0120    0.0032             n/a
+   E    1.0  log-pat   120 0.5011 0.0050 tidak ada bukti -0.0200    0.0042             n/a
+   E    1.0 rank-ash   120 0.5158 0.0053 tidak ada bukti -0.0053    0.0030             n/a
+   E    1.0  rank-eb   120 0.5116 0.0052 tidak ada bukti -0.0095    0.0032             n/a
+   E    1.0 rank-pat   120 0.5048 0.0050 tidak ada bukti -0.0164    0.0042             n/a
+   E    1.0  raw-ash   120 0.5463 0.0056     tidak pasti  0.0251    0.0041             n/a
+   E    1.0 raw-none   120 0.5212 0.0052              --     NaN       NaN             NaN
+   E    1.0  raw-pat   120 0.6061 0.0053       kebocoran  0.0849    0.0067             n/a
+  H1    0.0  log-ash   120 0.4937 0.0048 tidak ada bukti  0.0007    0.0010 tidak ada bukti
+  H1    0.0   log-eb   120 0.4937 0.0048 tidak ada bukti  0.0007    0.0014 tidak ada bukti
+  H1    0.0  log-pat   120 0.4929 0.0046 tidak ada bukti -0.0001    0.0027 tidak ada bukti
+  H1    0.0 rank-ash   120 0.4932 0.0048 tidak ada bukti  0.0002    0.0010 tidak ada bukti
+  H1    0.0  rank-eb   120 0.4933 0.0048 tidak ada bukti  0.0003    0.0015 tidak ada bukti
+  H1    0.0 rank-pat   120 0.4934 0.0046 tidak ada bukti  0.0004    0.0026 tidak ada bukti
+  H1    0.0  raw-ash   120 0.4928 0.0044 tidak ada bukti -0.0002    0.0035 tidak ada bukti
+  H1    0.0 raw-none   120 0.4930 0.0048              --     NaN       NaN             NaN
+  H1    0.0  raw-pat   120 0.5039 0.0049 tidak ada bukti  0.0109    0.0073     tidak pasti
+  H1    1.0  log-ash   120 0.4947 0.0053 tidak ada bukti  0.0009    0.0010 tidak ada bukti
+  H1    1.0   log-eb   120 0.4948 0.0053 tidak ada bukti  0.0010    0.0013 tidak ada bukti
+  H1    1.0  log-pat   120 0.5012 0.0050 tidak ada bukti  0.0074    0.0027 tidak ada bukti
+  H1    1.0 rank-ash   120 0.4945 0.0053 tidak ada bukti  0.0007    0.0009 tidak ada bukti
+  H1    1.0  rank-eb   120 0.4962 0.0052 tidak ada bukti  0.0024    0.0014 tidak ada bukti
+  H1    1.0 rank-pat   120 0.5024 0.0048 tidak ada bukti  0.0086    0.0028 tidak ada bukti
+  H1    1.0  raw-ash   120 0.5245 0.0055     tidak pasti  0.0307    0.0044       kebocoran
+  H1    1.0 raw-none   120 0.4938 0.0054              --     NaN       NaN             NaN
+  H1    1.0  raw-pat   120 0.6053 0.0053       kebocoran  0.1115    0.0072       kebocoran
+ H2a    0.0  log-ash    30 0.5019 0.0102 tidak ada bukti  0.0013    0.0021             n/a
+ H2a    0.0   log-eb    30 0.5003 0.0107 tidak ada bukti -0.0002    0.0027             n/a
+ H2a    0.0  log-pat    30 0.5109 0.0108 tidak ada bukti  0.0103    0.0061             n/a
+ H2a    0.0 rank-ash    30 0.5010 0.0104 tidak ada bukti  0.0005    0.0016             n/a
+ H2a    0.0  rank-eb    30 0.5004 0.0106 tidak ada bukti -0.0001    0.0026             n/a
+ H2a    0.0 rank-pat    30 0.5096 0.0102 tidak ada bukti  0.0091    0.0058             n/a
+ H2a    0.0  raw-ash    30 0.4989 0.0107 tidak ada bukti -0.0016    0.0049             n/a
+ H2a    0.0 raw-none    30 0.5005 0.0108              --     NaN       NaN             NaN
+ H2a    0.0  raw-pat    30 0.5012 0.0097 tidak ada bukti  0.0007    0.0132             n/a
+ H2a    1.0  log-ash    30 0.5112 0.0098 tidak ada bukti  0.0013    0.0020             n/a
+ H2a    1.0   log-eb    30 0.5092 0.0099 tidak ada bukti -0.0007    0.0033             n/a
+ H2a    1.0  log-pat    30 0.5208 0.0105     tidak pasti  0.0109    0.0063             n/a
+ H2a    1.0 rank-ash    30 0.5128 0.0101 tidak ada bukti  0.0029    0.0018             n/a
+ H2a    1.0  rank-eb    30 0.5080 0.0097 tidak ada bukti -0.0019    0.0029             n/a
+ H2a    1.0 rank-pat    30 0.5198 0.0108 tidak ada bukti  0.0099    0.0064             n/a
+ H2a    1.0  raw-ash    30 0.5228 0.0094     tidak pasti  0.0129    0.0061             n/a
+ H2a    1.0 raw-none    30 0.5099 0.0094              --     NaN       NaN             NaN
+ H2a    1.0  raw-pat    30 0.6042 0.0103       kebocoran  0.0943    0.0121             n/a
+
+===== E2 tuep XGB =====
+cond  gamma     pipe  nrep    auc     se              R1   delta  delta_se              R2
+   E    0.0  log-ash   120 0.4953 0.0047 tidak ada bukti -0.0001    0.0029             n/a
+   E    0.0   log-eb   120 0.4947 0.0045 tidak ada bukti -0.0008    0.0030             n/a
+   E    0.0  log-pat   120 0.4947 0.0044 tidak ada bukti -0.0007    0.0037             n/a
+   E    0.0 rank-ash   120 0.4961 0.0044 tidak ada bukti  0.0006    0.0028             n/a
+   E    0.0  rank-eb   120 0.4959 0.0045 tidak ada bukti  0.0005    0.0030             n/a
+   E    0.0 rank-pat   120 0.4964 0.0044 tidak ada bukti  0.0010    0.0037             n/a
+   E    0.0  raw-ash   120 0.4968 0.0044 tidak ada bukti  0.0013    0.0035             n/a
+   E    0.0 raw-none   120 0.4955 0.0042              --     NaN       NaN             NaN
+   E    0.0  raw-pat   120 0.5032 0.0047 tidak ada bukti  0.0078    0.0067             n/a
+   E    1.0  log-ash   120 0.5183 0.0051 tidak ada bukti -0.0063    0.0034             n/a
+   E    1.0   log-eb   120 0.5121 0.0051 tidak ada bukti -0.0125    0.0036             n/a
+   E    1.0  log-pat   120 0.5016 0.0051 tidak ada bukti -0.0231    0.0045             n/a
+   E    1.0 rank-ash   120 0.5202 0.0050     tidak pasti -0.0045    0.0031             n/a
+   E    1.0  rank-eb   120 0.5150 0.0050 tidak ada bukti -0.0097    0.0035             n/a
+   E    1.0 rank-pat   120 0.5070 0.0050 tidak ada bukti -0.0177    0.0043             n/a
+   E    1.0  raw-ash   120 0.5477 0.0055     tidak pasti  0.0231    0.0043             n/a
+   E    1.0 raw-none   120 0.5247 0.0050              --     NaN       NaN             NaN
+   E    1.0  raw-pat   120 0.6090 0.0054       kebocoran  0.0844    0.0064             n/a
+  H1    0.0  log-ash   120 0.4958 0.0043 tidak ada bukti  0.0028    0.0013 tidak ada bukti
+  H1    0.0   log-eb   120 0.4953 0.0043 tidak ada bukti  0.0023    0.0017 tidak ada bukti
+  H1    0.0  log-pat   120 0.4949 0.0044 tidak ada bukti  0.0019    0.0030 tidak ada bukti
+  H1    0.0 rank-ash   120 0.4951 0.0043 tidak ada bukti  0.0020    0.0013 tidak ada bukti
+  H1    0.0  rank-eb   120 0.4964 0.0043 tidak ada bukti  0.0034    0.0018 tidak ada bukti
+  H1    0.0 rank-pat   120 0.4950 0.0043 tidak ada bukti  0.0020    0.0029 tidak ada bukti
+  H1    0.0  raw-ash   120 0.4918 0.0045 tidak ada bukti -0.0013    0.0033 tidak ada bukti
+  H1    0.0 raw-none   120 0.4930 0.0045              --     NaN       NaN             NaN
+  H1    0.0  raw-pat   120 0.5027 0.0045 tidak ada bukti  0.0097    0.0068 tidak ada bukti
+  H1    1.0  log-ash   120 0.4935 0.0052 tidak ada bukti -0.0003    0.0011 tidak ada bukti
+  H1    1.0   log-eb   120 0.4952 0.0053 tidak ada bukti  0.0014    0.0016 tidak ada bukti
+  H1    1.0  log-pat   120 0.5013 0.0051 tidak ada bukti  0.0074    0.0028 tidak ada bukti
+  H1    1.0 rank-ash   120 0.4940 0.0053 tidak ada bukti  0.0002    0.0012 tidak ada bukti
+  H1    1.0  rank-eb   120 0.4964 0.0052 tidak ada bukti  0.0026    0.0015 tidak ada bukti
+  H1    1.0 rank-pat   120 0.5021 0.0051 tidak ada bukti  0.0083    0.0028 tidak ada bukti
+  H1    1.0  raw-ash   120 0.5218 0.0054     tidak pasti  0.0280    0.0042     tidak pasti
+  H1    1.0 raw-none   120 0.4938 0.0051              --     NaN       NaN             NaN
+  H1    1.0  raw-pat   120 0.6096 0.0051       kebocoran  0.1158    0.0069       kebocoran
+ H2a    0.0  log-ash    30 0.5045 0.0110 tidak ada bukti  0.0033    0.0024             n/a
+ H2a    0.0   log-eb    30 0.5048 0.0107 tidak ada bukti  0.0035    0.0027             n/a
+ H2a    0.0  log-pat    30 0.5148 0.0103 tidak ada bukti  0.0135    0.0070             n/a
+ H2a    0.0 rank-ash    30 0.5035 0.0106 tidak ada bukti  0.0022    0.0027             n/a
+ H2a    0.0  rank-eb    30 0.5024 0.0109 tidak ada bukti  0.0011    0.0031             n/a
+ H2a    0.0 rank-pat    30 0.5129 0.0093 tidak ada bukti  0.0116    0.0066             n/a
+ H2a    0.0  raw-ash    30 0.5008 0.0106 tidak ada bukti -0.0004    0.0041             n/a
+ H2a    0.0 raw-none    30 0.5013 0.0110              --     NaN       NaN             NaN
+ H2a    0.0  raw-pat    30 0.5037 0.0090 tidak ada bukti  0.0024    0.0129             n/a
+ H2a    1.0  log-ash    30 0.5163 0.0093 tidak ada bukti -0.0005    0.0021             n/a
+ H2a    1.0   log-eb    30 0.5133 0.0099 tidak ada bukti -0.0035    0.0031             n/a
+ H2a    1.0  log-pat    30 0.5224 0.0110     tidak pasti  0.0056    0.0073             n/a
+ H2a    1.0 rank-ash    30 0.5196 0.0092 tidak ada bukti  0.0028    0.0028             n/a
+ H2a    1.0  rank-eb    30 0.5110 0.0101 tidak ada bukti -0.0057    0.0035             n/a
+ H2a    1.0 rank-pat    30 0.5204 0.0110     tidak pasti  0.0037    0.0072             n/a
+ H2a    1.0  raw-ash    30 0.5273 0.0092     tidak pasti  0.0105    0.0060             n/a
+ H2a    1.0 raw-none    30 0.5168 0.0090              --     NaN       NaN             NaN
+ H2a    1.0  raw-pat    30 0.6076 0.0100       kebocoran  0.0908    0.0105             n/a
+
+===== E2 keluarga primer (Holm per kohort, 4 uji) =====
+cohort fam                           uji       d      se       p  p_holm
+  tuep  RF   H1: rank-pat - rank-ash > 0 0.00799 0.00264 0.00150 0.00598
+  tuep  RF E: rank-ash - rank-pat < 0.01 0.01101 0.00276 0.64266 1.00000
+  tuep XGB   H1: rank-pat - rank-ash > 0 0.00815 0.00273 0.00171 0.00598
+  tuep XGB E: rank-ash - rank-pat < 0.01 0.01321 0.00300 0.85686 1.00000
+emotiv  RF   H1: rank-pat - rank-ash > 0 0.00999 0.00188 0.00000 0.00000
+emotiv  RF E: rank-ash - rank-pat < 0.01 0.01411 0.00196 0.98084 1.00000
+emotiv XGB   H1: rank-pat - rank-ash > 0 0.00914 0.00191 0.00000 0.00001
+emotiv XGB E: rank-ash - rank-pat < 0.01 0.01897 0.00232 0.99991 1.00000
+
+===== E2 sekunder (Holm per kohort x famili) =====
+cohort fam                        uji        d      se       p  p_holm
+emotiv  RF  H1: raw-pat - raw-ash > 0  0.09626 0.00534 0.00000 0.00000
+emotiv  RF  H1: log-pat - log-ash > 0  0.01861 0.00229 0.00000 0.00000
+emotiv  RF  E: rank-eb - rank-ash > 0 -0.00490 0.00115 0.99998 0.99998
+emotiv  RF H1: rank-eb - rank-ash > 0  0.00114 0.00088 0.09903 0.19805
+emotiv XGB  H1: raw-pat - raw-ash > 0  0.09754 0.00529 0.00000 0.00000
+emotiv XGB  H1: log-pat - log-ash > 0  0.02197 0.00242 0.00000 0.00000
+emotiv XGB  E: rank-eb - rank-ash > 0 -0.00631 0.00132 1.00000 1.00000
+emotiv XGB H1: rank-eb - rank-ash > 0 -0.00031 0.00098 0.62242 1.00000
+  tuep  RF  H1: raw-pat - raw-ash > 0  0.08076 0.00714 0.00000 0.00000
+  tuep  RF  H1: log-pat - log-ash > 0  0.00645 0.00261 0.00751 0.02253
+  tuep  RF  E: rank-eb - rank-ash > 0 -0.00420 0.00126 0.99943 0.99943
+  tuep  RF H1: rank-eb - rank-ash > 0  0.00178 0.00097 0.03480 0.06959
+  tuep XGB  H1: raw-pat - raw-ash > 0  0.08781 0.00698 0.00000 0.00000
+  tuep XGB  H1: log-pat - log-ash > 0  0.00775 0.00272 0.00259 0.00778
+  tuep XGB  E: rank-eb - rank-ash > 0 -0.00519 0.00149 0.99965 0.99965
+  tuep XGB H1: rank-eb - rank-ash > 0  0.00246 0.00112 0.01493 0.02986
+
+===== E2 kontrol =====
+K1 emotiv RF: gamma 0, sel tersesuaikan bukan 'kebocoran' = 18/18 (100.0%; batas 95%)
+K1 emotiv XGB: gamma 0, sel tersesuaikan bukan 'kebocoran' = 18/18 (100.0%; batas 95%)
+K1 tuep RF: gamma 0, sel tersesuaikan bukan 'kebocoran' = 27/27 (100.0%; batas 95%)
+K1 tuep XGB: gamma 0, sel tersesuaikan bukan 'kebocoran' = 27/27 (100.0%; batas 95%)
+K3 AUC kovariat (eta -> y_sim) per kohort x gamma: {('emotiv', 0.0): 0.4968, ('emotiv', 1.0): 0.6937, ('tuep', 0.0): 0.4968, ('tuep', 1.0): 0.7071}

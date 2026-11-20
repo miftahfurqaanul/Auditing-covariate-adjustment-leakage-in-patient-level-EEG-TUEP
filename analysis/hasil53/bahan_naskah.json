@@ -1,0 +1,194 @@
+{
+ "rows": {
+  "en": {
+   "tuep|LRw": "\\multicolumn{6}{l}{\\textit{Logistic regression, window level (raw Rohira window; round 53)}} \\\\\n\\quad raw, no adjustment & 49.3 & 49.0 & 49.2 & -- & -- \\\\\n\\quad raw + per-patient adjustment & 49.8 & 53.1 & 55.8 & leakage & +6.6; leakage \\\\\n\\quad symlog + per patient & 49.3 & 50.2 & 49.9 & no evidence & +0.7; no evidence \\\\\n\\quad log + per patient & 49.6 & 49.3 & 50.1 & no evidence & +1.0; no evidence \\\\\n\\quad rank-normal + per patient & 49.7 & 50.2 & 50.1 & no evidence & +0.9; no evidence \\\\",
+   "tuep|LRp": "\\multicolumn{6}{l}{\\textit{Logistic regression, patient level (median of raw Rohira windows; round 53)}} \\\\\n\\quad raw, no adjustment & 49.8 & 49.6 & 50.0 & -- & -- \\\\\n\\quad raw + per-patient adjustment & 49.3 & 49.7 & 50.2 & no evidence & +0.2; no evidence \\\\",
+   "emotiv|LRw": "\\multicolumn{6}{l}{\\quad\\textit{Logistic regression, window level (raw band power, 60 features; round 53)}} \\\\\n\\qquad raw, no adjustment & 50.7 & 49.9 & 48.4 & -- & -- \\\\\n\\qquad raw + per-patient adjustment & 50.8 & 50.3 & 49.6 & no evidence & +1.2; uncertain \\\\\n\\qquad symlog + per patient & 50.9 & 50.1 & 49.4 & no evidence & +0.9; no evidence \\\\\n\\qquad log + per patient & 51.0 & 50.0 & 49.3 & no evidence & +0.9; no evidence \\\\\n\\qquad rank-normal + per patient & 51.0 & 50.3 & 50.0 & no evidence & +1.5; uncertain \\\\",
+   "emotiv|LRp": "\\multicolumn{6}{l}{\\quad\\textit{Logistic regression, patient level (median raw band power; round 53)}} \\\\\n\\qquad raw, no adjustment & 50.8 & 49.9 & 49.5 & -- & -- \\\\\n\\qquad raw + per-patient adjustment & 50.9 & 50.2 & 50.6 & no evidence & +1.1; uncertain \\\\"
+  },
+  "id": {
+   "tuep|LRw": "\\multicolumn{6}{l}{\\textit{Regresi logistik, tingkat jendela (jendela Rohira mentah; putaran 53)}} \\\\\n\\quad mentah, tanpa penyesuaian & 49.3 & 49.0 & 49.2 & -- & -- \\\\\n\\quad mentah + penyesuaian per pasien & 49.8 & 53.1 & 55.8 & kebocoran & +6.6; kebocoran \\\\\n\\quad symlog + per pasien & 49.3 & 50.2 & 49.9 & tidak ada bukti & +0.7; tidak ada bukti \\\\\n\\quad log + per pasien & 49.6 & 49.3 & 50.1 & tidak ada bukti & +1.0; tidak ada bukti \\\\\n\\quad rank-normal + per pasien & 49.7 & 50.2 & 50.1 & tidak ada bukti & +0.9; tidak ada bukti \\\\",
+   "tuep|LRp": "\\multicolumn{6}{l}{\\textit{Regresi logistik, tingkat pasien (median jendela Rohira mentah; putaran 53)}} \\\\\n\\quad mentah, tanpa penyesuaian & 49.8 & 49.6 & 50.0 & -- & -- \\\\\n\\quad mentah + penyesuaian per pasien & 49.3 & 49.7 & 50.2 & tidak ada bukti & +0.2; tidak ada bukti \\\\",
+   "emotiv|LRw": "\\multicolumn{6}{l}{\\quad\\textit{Regresi logistik, tingkat jendela (daya pita mentah, 60 fitur; putaran 53)}} \\\\\n\\qquad mentah, tanpa penyesuaian & 50.7 & 49.9 & 48.4 & -- & -- \\\\\n\\qquad mentah + penyesuaian per pasien & 50.8 & 50.3 & 49.6 & tidak ada bukti & +1.2; tidak pasti \\\\\n\\qquad symlog + per pasien & 50.9 & 50.1 & 49.4 & tidak ada bukti & +0.9; tidak ada bukti \\\\\n\\qquad log + per pasien & 51.0 & 50.0 & 49.3 & tidak ada bukti & +0.9; tidak ada bukti \\\\\n\\qquad rank-normal + per pasien & 51.0 & 50.3 & 50.0 & tidak ada bukti & +1.5; tidak pasti \\\\",
+   "emotiv|LRp": "\\multicolumn{6}{l}{\\quad\\textit{Regresi logistik, tingkat pasien (median daya pita mentah; putaran 53)}} \\\\\n\\qquad mentah, tanpa penyesuaian & 50.8 & 49.9 & 49.5 & -- & -- \\\\\n\\qquad mentah + penyesuaian per pasien & 50.9 & 50.2 & 50.6 & tidak ada bukti & +1.1; tidak pasti \\\\"
+  }
+ },
+ "fig": {
+  "tuep|LRw|raw-pat": {
+   "delta": 6.6466666666666665,
+   "lo": 5.4224109854919975,
+   "hi": 7.8709223478413355,
+   "n": 120
+  },
+  "tuep|LRw|symlog-pat": {
+   "delta": 0.7120833333333324,
+   "lo": -0.22415276829377362,
+   "hi": 1.6483194349604384,
+   "n": 120
+  },
+  "tuep|LRw|log-pat": {
+   "delta": 0.9604166666666659,
+   "lo": 0.04885410856632577,
+   "hi": 1.871979224767006,
+   "n": 120
+  },
+  "tuep|LRw|rank-pat": {
+   "delta": 0.9237499999999993,
+   "lo": -0.06071408368295761,
+   "hi": 1.9082140836829562,
+   "n": 120
+  },
+  "tuep|LRp|raw-pat": {
+   "delta": 0.17791666666666675,
+   "lo": -0.6769532110273931,
+   "hi": 1.0327865443607267,
+   "n": 120
+  },
+  "emotiv|LRw|raw-pat": {
+   "delta": 1.1577011494252891,
+   "lo": 0.21380458308217865,
+   "hi": 2.1015977157683996,
+   "n": 30
+  },
+  "emotiv|LRw|symlog-pat": {
+   "delta": 0.9243933588761202,
+   "lo": -0.8417778211850397,
+   "hi": 2.69056453893728,
+   "n": 30
+  },
+  "emotiv|LRw|log-pat": {
+   "delta": 0.8710855683269483,
+   "lo": -0.8702372817227131,
+   "hi": 2.6124084183766096,
+   "n": 30
+  },
+  "emotiv|LRw|rank-pat": {
+   "delta": 1.5452107279693486,
+   "lo": -0.248717189147998,
+   "hi": 3.3391386450866953,
+   "n": 30
+  },
+  "emotiv|LRp|raw-pat": {
+   "delta": 1.0666411238825046,
+   "lo": -0.20538987683492071,
+   "hi": 2.3386721245999302,
+   "n": 30
+  }
+ },
+ "cells": {
+  "tuep|LRw|raw-pat": {
+   "delta": "+6.6",
+   "lo": "+5.4",
+   "hi": "+7.9",
+   "R1": "leakage",
+   "R2": "leakage",
+   "auc1": "55.8"
+  },
+  "tuep|LRw|symlog-pat": {
+   "delta": "+0.7",
+   "lo": "$-$0.2",
+   "hi": "+1.6",
+   "R1": "no evidence",
+   "R2": "no evidence",
+   "auc1": "49.9"
+  },
+  "tuep|LRw|log-pat": {
+   "delta": "+1.0",
+   "lo": "+0.0",
+   "hi": "+1.9",
+   "R1": "no evidence",
+   "R2": "no evidence",
+   "auc1": "50.1"
+  },
+  "tuep|LRw|rank-pat": {
+   "delta": "+0.9",
+   "lo": "$-$0.1",
+   "hi": "+1.9",
+   "R1": "no evidence",
+   "R2": "no evidence",
+   "auc1": "50.1"
+  },
+  "tuep|LRp|raw-pat": {
+   "delta": "+0.2",
+   "lo": "$-$0.7",
+   "hi": "+1.0",
+   "R1": "no evidence",
+   "R2": "no evidence",
+   "auc1": "50.2"
+  },
+  "emotiv|LRw|raw-pat": {
+   "delta": "+1.2",
+   "lo": "+0.2",
+   "hi": "+2.1",
+   "R1": "no evidence",
+   "R2": "uncertain",
+   "auc1": "49.6"
+  },
+  "emotiv|LRw|symlog-pat": {
+   "delta": "+0.9",
+   "lo": "$-$0.8",
+   "hi": "+2.7",
+   "R1": "no evidence",
+   "R2": "no evidence",
+   "auc1": "49.4"
+  },
+  "emotiv|LRw|log-pat": {
+   "delta": "+0.9",
+   "lo": "$-$0.9",
+   "hi": "+2.6",
+   "R1": "no evidence",
+   "R2": "no evidence",
+   "auc1": "49.3"
+  },
+  "emotiv|LRw|rank-pat": {
+   "delta": "+1.5",
+   "lo": "$-$0.2",
+   "hi": "+3.3",
+   "R1": "no evidence",
+   "R2": "uncertain",
+   "auc1": "50.0"
+  },
+  "emotiv|LRp|raw-pat": {
+   "delta": "+1.1",
+   "lo": "$-$0.2",
+   "hi": "+2.3",
+   "R1": "no evidence",
+   "R2": "uncertain",
+   "auc1": "50.6"
+  }
+ },
+ "interaksi": {
+  "RF|tuep": {
+   "I": "+4.5",
+   "lo": "+3.0",
+   "hi": "+6.0",
+   "n": 120,
+   "holm": 7.2304447308890925e-09,
+   "p1": 7.2304447308890925e-09
+  },
+  "RF|emotiv": {
+   "I": "+11.6",
+   "lo": "+8.9",
+   "hi": "+14.2",
+   "n": 30,
+   "holm": 8.47140680154998e-10,
+   "p1": 4.23570340077499e-10
+  },
+  "XGB|tuep": {
+   "I": "+4.9",
+   "lo": "+3.5",
+   "hi": "+6.4",
+   "n": 120,
+   "holm": 4.333413843265016e-10,
+   "p1": 2.166706921632508e-10
+  },
+  "XGB|emotiv": {
+   "I": "+10.3",
+   "lo": "+7.3",
+   "hi": "+13.3",
+   "n": 20,
+   "holm": 4.1736632268783113e-07,
+   "p1": 4.1736632268783113e-07
+  }
+ }
+}

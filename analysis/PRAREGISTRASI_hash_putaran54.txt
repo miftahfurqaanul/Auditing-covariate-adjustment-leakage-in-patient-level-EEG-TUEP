@@ -1,0 +1,13 @@
+8d97d0b4e5bad2a407bd0af9d6e6575a006e14e4a45a1731aea18ebff3007a70  PRAREGISTRASI_putaran54.md
+475bde3ee92749396aa2151bd4e35719072ff9b51523da8fae4a7873b8bd44a6  round54_lr_bobot.py
+4dc6d8987bff986b1926cc2ce0418b15302dc48e016ff867e8ef9bc7fc57c50c  round54_ringkas.py
+2026-11-12T07:01:13+07:00
+(dokumen, adendum 1, dan kode dicatat sebelum run; hanya mode --check yang sudah dijalankan: 44 pemeriksaan lulus; A0 identik dengan round53_lr_mentah.unit dijalankan ulang; terhadap CSV putaran 53: TUEP selisih maks 0.0025 (adendum 1), Emotiv 0; kovarians silang relatif WS: TUEP 4.2e-15, Emotiv 4.0e-14; tidak ada AUC putaran 54 yang dicetak atau dilihat)
+# Catatan komputasi (bukan perubahan rencana): run TUEP dihentikan sebelum chunk pertama ditulis (beban mesin bersama tinggi) dan dimulai ulang dengan NJOBS=12; benih tidak bergantung pada jumlah pekerja. Belum ada AUC putaran 54 yang dilihat (Emotiv selesai dan tersimpan, belum diringkas).
+2026-11-12T07:12:47+07:00
+# Catatan komputasi (bukan perubahan rencana): kedua run TUEP terhenti sebelum menulis satu unit pun (run pertama tidak terhenti oleh pkill dan berjalan bersamaan; sesi pengguna terputus ketika agen keliru menghentikan PID systemd --user). Run dimulai ulang dari nol dengan NJOBS=12; benih tidak bergantung pada jumlah pekerja. Belum ada AUC putaran 54 yang dilihat (Emotiv tersimpan, belum diringkas).
+2026-11-12T09:17:34+07:00
+# Catatan komputasi: atas perintah pemilik ('gunakan maksimum cpu dan gpu') run TUEP dihentikan sesudah 36/240 unit tersimpan dan dilanjutkan dengan NJOBS=24; GPU tidak dipakai (LR scikit-learn hanya CPU). Belum ada AUC putaran 54 yang dilihat.
+2026-11-12T09:49:40+07:00
+# PEMBATALAN (2026-11-12): pemilik menolak eksperimen tambahan ('jangan tambah eksperimen apapun, cukup yang sudah ada saja'). Run TUEP dihentikan sesudah sebagian unit tersimpan; Emotiv selesai. Tidak ada AUC putaran 54 yang diringkas atau dilihat, dan putaran 54 TIDAK masuk naskah maupun suplemen. Berkas hasil54/ dibiarkan apa adanya sebagai arsip.
+2026-11-12T09:52:05+07:00

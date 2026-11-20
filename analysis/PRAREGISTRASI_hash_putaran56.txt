@@ -1,0 +1,6 @@
+
+# Putaran 56: dokumen, kode, dan skrip ringkasan dicatat SEBELUM run (hanya --check: reproduksi replikasi 0 identik, 9 s; AUC VR tidak dicetak)
+5b90c048be38515d9fa683ccf78fe645a7827c18c0ff55f7e975bbb2861858b0  PRAREGISTRASI_putaran56.md
+5c8e2c2e7920de11580a2418343564143d1c30811ab98250b5c90a0c4835262c  round56_referensi_acak.py
+77051d5870bb5a95c88e9bd9c437302b320d8243409356800dd2138668c18787  round56_ringkas.py
+2026-11-13T23:30:25+07:00

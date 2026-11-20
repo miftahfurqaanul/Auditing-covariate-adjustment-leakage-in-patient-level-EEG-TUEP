@@ -1,0 +1,8 @@
+ddaa3579c872587ced5da14644d0040b0b629991fdd921d84272361884deaaf7  PRAREGISTRASI_putaran55.md
+4a6d6c602b434fc36a5e88fde7bfb7905279a231734198e146475cf8430767ee  round55_referensi_kontrol.py
+2026-11-13T17:26:04+07:00
+(dokumen dan kode dicatat sebelum run; hanya mode --check yang sudah dijalankan: 7 pemeriksaan lulus, fit_norm identik dengan round4.normative_z (<1e-9); waktu satu unit 1.1-5.2 s; tidak ada AUC putaran 55 yang dicetak atau dilihat)
+
+# Skrip ringkasan (ditulis dan di-hash SEBELUM hasil putaran 55 dilihat; run masih berjalan)
+550bff2228b7c9d2a9e04bcb8bb00e95d983f5f2f6e8454fbe1fa550000f9863  round55_ringkas.py
+2026-11-13T17:33:41+07:00

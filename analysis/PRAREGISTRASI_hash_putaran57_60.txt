@@ -1,0 +1,10 @@
+# Putaran 57--60: rencana dan seluruh kode dicatat SEBELUM run (hanya --check: reproduksi RF/XGB/sim/r55 identik; LRw dalam toleransi 0.01 karena solver; waktu per unit: RF 82 s, XGB 9 s, LRw 47 s, r58 46 s, r60 23 s; tidak ada AUC baru yang dicetak)
+0aba327f29b6e7d119089173d67345a1069f36625a5f1662684d79cf8ce3dcad  PRAREGISTRASI_putaran57_60.md
+843f71c07857112a7e23227489dab7e519045579448bfb3b7d228b831679cd89  round57_transformasi.py
+e93c21bf0b36018ca8479f10f210714f1375384c2533febe1654d5335761cfc4  round57_ringkas.py
+84e5f11e49c814d5327c3138bcd29b43bb3b0c0505cfb58285f39bdaf0208b52  round58_lrw_disamakan.py
+0c04a0c22fb4822d7631900fccea558e0e9958e1058983e6ec7290ac5e67da2e  round58_ringkas.py
+468ac874a4aa5a8adf522b46eaf6bf9a1176d4b0382b5c7b4899edd1351dd4b3  round59_keputusan_gabungan.py
+5d0f137f7adc8fdc399faf4f5fc46968f27ea5cb61d3000e502ca2daa1dd320c  round60_validasi_aturan.py
+43d5b517ed3537144bc24aa5169b70521ab930786fbe8b36ae4e0d11b514aa82  round60_ringkas.py
+2026-11-14T00:03:52+07:00
