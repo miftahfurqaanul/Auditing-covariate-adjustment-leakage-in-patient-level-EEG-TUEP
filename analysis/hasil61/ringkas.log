@@ -1,0 +1,21 @@
+AUC (persen) putaran 56 | longgar -> ketat; keputusan R1 longgar -> ketat
+  C1: [p56 50.6, R1 no evidence] gabungan 50.6 -> 50.6; per lipatan 50.4 -> 50.4; R1 no evidence -> no evidence
+  V0: [p56 56.0, R1 leakage] gabungan 56.0 -> 55.0; per lipatan 56.9 -> 56.0; R1 leakage -> uncertain
+  VR: [p56 52.8, R1 uncertain] gabungan 52.8 -> 52.3; per lipatan 53.2 -> 53.0; R1 uncertain -> uncertain
+  V4: [p56 50.4, R1 no evidence] gabungan 50.4 -> 50.2; per lipatan 50.0 -> 49.9; R1 no evidence -> no evidence
+
+Kontras berpasangan (pp; 95% CI atas 100 replikasi); keputusan R2 bila terhadap C1
+  V0 - C1: [p56 +5.41 (+4.92 to +5.90) R2 leakage] longgar +5.40 (SD 2.47; +4.91 to +5.89) R2 leakage -> ketat +4.33 (SD 2.48; +3.84 to +4.82) R2 leakage
+  V0 - VR: [p56 +3.25 (+2.91 to +3.59) R2 -] longgar +3.25 (SD 1.73; +2.90 to +3.59) R2 - -> ketat +2.65 (SD 1.45; +2.36 to +2.94) R2 -
+  VR - C1: [p56 +2.16 (+1.70 to +2.62) R2 uncertain] longgar +2.16 (SD 2.31; +1.70 to +2.61) R2 uncertain -> ketat +1.68 (SD 2.29; +1.23 to +2.14) R2 uncertain
+  V4 - C1: [p56 -0.24 (-0.68 to +0.21) R2 no evidence] longgar -0.24 (SD 2.23; -0.68 to +0.20) R2 no evidence -> ketat -0.41 (SD 2.22; -0.85 to +0.03) R2 no evidence
+
+KONTRAS UTAMA (perubahan ketat - longgar; Holm atas 2)
+  delta(V0 - C1): -1.07 pp (SD 1.73; 95% CI -1.41 to -0.73); t = -6.21, p = 1.25e-08, Holm p = 2.5e-08
+  delta(V0 - VR): -0.60 pp (SD 1.80; 95% CI -0.95 to -0.24); t = -3.31, p = 0.00132, Holm p = 0.00132
+
+C terpilih (ketat), median [min, max] atas replikasi x lipatan:
+  C1: 0.0316 [0.001, 10]
+  V0: 3.16 [0.001, 10]
+  VR: 0.316 [0.001, 10]
+  V4: 0.1 [0.001, 10]

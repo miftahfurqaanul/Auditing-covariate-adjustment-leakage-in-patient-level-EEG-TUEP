@@ -8,7 +8,7 @@
 \bibitem{lemoine2024}
 {\'E}.~Lemoine, J.~N. Briard, B.~Rioux, O.~Gharbi, R.~Podbielski, B.~Nauche,
   D.~Toffa, M.~Keezer, F.~Lesage, D.~K. Nguyen, E.~Bou~Assi, {Computer-assisted
-  analysis of routine EEG to identify hidden biomarkers of epilepsy: A
+  analysis of routine EEG to identify hidden biomarkers of epilepsy: a
   systematic review}, Computational and Structural Biotechnology Journal 24
   (2024) 66--86.
 \newblock \href {https://doi.org/10.1016/j.csbj.2023.12.006}
@@ -31,15 +31,15 @@ I.~Obeid, J.~Picone, {The Temple University Hospital EEG Data Corpus},
 
 \bibitem{veloso2017}
 L.~Veloso, J.~McHugh, E.~von Weltin, S.~Lopez, I.~Obeid, J.~Picone, {Big data
-  resources for EEGs: Enabling deep learning research}, in: Proc. of 2017 IEEE
+  resources for EEGs: enabling deep learning research}, in: Proc. of 2017 IEEE
   Signal Processing in Medicine and Biology Symposium (SPMB), 2017, pp. 1--3.
 \newblock \href {https://doi.org/10.1109/SPMB.2017.8257044}
   {\path{doi:10.1109/SPMB.2017.8257044}}.
 
 \bibitem{marquand2016}
 A.~F. Marquand, I.~Rezek, J.~Buitelaar, C.~F. Beckmann, {Understanding
-  Heterogeneity in Clinical Cohorts Using Normative Models: Beyond Case-Control
-  Studies}, Biological Psychiatry 80~(7) (2016) 552--561.
+  heterogeneity in clinical cohorts using normative models: beyond case-control
+  studies}, Biological Psychiatry 80~(7) (2016) 552--561.
 \newblock \href {https://doi.org/10.1016/j.biopsych.2015.12.023}
   {\path{doi:10.1016/j.biopsych.2015.12.023}}.
 
@@ -81,7 +81,7 @@ S.~Hamdan, B.~C. Love, G.~G. von Polier, S.~Weis, H.~Schwender, S.~B. Eickhoff,
   {\path{doi:10.1093/gigascience/giad071}}.
 
 \bibitem{rohira2023}
-V.~Rohira, S.~Chaudhary, S.~Das, K.~P. Miyapuram, {Automatic Epilepsy Detection
+V.~Rohira, S.~Chaudhary, S.~Das, K.~P. Miyapuram, {Automatic epilepsy detection
   from EEG signals}, in: Proc. of the 6th Joint International Conference on
   Data Science \& Management of Data (CODS-COMAD 2023), Mumbai, 2023, pp.
   272--273.
@@ -89,8 +89,8 @@ V.~Rohira, S.~Chaudhary, S.~Das, K.~P. Miyapuram, {Automatic Epilepsy Detection
   {\path{doi:10.1145/3570991.3570995}}.
 
 \bibitem{tang2024}
-Y.~Tang, Q.~Wu, H.~Mao, L.~Guo, {Epileptic Seizure Detection Based on Path
-  Signature and Bi-LSTM Network With Attention Mechanism}, IEEE Transactions on
+Y.~Tang, Q.~Wu, H.~Mao, L.~Guo, {Epileptic seizure detection based on path
+  signature and Bi-LSTM network with attention mechanism}, IEEE Transactions on
   Neural Systems and Rehabilitation Engineering 32 (2024) 304--313.
 \newblock \href {https://doi.org/10.1109/TNSRE.2024.3350074}
   {\path{doi:10.1109/TNSRE.2024.3350074}}.
@@ -114,7 +114,7 @@ F.~Del~Pup, A.~Zanola, L.~F. Tshimanga, A.~Bertoldo, L.~Finos, M.~Atzori, {The
 \bibitem{bayer2022frontneurol}
 J.~M.~M. Bayer, P.~M. Thompson, C.~R.~K. Ching, M.~Liu, A.~Chen, A.~C.
   Panzenhagen, N.~Jahanshad, A.~Marquand, L.~Schmaal, P.~G. S{\"a}mann, {Site
-  effects how-to and when: An overview of retrospective techniques to
+  effects how-to and when: an overview of retrospective techniques to
   accommodate site effects in multi-site neuroimaging analyses}, Frontiers in
   Neurology 13 (2022) Art. 923988.
 \newblock \href {https://doi.org/10.3389/fneur.2022.923988}
@@ -172,7 +172,7 @@ A.-K. Kiessner, R.~T. Schirrmeister, J.~Boedecker, T.~Ball, {Reaching the
 
 \bibitem{poziomska2026}
 M.~Poziomska, M.~Dovgialo, P.~Olbratowski, P.~Niedbalski, P.~Ogniewski,
-  J.~Zych, J.~Rogala, J.~{\.Z}ygierewicz, {Quantity versus diversity: Influence
+  J.~Zych, J.~Rogala, J.~{\.Z}ygierewicz, {Quantity versus diversity: influence
   of data on detecting EEG pathology with advanced ML models}, Neural Networks
   193 (2026) Art. 108073.
 \newblock \href {https://doi.org/10.1016/j.neunet.2025.108073}
@@ -198,11 +198,17 @@ S.~Holm, \href{https://www.jstor.org/stable/4615733}{{A simple sequentially
 \newline\urlprefix\url{https://www.jstor.org/stable/4615733}
 
 \bibitem{bates2024}
-S.~Bates, T.~Hastie, R.~Tibshirani, {Cross-Validation: What Does It Estimate
-  and How Well Does It Do It?}, Journal of the American Statistical Association
+S.~Bates, T.~Hastie, R.~Tibshirani, {Cross-validation: what does it estimate
+  and how well does it do it?}, Journal of the American Statistical Association
   119~(546) (2024) 1434--1445.
 \newblock \href {https://doi.org/10.1080/01621459.2023.2197686}
   {\path{doi:10.1080/01621459.2023.2197686}}.
+
+\bibitem{nadeau2003}
+C.~Nadeau, Y.~Bengio, {Inference for the generalization error}, Machine
+  Learning 52~(3) (2003) 239--281.
+\newblock \href {https://doi.org/10.1023/A:1024068626366}
+  {\path{doi:10.1023/A:1024068626366}}.
 
 \bibitem{collins2024tripod}
 G.~S. Collins, K.~G.~M. Moons, P.~Dhiman, R.~D. Riley, A.~L. Beam,
@@ -216,12 +222,6 @@ G.~S. Collins, K.~G.~M. Moons, P.~Dhiman, R.~D. Riley, A.~L. Beam,
   (2024) Art. e078378.
 \newblock \href {https://doi.org/10.1136/bmj-2023-078378}
   {\path{doi:10.1136/bmj-2023-078378}}.
-
-\bibitem{nadeau2003}
-C.~Nadeau, Y.~Bengio, {Inference for the Generalization Error}, Machine
-  Learning 52~(3) (2003) 239--281.
-\newblock \href {https://doi.org/10.1023/A:1024068626366}
-  {\path{doi:10.1023/A:1024068626366}}.
 
 \bibitem{fraza2021}
 C.~J. Fraza, R.~Dinga, C.~F. Beckmann, A.~F. Marquand, {Warped Bayesian linear

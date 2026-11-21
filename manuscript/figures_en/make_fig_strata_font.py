@@ -18,7 +18,7 @@ z7 = np.load(REP / "round7_fold_aucs.npz", allow_pickle=True); z25 = np.load(REP
 import sys; sys.path.insert(0, "/home/miftah_f/RTX-5090/tuep_fresh/code"); cwd = os.getcwd(); os.chdir("/home/miftah_f/RTX-5090/tuep_fresh/code")
 import round17_common as c17; J = c17.JOBS; Y = c17.Y; os.chdir(cwd)
 plt.rcParams.update({"font.size": 8.5, "axes.spines.top": False, "axes.spines.right": False, "figure.dpi": 150})
-C = dict(scratch="#1f77b4", pre="#d95f02", non="#7f7f7f", repro="#2ca02c", f2="#c0392b")
+C = dict(scratch="#7aa7a6", pre="#d4ab6a", non="#9b968a", repro="#5f8f6e", f2="#a58fae")   # soft palette (writing rules, 2026-11-21)
 fa = lambda P: np.array([roc_auc_score(Y[te], P[r, te]) for r, _, _, te in J])
 def nb_ci(a, n1=160, n2=40):
     m = a.mean(); h = stats.t.ppf(.975, len(a) - 1) * a.std(ddof=1) * np.sqrt(1 / len(a) + n2 / n1); return 100 * m, 100 * (m - h), 100 * (m + h)
@@ -36,9 +36,9 @@ a.set_ylabel("Per-fold AUC difference\n(with − without covariate adjustment)")
 b = ax[1]; S = [("year", "year"), ("device", "device"), ("year × device", "year x device"), ("year × montage", "year x montage")]; x = np.arange(len(S)); wd = .2
 def g(st, test, col): return float(W[(W.strata == st) & (W.test == test)][col].iloc[0])
 for i, (lab, st) in enumerate(S):
-    vals = [("F2", g(st, "F2-adj - Floor", "auc_F2-adj"), C["f2"]), ("I2", g(st, "I2-adj - Floor", "auc_I2-adj"), C["scratch"]), ("C1", g(st, "F2-adj - C1", "auc_C1"), "#9ecae1"), ("Metadata baseline", g(st, "F2-adj - Floor", "auc_Floor"), C["non"])]
+    vals = [("F2", g(st, "F2-adj - Floor", "auc_F2-adj"), C["f2"]), ("I2", g(st, "I2-adj - Floor", "auc_I2-adj"), C["scratch"]), ("C1", g(st, "F2-adj - C1", "auc_C1"), "#d4ab6a"), ("Metadata baseline", g(st, "F2-adj - Floor", "auc_Floor"), C["non"])]
     for j, (nm, v, col) in enumerate(vals):
-        b.bar(i + (j - 1.5) * wd, 100 * v, wd, color=col, label=nm if i == 0 else None)
+        b.bar(i + (j - 1.5) * wd, 100 * v, wd, color=col, alpha=0.8, label=nm if i == 0 else None)
         x_pos = i + (j - 1.5) * wd
         y_pos = 100 * v + 1
         if j > 0 and round(100 * v) == round(100 * vals[j - 1][1]):

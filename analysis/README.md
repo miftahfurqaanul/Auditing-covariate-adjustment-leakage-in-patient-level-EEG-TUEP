@@ -1,4 +1,4 @@
-# analysis/ -- follow-up analyses, rounds 28--60
+# analysis/ -- follow-up analyses, rounds 28--61
 
 Scripts, analysis plans, and result tables of the follow-up analyses on the TUEP v2.0.1 first-session cohort (200 patients, 50 canonical patient-level folds); rounds 50 and later also use the public Emotiv cohort (Zenodo 1252141, 299 subjects). The code of the earlier rounds (feature extraction, models, rounds 3--27) is in `../code/`. The manuscript (`../manuscript/`, Supplement S1--S3) describes each round and its status.
 
@@ -6,7 +6,7 @@ All analyses are **follow-up analyses**: every plan was written after the result
 
 ## Names that come from Indonesian
 
-File and folder names, CSV columns, and decision labels were kept as they were produced (the plans and scripts refer to them, and the stored results use them). Prose, comments, and messages are in English for rounds up to 50; the plans, hash notes, and script comments of rounds 51--60 are the original Indonesian files (so their SHA-256 values can be checked). Glossary:
+File and folder names, CSV columns, and decision labels were kept as they were produced (the plans and scripts refer to them, and the stored results use them). Prose, comments, and messages are in English for rounds up to 50; the plans, hash notes, and script comments of rounds 51--61 are the original Indonesian files (so their SHA-256 values can be checked). Glossary:
 
 | Name | Meaning |
 |---|---|
@@ -67,8 +67,24 @@ File and folder names, CSV columns, and decision labels were kept as they were p
 | 58 | Window-level logistic regression with a training configuration matched to the adjustment (factorial variant) | `round58_*.py` |
 | 59 | Decision frequencies of the combined rule | `round59_*.py` |
 | 60 | Validation of the frozen rules on new simulation runs with unused seeds (independent audits) | `round60_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
+| 61 | Strictly nested inner selection for the control, random, and all-patient references (editorial review); descriptive re-summaries of stored results (decisions by rule and audit size, planning example, within-era differences, Emotiv subject flow) | `round61_*.py` |
 
-Each plan lists its hypotheses, decision rules, predictions (written before the results), and the checks that were promised. Rounds 28--50 and 53 have an independent check (`*_cek_independen.py`) that recomputes the main numbers with a second implementation. For rounds 51--60, the hash files also record the `--check` reproductions of earlier outputs that were run before each round.
+Each plan lists its hypotheses, decision rules, predictions (written before the results), and the checks that were promised. Rounds 28--50 and 53 have an independent check (`*_cek_independen.py`) that recomputes the main numbers with a second implementation. For rounds 51--61, the hash files also record the `--check` reproductions of earlier outputs that were run before each round.
 
 ## What is not included
 

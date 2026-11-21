@@ -1,0 +1,5 @@
+# Putaran 61: dokumen, kode, dan skrip ringkasan dicatat SEBELUM run (hanya --check: mode longgar replikasi 0 mereproduksi putaran 56 dalam 0.005; 45 referensi dalam bersih; AUC ketat tidak dicetak)
+f110933b928e94d6f9b0bb128414dc6f8b4fa3590f034fa143e2a556144968a8  PRAREGISTRASI_putaran61.md
+8b4b5e78fcedfd97183247b173984736275f9edf51648f3502c66bc756a37e80  round61_nesting_referensi.py
+08d86055e2c651b644cdd031915a4b9f8de7d564377c55c24ec5e9116b1ba8ee  round61_ringkas.py
+2026-11-20T21:08:45+07:00

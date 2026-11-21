@@ -1,4 +1,4 @@
-# Auditing covariate-adjustment leakage in patient-level EEG classification: simulations and a TUEP case study
+# Covariate-adjustment leakage in patient-level EEG classification: effects of fitting population, repeated measurements, and audit replication
 
 Code, analysis plans, result tables and manuscript sources for a methodological study of **covariate-adjustment
 leakage** in patient-level epilepsy classification from routine EEG (TUH EEG Epilepsy Corpus, TUEP v2.0.1;
@@ -10,18 +10,19 @@ explicit decision rules (R1, R2) raises false alarms or misses the leak. The pip
 mean of three view-specific probabilities) is a test case, not a validated clinical model. The label is the TUEP
 curation label (derived from reports, clinical history and medication), not an independent clinical diagnosis.
 
-> Status: the current manuscript version (2026-11-20, "Covariate-adjustment leakage in patient-level EEG classification:
-> effects of fitting population, repeated measurements, and audit replication") is in `manuscript/jbi/`. The analyses are
-> follow-up analyses on one retrospective archive over 60 rounds (rounds 51, 52, and the cancelled round 54 are not reported);
+> Status: the submission version of the manuscript (2026-11-21, Journal of Biomedical Informatics) is in `manuscript/jbi/`,
+> with the Supplementary Material S1--S4; S2.20 of the supplement maps each main-text table and figure to its script,
+> seeds, and output files in this repository. The analyses are
+> follow-up analyses on one retrospective archive over 61 rounds (rounds 51, 52, and the cancelled round 54 are not reported);
 > they are exploratory, not confirmatory. Round 50 and later rounds also use the independent Emotiv cohort.
 
 ## Repository layout
 
 | Folder | Content |
 |---|---|
-| `manuscript/jbi/` | **Current version (2026-11-20).** Single-file LaTeX source of the main text (`main_jbi_en.tex`, compiles with the included `elsarticle.cls`, `.bst`, `.bbl`, and `supl_jbi_en.aux`), Figures 1--4, and the PDFs of the main text and the Supplementary Material S1--S4 |
+| `manuscript/jbi/` | **Submission version (2026-11-21).** Single-file LaTeX source of the main text (`main_jbi_en.tex`, compiles with the included `elsarticle.cls`, `.bst`, `.bbl`, and `supl_jbi_en.aux`), Figures 1--4, and the PDFs of the main text and the Supplementary Material S1--S4 |
 | `manuscript/` (other folders) | Earlier version (2026-11-03): LaTeX sources of the main text (`main_en.tex`) and the supplementary material S1--S3 (`supl_S1S3_en.tex`), section files in `naskah/`, figures in `figures_en/`, bibliography, build script, and the compiled PDFs in `manuscript/pdf/` |
-| `analysis/` | Scripts, analysis plans (`PRAREGISTRASI_*.md`) with their SHA-256 records (`PRAREGISTRASI_hash_*.txt`), and result tables for rounds 28--60 (`hasil*/`); see `analysis/README.md` for the round index and a glossary of the Indonesian-derived file names |
+| `analysis/` | Scripts, analysis plans (`PRAREGISTRASI_*.md`) with their SHA-256 records (`PRAREGISTRASI_hash_*.txt`), and result tables for rounds 28--61 (`hasil*/`); see `analysis/README.md` for the round index and a glossary of the Indonesian-derived file names |
 | `code/` | Pipeline code shared by all rounds (feature extraction, normative adjustment, evaluation kit, models, rounds 3--27) |
 | `tools/` | `verify_sha256.sh`, `rewrite_paths.sh` |
 | `SHA256SUMS.txt` | Checksums of every file in this repository |
@@ -66,8 +67,8 @@ written to `manuscript/build/out/`. Their text matches the PDFs in `manuscript/p
 ## Analysis plans and their status
 
 Every round was planned in a version-controlled document written after the results of earlier rounds were
-known. Rounds 3--27 were committed to Git before their code ran; rounds 28--60 were hashed with SHA-256 (the
-`PRAREGISTRASI_hash_*.txt` files). For rounds 51--60 the plans and hash files are the original Indonesian files, so
+known. Rounds 3--27 were committed to Git before their code ran; rounds 28--61 were hashed with SHA-256 (the
+`PRAREGISTRASI_hash_*.txt` files). For rounds 51--61 the plans and hash files are the original Indonesian files, so
 `sha256sum analysis/PRAREGISTRASI_putaran5*.md` reproduces the last value recorded for each plan (plans that received
 an addendum were hashed again, and the hash file lists every value with its timestamp). A hash identifies a document but does not by itself prove when it was written, and
 these plans are **not** registrations in the confirmatory sense. Addenda made after results were seen are
@@ -79,7 +80,7 @@ listed in the plans and in the manuscript (Supplement S1).
 * For rounds up to 50, the analysis plans, the notes in the hash files, and the comments and messages of the scripts were translated from
   Indonesian into English for publication (only text; a check of the code structure confirmed that no executable code
   changed). The SHA-256 values recorded in `analysis/PRAREGISTRASI_hash_*.txt` were computed on the original Indonesian
-  files and therefore do not match the English files in this repository. The files of rounds 51--60 were not translated, so
+  files and therefore do not match the English files in this repository. The files of rounds 51--61 were not translated, so
   their hashes can be checked directly. File and folder names, CSV columns, and the
   decision labels stored in result files were kept as produced; `analysis/README.md` explains them.
 * The Git history of the original working directory is not included; this repository starts from the final state.
