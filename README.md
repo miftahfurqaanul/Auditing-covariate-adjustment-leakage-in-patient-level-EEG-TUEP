@@ -1,4 +1,4 @@
-# Covariate-adjustment leakage in patient-level EEG classification: effects of fitting population, repeated measurements, and audit replication
+# Auditing covariate-adjustment leakage in patient-level EEG classification: fitting population, training configuration, and decision-rule error rates
 
 Code, analysis plans, result tables and manuscript sources for a methodological study of **covariate-adjustment
 leakage** in patient-level epilepsy classification from routine EEG (TUH EEG Epilepsy Corpus, TUEP v2.0.1;

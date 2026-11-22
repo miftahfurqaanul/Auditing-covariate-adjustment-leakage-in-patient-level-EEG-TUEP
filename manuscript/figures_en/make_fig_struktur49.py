@@ -8,7 +8,7 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE); H = os.path.join(ROOT, "analisis_tambahan", "hasil49")
 D = pd.read_csv(os.path.join(H, "D_replikasi.csv"))
-ARMS = [("A", "RFwin_A", "RFwin_none", "#a58fae"), ("C", "RFpat_C", "RFpat_none", "#7aa7a6"), ("LR", "LRpat_win", "LRpat_none", "#5f8f6e")]   # soft palette (writing rules, 2026-11-21)
+ARMS = [("A", "RFwin_A", "RFwin_none", "#7f5f8c"), ("C", "RFpat_C", "RFpat_none", "#4f8584"), ("LR", "LRpat_win", "LRpat_none", "#3f6e4f")]   # soft palette (writing rules, 2026-11-21)
 LAB = {"id": {"A": "A (= B): penyesuaian sebelum klasifikasi jendela, RF jendela", "B": "B: penyesuaian per pasien, RF jendela", "C": "C: agregasi dulu, RF pasien", "LR": "regresi logistik pasien",
               "normal": "normal", "lognormal": "lognormal", "contam": "kontaminasi 1%", "y": "selisih AUC (poin)", "m": "jendela"},
        "en": {"A": "A (= B): adjustment before window classification, window-level random forest", "B": "B: per-patient adjustment, window-level random forest", "C": "C: aggregate first, patient-level random forest", "LR": "patient-level logistic regression",
@@ -20,13 +20,13 @@ for lang, out in (("id", os.path.join(HERE, "hasil_struktur49.pdf")), ("en", os.
             ax = axs[i, j]; q = D[(D.m == m) & (D.dist == dist)]
             for k, (arm, a, b, col) in enumerate(ARMS):
                 g = q.assign(d=100 * (q[a] - q[b])).groupby("icc").d.agg(["mean", "sem", "count"]).reset_index()
-                ax.errorbar(g.icc + (k - 1) * 0.012, g["mean"], yerr=1.96 * g["sem"], marker="o", ms=3, lw=1.1, capsize=1.5, color=col, alpha=0.8, label=L[arm])
-            ax.axhline(0, color="k", lw=0.6, ls="--"); ax.set_xticks([0, 0.3, 0.7, 0.95]); ax.tick_params(labelsize=7.5)
+                ax.errorbar(g.icc + (k - 1) * 0.012, g["mean"], yerr=1.96 * g["sem"], marker="o", ms=4.2, lw=1.6, capsize=2.0, color=col, alpha=1.0, mec="#1a1a1a", mew=0.4, label=L[arm])
+            ax.axhline(0, color="#333333", lw=0.8, ls="--"); ax.set_xticks([0, 0.3, 0.7, 0.95]); ax.tick_params(labelsize=7.5)
             ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
             if i == 0: ax.set_title(L[dist], fontsize=8.5)
             if j == 0: ax.set_ylabel(f"W = {m} {L['m']}\n{L['y']}", fontsize=7.8)   # W = windows per patient (supplement S1.8 notation)
             if i == 2: ax.set_xlabel("ICC", fontsize=8.0)
-    h_, l_ = axs[0, 0].get_legend_handles_labels(); fig.legend(h_, l_, fontsize=7.5, frameon=False, loc="lower center", ncol=2, handlelength=1.4, columnspacing=1.2)
+    h_, l_ = axs[0, 0].get_legend_handles_labels(); fig.legend(h_, l_, fontsize=8, frameon=False, loc="lower center", ncol=2, handlelength=1.6, columnspacing=1.2)
     fig.tight_layout(rect=(0, 0.07, 1, 1)); fig.savefig(out, bbox_inches="tight"); plt.close(fig)
 R = pd.read_csv(os.path.join(H, "ringkas_D_delta.csv"), header=[0, 1], index_col=[0, 1, 2])
 chk = D[(D.dist == "lognormal") & (D.m == 50) & (D.icc == 0.0)]; v = (chk.RFwin_A - chk.RFwin_none).mean()

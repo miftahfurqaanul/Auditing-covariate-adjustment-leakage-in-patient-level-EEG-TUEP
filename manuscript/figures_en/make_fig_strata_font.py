@@ -18,7 +18,7 @@ z7 = np.load(REP / "round7_fold_aucs.npz", allow_pickle=True); z25 = np.load(REP
 import sys; sys.path.insert(0, "/home/miftah_f/RTX-5090/tuep_fresh/code"); cwd = os.getcwd(); os.chdir("/home/miftah_f/RTX-5090/tuep_fresh/code")
 import round17_common as c17; J = c17.JOBS; Y = c17.Y; os.chdir(cwd)
 plt.rcParams.update({"font.size": 8.5, "axes.spines.top": False, "axes.spines.right": False, "figure.dpi": 150})
-C = dict(scratch="#7aa7a6", pre="#d4ab6a", non="#9b968a", repro="#5f8f6e", f2="#a58fae")   # soft palette (writing rules, 2026-11-21)
+C = dict(scratch="#4f8584", pre="#b5892f", non="#6e695e", repro="#3f6e4f", f2="#7f5f8c")   # soft palette (writing rules, 2026-11-21)
 fa = lambda P: np.array([roc_auc_score(Y[te], P[r, te]) for r, _, _, te in J])
 def nb_ci(a, n1=160, n2=40):
     m = a.mean(); h = stats.t.ppf(.975, len(a) - 1) * a.std(ddof=1) * np.sqrt(1 / len(a) + n2 / n1); return 100 * m, 100 * (m - h), 100 * (m + h)
@@ -28,17 +28,17 @@ fig, ax = plt.subplots(1, 2, figsize=(7.4, 3.5), gridspec_kw=dict(width_ratios=[
 diffs = [("Spectral (I2)", fa(EV["I2_adj"]) - fa(EV["C1"])), ("Spatial (P3)", fa(EV["P3_adj"]) - fa(EV["Riemann_mentah"])), ("Temporal (NM)", fa(EV["NM_adj"]) - fa(EV["Mamba_mentah"]))]
 diffs.append(("Combined", np.mean([d for _, d in diffs], 0)))
 for i, (lab, d) in enumerate(diffs):
-    rng = np.random.default_rng(i); a.scatter(np.full(len(d), i) + rng.uniform(-.17, .17, len(d)), d, s=6, alpha=.45, color=C["scratch"] if i < 3 else C["f2"], lw=0)
-    m = d.mean(); h = stats.t.ppf(.975, 49) * d.std(ddof=1) * np.sqrt(1 / 50 + .25); a.errorbar(i, m, yerr=h, fmt="D", color="k", ms=4, capsize=3, lw=1.2)
+    rng = np.random.default_rng(i); a.scatter(np.full(len(d), i) + rng.uniform(-.17, .17, len(d)), 100 * d, s=11, alpha=.65, color=C["scratch"] if i < 3 else C["f2"], lw=0)
+    m = d.mean(); h = stats.t.ppf(.975, 49) * d.std(ddof=1) * np.sqrt(1 / 50 + .25); a.errorbar(i, 100 * m, yerr=100 * h, fmt="D", color="k", ms=5, capsize=3, lw=1.4)
 assert abs(diffs[3][1].mean() - T1.loc["efek gabungan (V4 - mentah, rata-rata 3 pandangan)", "diff"]) < 1e-12
 a.axhline(0, color="k", ls=":", lw=.8); a.set_xticks(range(4)); a.set_xticklabels([d[0] for d in diffs], rotation=20, ha="right")
-a.set_ylabel("Per-fold AUC difference\n(with − without covariate adjustment)"); a.set_title("(a)", loc="left", fontweight="bold")
+a.set_ylabel("Per-fold AUC difference (pp)\n(with − without covariate adjustment)"); a.set_title("(a)", loc="left", fontweight="bold", pad=22)
 b = ax[1]; S = [("year", "year"), ("device", "device"), ("year × device", "year x device"), ("year × montage", "year x montage")]; x = np.arange(len(S)); wd = .2
 def g(st, test, col): return float(W[(W.strata == st) & (W.test == test)][col].iloc[0])
 for i, (lab, st) in enumerate(S):
     vals = [("F2", g(st, "F2-adj - Floor", "auc_F2-adj"), C["f2"]), ("I2", g(st, "I2-adj - Floor", "auc_I2-adj"), C["scratch"]), ("C1", g(st, "F2-adj - C1", "auc_C1"), "#d4ab6a"), ("Metadata baseline", g(st, "F2-adj - Floor", "auc_Floor"), C["non"])]
     for j, (nm, v, col) in enumerate(vals):
-        b.bar(i + (j - 1.5) * wd, 100 * v, wd, color=col, alpha=0.8, label=nm if i == 0 else None)
+        b.bar(i + (j - 1.5) * wd, 100 * v, wd, color=col, alpha=0.95, edgecolor="#333333", linewidth=0.5, label=nm if i == 0 else None)
         x_pos = i + (j - 1.5) * wd
         y_pos = 100 * v + 1
         if j > 0 and round(100 * v) == round(100 * vals[j - 1][1]):
@@ -47,7 +47,7 @@ for i, (lab, st) in enumerate(S):
         elif j == 0 and len(vals) > 1 and round(100 * v) == round(100 * vals[1][1]):
             x_pos -= 0.015
         b.text(x_pos, y_pos, f"{100 * v:.0f}", ha="center", fontsize=8.2)
-b.axhline(50, color="k", ls=":", lw=.8); b.set_xticks(x); b.set_xticklabels([s[0] for s in S], rotation=15, ha="right"); b.set_ylim(0, 118); b.set_yticks([0, 20, 40, 60, 80, 100]); b.set_ylabel("AUC within strata (%)"); b.legend(frameon=False, fontsize=8.2, loc="upper center", ncol=2, columnspacing=.8, handlelength=1, labelspacing=.25); b.set_title("(b)", loc="left", fontweight="bold")
+b.axhline(50, color="k", ls=":", lw=.8); b.set_xticks(x); b.set_xticklabels([s[0] for s in S], rotation=15, ha="right"); b.set_ylim(0, 92); b.set_yticks([0, 20, 40, 60, 80]); b.set_ylabel("AUC within strata (%)"); b.legend(frameon=False, fontsize=8.0, loc="lower center", bbox_to_anchor=(0.5, 1.02), ncol=4, columnspacing=.8, handlelength=1); b.set_title("(b)", loc="left", fontweight="bold", pad=22)
 LBL = Counter(t.get_text() for t in b.texts)
 fig.tight_layout(); fig.savefig(HERE / "hasil_penyesuaian_strata.pdf"); plt.close(fig)
 import re

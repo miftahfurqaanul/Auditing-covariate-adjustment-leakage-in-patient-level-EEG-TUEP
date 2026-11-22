@@ -5,6 +5,23 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{sunaryono2022}
+D.~Sunaryono, R.~Sarno, J.~Siswantoro, D.~Purwitasari, S.~I. Sabilla, R.~I.
+  Susilo, N.~R. Akbar, {Hybrid one-dimensional CNN and DNN model for
+  classification epileptic seizure}, International Journal of Intelligent
+  Engineering and Systems 15~(6) (2022) 492--502.
+\newblock \href {https://doi.org/10.22266/ijies2022.1231.44}
+  {\path{doi:10.22266/ijies2022.1231.44}}.
+
+\bibitem{sunaryono2023}
+D.~Sunaryono, J.~Siswantoro, A.~B. Raharjo, R.~Ridho, R.~Sarno, S.~I. Sabilla,
+  R.~I. Susilo, {Optimized one-dimension convolutional neural network for
+  seizure classification from EEG signal based on whale optimization
+  algorithm}, International Journal of Intelligent Engineering and Systems
+  16~(3) (2023) 310--322.
+\newblock \href {https://doi.org/10.22266/ijies2023.0630.25}
+  {\path{doi:10.22266/ijies2023.0630.25}}.
+
 \bibitem{lemoine2024}
 {\'E}.~Lemoine, J.~N. Briard, B.~Rioux, O.~Gharbi, R.~Podbielski, B.~Nauche,
   D.~Toffa, M.~Keezer, F.~Lesage, D.~K. Nguyen, E.~Bou~Assi, {Computer-assisted

@@ -28,19 +28,20 @@ def matriks(transform):   # salinan persis dari make_fig_peta_pp.py
 
 
 # palet lembut aturan penulisan §11 (2026-11-20): teal pudar - putih - pasir, tanpa merah atau biru terang
-CMAP = LinearSegmentedColormap.from_list("lembut", ["#7aa7a6", "#c9dcdb", "#f7f7f7", "#ead6b0", "#d4ab6a"])
+CMAP = LinearSegmentedColormap.from_list("tegas", ["#4f8584", "#9fc3c2", "#f7f7f7", "#e3c17f", "#b5892f"])   # 2026-11-21: rona palet sama, dipekatkan agar mudah dibaca
 plt.rcParams.update({"font.family": "DejaVu Sans"})
-fig, axs = plt.subplots(2, 1, figsize=(7.4, 3.9), sharex=True, gridspec_kw=dict(hspace=0.32)); cell = {}
+fig, axs = plt.subplots(2, 1, figsize=(7.4, 3.45), sharex=True, gridspec_kw=dict(hspace=0.30)); cell = {}
 for ax, (tr, title) in zip(axs, (("raw", "(a) Raw features"), ("rank", "(b) Rank-normal transformation fitted on the training data"))):
     M, labs = matriks(tr); M = 100 * M; cell[tr] = M
     im = ax.imshow(M, cmap=CMAP, vmin=-15, vmax=15, aspect="auto")
     ax.set_yticks(range(len(CL))); ax.set_yticklabels(NAMA, fontsize=10); ax.set_title(title, fontsize=10.5, loc="left")
     ax.set_xticks(np.arange(-0.5, len(COLS), 1), minor=True); ax.set_yticks(np.arange(-0.5, len(CL), 1), minor=True)
-    ax.grid(which="minor", color="white", linewidth=1.2); ax.tick_params(which="minor", length=0)
-    for i in range(len(CL)):
+    ax.grid(which="minor", color="white", linewidth=1.5); ax.tick_params(which="minor", length=0)
+    for i in range(len(CL)):   # 2026-11-21: semua sel diberi angka; tebal bila > 3 pp (ambang "kebocoran" aturan berpasangan)
         for j in range(len(COLS)):
-            if not np.isnan(M[i, j]) and M[i, j] > 3:
-                ax.text(j, i, f"+{M[i, j]:.1f}", ha="center", va="center", fontsize=9, color="black")
+            if np.isnan(M[i, j]): continue
+            v = M[i, j]; s = "0.0" if abs(v) < 0.05 else (f"+{v:.1f}" if v > 0 else f"−{abs(v):.1f}")
+            ax.text(j, i, s, ha="center", va="center", fontsize=8.6 if v > 3 else 7.6, fontweight="bold" if v > 3 else "normal", color="black" if v > 3 else "#333333")
 axs[1].set_xticks(range(len(COLS))); axs[1].set_xticklabels(labs, rotation=35, ha="right", fontsize=9)
 axs[1].set_xlabel("Feature distribution (LN: lognormal, parameter σ; CT: contamination, f% of samples, scale ×c; k: mean kurtosis)", fontsize=9)
 cb = fig.colorbar(im, ax=axs, shrink=0.85, pad=0.015, aspect=28); cb.set_label("AUC with − without adjustment (pp)", fontsize=9.5); cb.ax.tick_params(labelsize=9)

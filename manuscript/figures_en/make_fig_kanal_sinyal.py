@@ -26,7 +26,7 @@ CH19 = ["FP1", "FP2", "F3", "F4", "C3", "C4", "P3", "P4", "O1", "O2", "F7", "F8"
 SHOW = ["F3", "C3", "P3", "O1", "F4", "C4", "P4", "O2"]
 REG = {"Frontal": ["FP1", "FP2", "F7", "F3", "FZ", "F4", "F8"], "Central": ["C3", "CZ", "C4"], "Temporal": ["T3", "T4", "T5", "T6"],
        "Parietal": ["P3", "PZ", "P4"], "Occipital": ["O1", "O2"]}
-COL = {"Frontal": "#5f8f6e", "Central": "#7aa7a6", "Temporal": "#d4ab6a", "Parietal": "#a58fae", "Occipital": "#9b968a"}   # soft palette (writing rules, 2026-11-21)
+COL = {"Frontal": "#3f6e4f", "Central": "#4f8584", "Temporal": "#b5892f", "Parietal": "#7f5f8c", "Occipital": "#6e695e"}   # soft palette (writing rules, 2026-11-21)
 POS = {"FP1": (-.28, .82), "FP2": (.28, .82), "F7": (-.70, .52), "F3": (-.36, .50), "FZ": (0, .46), "F4": (.36, .50), "F8": (.70, .52),
        "T3": (-.88, 0), "C3": (-.46, 0), "CZ": (0, 0), "C4": (.46, 0), "T4": (.88, 0), "T5": (-.70, -.52), "P3": (-.36, -.50), "PZ": (0, -.46),
        "P4": (.36, -.50), "T6": (.70, -.52), "O1": (-.28, -.82), "O2": (.28, -.82)}
@@ -78,7 +78,7 @@ def gambar_kanal(out):
     for r, chs in REG.items():
         for c in chs:
             x, y = POS[c]; sel = c in SHOW
-            ax.add_patch(Circle((x, y), .118, ec="#111" if sel else COL[r], fc=COL[r] + "55", lw=2.2 if sel else 1.0))
+            ax.add_patch(Circle((x, y), .118, ec="#111" if sel else COL[r], fc=COL[r] + "66", lw=2.4 if sel else 1.3))
             ax.text(x, y, c.capitalize() if c in ("FP1", "FP2") else c.title() if len(c) == 2 else c, ha="center", va="center", fontsize=7.2, fontweight="bold")
     ax.text(0, 1.21, "Front", ha="center", fontsize=8); ax.text(0, -1.13, "Back", ha="center", fontsize=8)
     ax.text(-1.30, 0, "Left", ha="center", va="center", fontsize=8, rotation=90); ax.text(1.30, 0, "Right", ha="center", va="center", fontsize=8, rotation=270)
@@ -92,14 +92,14 @@ def gambar_kanal(out):
              ("Adjustment and model", "Age, sex, and era removed from the features (fitted on training data only); one prediction per patient")]
     y = 0.97
     for i, (t, d) in enumerate(steps):
-        lines = textwrap.wrap(d, 62); h = 0.056 + 0.050 * len(lines)
-        bx.add_patch(plt.Rectangle((0.0, y - h), 1.0, h, fc="#e6efe9" if i % 2 == 0 else "#f7f7f7", ec="#9b968a", lw=0.7))
+        lines = textwrap.wrap(d, 62); h = 0.064 + 0.050 * len(lines)
+        bx.add_patch(plt.Rectangle((0.0, y - h), 1.0, h, fc="#d3e5d9" if i % 2 == 0 else "#efeee9", ec="#6e695e", lw=0.9))
         bx.text(0.02, y - 0.038, f"{i + 1}. {t}", fontsize=7.6, fontweight="bold", va="center")
-        bx.text(0.02, y - 0.080, "\n".join(lines), fontsize=6.9, va="top", color="#222", linespacing=1.2)
+        bx.text(0.02, y - 0.072, "\n".join(lines), fontsize=6.9, va="top", color="#222", linespacing=1.2)
         y -= h + 0.014
-    hs = [plt.Line2D([], [], marker="o", ls="", ms=6, mfc=COL[r] + "55", mec=COL[r], label=f"{r} ({len(c)}): {', '.join(x.title() if len(x) == 2 else x for x in c)}") for r, c in REG.items()]
+    hs = [plt.Line2D([], [], marker="o", ls="", ms=6, mfc=COL[r] + "66", mec=COL[r], label=f"{r} ({len(c)}): {', '.join(x.title() if len(x) == 2 else x for x in c)}") for r, c in REG.items()]
     hs.append(plt.Line2D([], [], marker="o", ls="", ms=6, mfc="white", mec="#111", mew=2, label="Example channels (signal figure)"))
-    bx.legend(handles=hs, loc="lower left", bbox_to_anchor=(0.0, -0.03), fontsize=6.0, frameon=False, handletextpad=0.2, labelspacing=0.3, ncol=2, columnspacing=0.8)
+    bx.legend(handles=hs, loc="upper left", bbox_to_anchor=(0.0, 0.035), fontsize=6.0, frameon=False, handletextpad=0.2, labelspacing=0.3, ncol=2, columnspacing=0.8)
     fig.savefig(out, bbox_inches="tight"); plt.close(fig)
 
 
@@ -108,9 +108,9 @@ def gambar_sinyal(out, info):
     fig, axes = plt.subplots(2, 1, figsize=(7.0, 3.8), sharex=True)
     t = np.arange(2000) / 200.0
     off = 110.0; ylim = (-off * 0.8, off * (len(SHOW) - 1) + off * 0.9)
-    for ax, (row, (w, t0, nwin, med)), col, ttl in [(axes[0], (b, wb), "#5f8f6e", "(a) Non-epilepsy"), (axes[1], (a, wa), "#a58fae", "(b) Epilepsy")]:
+    for ax, (row, (w, t0, nwin, med)), col, ttl in [(axes[0], (b, wb), "#3f6e4f", "(a) Non-epilepsy"), (axes[1], (a, wa), "#7f5f8c", "(b) Epilepsy")]:
         for i, ch in enumerate(SHOW):
-            ax.plot(t, w[i] + (len(SHOW) - 1 - i) * off, color=col, lw=0.7)
+            ax.plot(t, w[i] + (len(SHOW) - 1 - i) * off, color=col, lw=0.85)
         ax.set_yticks([(len(SHOW) - 1 - i) * off for i in range(len(SHOW))]); ax.set_yticklabels(SHOW, fontsize=8)
         ax.set_ylim(*ylim); ax.set_xlim(0, 10)
         ax.set_title(f"{ttl}: age {int(row.age)} years, {'female' if row.sex == 'F' else 'male'}, year {int(row.year)}, device {row.device}; 10 s window at minute {t0 / 60:.1f}", fontsize=8.2, loc="left", fontweight="bold")
