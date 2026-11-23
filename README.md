@@ -25,6 +25,7 @@ curation label (derived from reports, clinical history and medication), not an i
 | `analysis/` | Scripts, analysis plans (`PRAREGISTRASI_*.md`) with their SHA-256 records (`PRAREGISTRASI_hash_*.txt`), and result tables for rounds 28--61 (`hasil*/`); see `analysis/README.md` for the round index and a glossary of the Indonesian-derived file names |
 | `code/` | Pipeline code shared by all rounds (feature extraction, normative adjustment, evaluation kit, models, rounds 3--27) |
 | `tools/` | `verify_sha256.sh`, `rewrite_paths.sh` |
+| `LICENSE` | MIT License for the code (scope and exceptions under Licence below) |
 | `SHA256SUMS.txt` | Checksums of every file in this repository |
 | `requirements.txt` | Frozen Python environment (Python 3.12.3) |
 
@@ -84,7 +85,19 @@ listed in the plans and in the manuscript (Supplement S1).
   their hashes can be checked directly. File and folder names, CSV columns, and the
   decision labels stored in result files were kept as produced; `analysis/README.md` explains them.
 * The Git history of the original working directory is not included; this repository starts from the final state.
-* No licence has been chosen yet; until the authors add one, all rights are reserved.
+
+## Licence
+
+The code, scripts, analysis plans, and aggregate result tables in this repository are released under the MIT License (`LICENSE`).
+The following are not covered by it:
+
+* The text of the manuscript and the Supplementary Material (LaTeX sources and PDFs in `manuscript/`) and the figure images;
+  copyright remains with the authors, and on publication the terms of the journal apply.
+* `manuscript/jbi/elsarticle.cls` and `manuscript/jbi/elsarticle-num.bst`, which are Elsevier's files and remain under their own terms
+  (LaTeX Project Public License, version 1.3 or later).
+* The BENDR convolutional encoder class in `code/embeddings.py`, which reproduces the encoder definition of dn3/EEG-Bench and
+  remains under the terms of its original authors.
+* TUEP and the external EEG sets. The licence grants no rights to these data, which stay under the terms of their providers (see Data).
 
 ## Citation
 
