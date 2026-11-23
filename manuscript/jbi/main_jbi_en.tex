@@ -56,7 +56,7 @@
 \begin{abstract}
 \textbf{Objective:} Regressing covariates such as age or recording era out of tabular clinical features is known to create spurious discrimination. The study extends the finding to repeated electroencephalography (EEG) measurements and control-referenced adjustment and quantifies audit error frequencies.
 \textbf{Methods:} The audit is a feature-shuffle test with and without adjustment on identical partitions, judged by two rules. Shuffling removes the EEG--label link but keeps the label--covariate association, so any gain stems from the adjustment. Simulations with known truth and semi-synthetic data (recorded EEG features, labels from covariates alone) from 200 patients of the Temple University Hospital EEG Epilepsy Corpus (TUEP) and an independent cohort of 299 subjects supplied the measurements. Analyses were exploratory; replication and reference experiments were preplanned.
-\textbf{Results:} At the observed association, adjusting raw, heavy-tailed features created 11.1 to 12.7 percentage points (pp) of area under the receiver operating characteristic curve (AUC) for nonlinear classifiers in both cohorts. Window-level logistic regression gained 6.6 pp in TUEP (2.8 pp with a matched training configuration), whereas patient-level logistic regression after all-patient adjustment gained at most 1.1 pp in either cohort. An adjustment fitted only on training controls, refitted per inner split, leaked into this classifier (+4.3 pp, 95\% confidence interval +3.8 to +4.8), more than a random reference of equal size (+1.7 pp) in this cohort composition. In simulation, this leak persisted with 1,000 controls. Frozen rules raised 0 false alarms in 48 independent leakage-free simulation audits and detected all 48 leaking ones, whereas null semi-synthetic data gave false alarms in up to 14.6\% of 20-replicate draws.
+\textbf{Results:} At the observed association, adjusting raw, heavy-tailed features created 11.1 to 12.7 percentage points (pp) of area under the receiver operating characteristic curve (AUC) for nonlinear classifiers in both cohorts. Window-level logistic regression gained 6.6 pp in TUEP (2.8 pp with a matched training configuration), whereas patient-level logistic regression after all-patient adjustment gained at most 1.1 pp in either cohort. An adjustment fitted only on training controls, refitted per inner split, leaked into this classifier (+4.3 pp, 95\% confidence interval +3.8 to +4.8), more than a random reference of equal size (+1.7 pp) in this cohort composition. The leak persisted in simulation with 1,000 controls. In 20-, 50-, and 100-replicate simulation audits, frozen rules raised 0 false alarms and detected all leaking audits, whereas null semi-synthetic data gave false alarms in up to 14.6\% of 20-replicate draws.
 \textbf{Conclusion:} Whether adjustment created discrimination depended on its fitting population and training configuration, not on the classifier alone. Reporting archive performance with a feature-shuffle test with and without adjustment, a pilot-planned replicate number, and an acquisition-metadata baseline helps distinguish adjustment artifacts from disease information.
 \end{abstract}
 
@@ -78,7 +78,7 @@ The present study audits adjustment-induced discrimination at the patient level 
 \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=2pt]
 \item (i) Leak size and fitting unit. Discrimination added by an all-patient adjustment to recorded EEG features without label information is measured in two cohorts by classifier, fitting level, and transformation. Nonlinear classifiers in both cohorts and window-level logistic regression in TUEP gained discrimination, whereas patient-level logistic regression gained little.
 \item (ii) Reference sample. An adjustment fitted only on training controls, as normative references are, is compared with a random reference of equal size and simulated with up to 1,000 controls. The control reference leaked into a linear patient-level classifier, more than the random reference in this cohort composition, and in simulation the leak persisted with a larger reference.
-\item (iii) Decision rules. False-alarm and detection frequencies of two frozen rules are measured on independent simulation runs and on semi-synthetic null data. Combined, the rules raised zero false alarms in leakage-free simulation audits and detected all leaking ones, whereas null semi-synthetic data exposed pool-dependent false alarms. A rule based on the mean and SD of pilot shuffles sets the number of shuffles when the pilot mean stays well below the margin (Section~\ref{sec:metode_n}).
+\item (iii) Decision rules. False-alarm and detection frequencies of two frozen rules are measured on new simulation runs and on semi-synthetic null data. Combined, the rules raised zero false alarms in leakage-free simulation audits and detected all leaking ones, whereas null semi-synthetic data exposed pool-dependent false alarms. A rule based on the mean and SD of pilot shuffles sets the number of shuffles when the pilot mean stays well below the margin (Section~\ref{sec:metode_n}).
 \end{itemize}
 The remaining sections review related work, describe the audit, report the measurements, and discuss the findings (Sections~\ref{sec:related}--\ref{sec:conclusion}), and \tabref{tab:signifikansi} states the significance.
 
@@ -89,7 +89,7 @@ The remaining sections review related work, describe the audit, report the measu
 \toprule
 Problem or Issue & Covariate adjustment of clinical EEG features can create spurious discrimination, so archive performance figures may reflect the adjustment instead of the disease. \\
 What is Already Known & Regressing confounders out of tabular features can leak the label into nonlinear classifiers, and shuffling features before removal can reveal it. \\
-What this Paper Adds & A patient-level audit showing that adjustment-created discrimination differed by fitting population (controls) and fitting unit (windows), with decision rules whose error frequencies were checked on independent simulation runs and a rule for the number of shuffles. \\
+What this Paper Adds & A patient-level audit showing that adjustment-created discrimination differed by fitting population (controls) and fitting unit (windows), with decision rules whose error frequencies were checked on new simulation runs and a rule for the number of shuffles. \\
 Who would benefit from the new knowledge in this paper & Researchers who build or evaluate clinical EEG and other patient-clustered models, and managers of clinical data archives. \\
 \bottomrule
 \end{tabular}
@@ -112,7 +112,7 @@ Known before & Added by this study & Evidence \\
 \midrule
 Regression adjustment leaks into nonlinear models on tabular data with one row per subject \cite{hamdan2023} & (i) Leak size on recorded EEG features in two cohorts by classifier, fitting level (windows or patients), and transformation & Fig.~\ref{fig:peta}, Fig.~\ref{fig:plasmode} \\
 Normative references are fitted on controls \cite{rutherford2022,kia2022}, and linear models showed no evidence of leakage when removal used all subjects \cite{hamdan2023} & (ii) A control-referenced adjustment leaks into a linear classifier, more than a random reference of equal size in this cohort composition. In simulation, the leak grows with the label--covariate association and shrinks by 2.7 pp from 80 to 1,000 controls & \tabref{tab:kebocoran_badan}, Fig.~\ref{fig:referensi} \\
-Shuffling features reveals the leak, but a decision rule and an error rate were lacking \cite{hamdan2023} & (iii) Two rules with false-alarm and detection frequencies from replicate pools, checked on independent simulation runs, and a replicate-number rule & \tabref{tab:oc} \\
+Shuffling features reveals the leak, but a decision rule and an error rate were lacking \cite{hamdan2023} & (iii) Two rules with false-alarm and detection frequencies from replicate pools, checked on new simulation runs, and a replicate-number rule & \tabref{tab:oc} \\
 \bottomrule
 \end{tabular}
 
@@ -127,7 +127,7 @@ Internal codes appear only in tables, figures, and the Supplementary Material, w
 
 \subsection{Data and ethics}\label{sec:desain}
 
-The study used TUEP v2.0.1 from the Neural Engineering Data Consortium (NEDC) and represented each of its 200 patients (100 with and 100 without epilepsy) by the first session in the corpus (2003--2013, 19 scalp electrodes) \cite{veloso2017,obeid2016}. Patients without epilepsy (``controls'') are clinical controls who also underwent EEG, not healthy volunteers. Labels came from TUEP curation based on the session report, clinical history, medication, and EEG features \cite{veloso2017}. Age, sex (female or male as recorded in the corpus; gender was not available), and recording era (five periods from $\leq$2009 to 2013, Table~\ref{tab:kohort}) served as covariates. An independent Emotiv cohort (consumer-grade resting-state EEG \cite{vanhees2018}) repeated the plasmode with 299 of its 313 subjects, those keeping at least five 10-s windows below label-free amplitude and head-motion thresholds (S2.11, S2.19).
+The study used TUEP v2.0.1 from the Neural Engineering Data Consortium (NEDC) and represented each of its 200 patients (100 with and 100 without epilepsy) by the first session in the corpus (2003--2013, 19 scalp electrodes) \cite{veloso2017,obeid2016}. Patients without epilepsy (``controls'') are clinical controls who also underwent EEG, not healthy volunteers. Labels came from TUEP curation based on the session report, clinical history, medication, and EEG features \cite{veloso2017}. Age, sex (female or male as recorded in the corpus; gender was not available), and recording era (five periods from $\leq$2009 to 2013, Table~\ref{tab:kohort}) served as covariates. An independent Emotiv cohort (consumer-grade resting-state EEG \cite{vanhees2018}) repeated the plasmode with 299 of its 313 subjects, those keeping at least five 10-s windows below label-free amplitude and head-motion thresholds (S2.11).
 
 Collection of the TUH corpus was approved by the Temple University institutional review board \cite{obeid2016}. As a secondary analysis of public, de-identified data, the study was exempt from approval by the authors' institutional ethics committee. The analysis used the released records without patient contact, re-identification, or record linkage (S1.7).
 
@@ -391,7 +391,7 @@ A random reference of equal size controlled for reference size. On the same 100 
 
 The next question was how often the two rules misjudge such leaks (\tabref{tab:oc}).
 
-In the independent audits (\tabref{tab:oc}a), the rules declared leakage in 0 of 48 null audits, and the combined decision detected all 48 leaking audits (Clopper--Pearson intervals and decisions by rule, S2.19). Near-margin cells (means of 1.7--2.4 pp over the new replicates) gave ``uncertain'' in 32 and ``leakage'' in 4 of 40 audits of 20, whereas larger audits declared leakage in 0 of 24 (S2.18). On new runs, the combined decision thus separated null from leaking cells, whereas near-margin cells called for more replicates.
+Per audit size (\tabref{tab:oc}a, with Clopper--Pearson intervals), no rule declared leakage in the null audits of 20, 50, or 100 replicates, and the combined decision detected all leaking audits (decisions by rule, S2.19). Near-margin cells (means of 1.7--2.4 pp over the new replicates) were ``uncertain'' in most audits and reached ``leakage'' in 4 of 40 audits of 20 and in none of 50 or 100 replicates (S2.18). On new runs, the combined decision thus separated null from leaking cells, whereas near-margin cells called for more replicates.
 
 \begin{table}[!htb]
 \caption{Decisions of the audit rules by scenario, audit size $n$, and rule: all leaking simulation audits were detected.}\label{tab:oc}
@@ -402,16 +402,16 @@ In the independent audits (\tabref{tab:oc}a), the rules declared leakage in 0 of
 \toprule
 Scenario & $n$ (audits) & R1 & R2 & Combined \\
 \midrule
-\multicolumn{5}{l}{\textit{(a) Independent audits of new simulation replicates (counts of audits)}} \\
-Null cells (3) & 20 (30) & 29/1/0 & 27/3/0 & 26/4/0 \\
- & 50 (12) & 12/0/0 & 12/0/0 & 12/0/0 \\
- & 100 (6) & 6/0/0 & 6/0/0 & 6/0/0 \\
-Near-margin cells (4) & 20 (40) & 21/19/0 & 5/31/4 & 4/32/4 \\
- & 50 (16) & 11/5/0 & 1/15/0 & 1/15/0 \\
- & 100 (8) & 6/2/0 & 0/8/0 & 0/8/0 \\
-Leaking cells (3) & 20 (30) & 0/10/20 & 0/0/30 & 0/0/30 \\
- & 50 (12) & 0/3/9 & 0/0/12 & 0/0/12 \\
- & 100 (6) & 0/2/4 & 0/0/6 & 0/0/6 \\
+\multicolumn{5}{l}{\textit{(a) Audits of new simulation replicates (counts of audits)}} \\
+Null cells (3) & 20 (30) & 29/1/0 & 27/3/0 & 26/4/0 [0.0, 11.6] \\
+ & 50 (12) & 12/0/0 & 12/0/0 & 12/0/0 [0.0, 26.5] \\
+ & 100 (6) & 6/0/0 & 6/0/0 & 6/0/0 [0.0, 45.9] \\
+Near-margin cells (4) & 20 (40) & 21/19/0 & 5/31/4 & 4/32/4 [2.8, 23.7] \\
+ & 50 (16) & 11/5/0 & 1/15/0 & 1/15/0 [0.0, 20.6] \\
+ & 100 (8) & 6/2/0 & 0/8/0 & 0/8/0 [0.0, 36.9] \\
+Leaking cells (3) & 20 (30) & 0/10/20 & 0/0/30 & 0/0/30 [88.4, 100.0] \\
+ & 50 (12) & 0/3/9 & 0/0/12 & 0/0/12 [73.5, 100.0] \\
+ & 100 (6) & 0/2/4 & 0/0/6 & 0/0/6 [54.1, 100.0] \\
 \midrule
 \multicolumn{5}{l}{\textit{(b) Draws from stored pools (percent of draws, mean over pools [maximum leakage])}} \\
 Plasmode $\gamma=0$, null (18 pools) & 20 & 94.8/5.2/0.0 & 70.3/26.6/3.1 & 68.9/28.0/3.1 [14.6] \\
@@ -429,7 +429,7 @@ V0, strict nesting (100) & 20 & 0.1/50.2/49.8 & 0.0/0.8/99.2 & 0.0/0.5/99.5 \\
 
 \vspace{2pt}
 \begin{minipage}{\textwidth}\footnotesize
-Entries, no evidence/uncertain/leakage. (a) Independent audits of new simulation replicates, non-overlapping within each $n$ and shared across sizes (per cell, S2.18). (b) Bootstrap draws from stored pools of 20--120 replicates (pool-resampling confidence intervals, S2.17). R1, absolute rule; R2, paired rule; combined, leakage if either rule declares it and no evidence only if both do; V0, control-referenced adjustment.
+Entries, no evidence/uncertain/leakage. (a) Audits of new simulation replicates, non-overlapping within each $n$; the sizes share replicates, so counts are not summed across $n$ (per cell, S2.18). Brackets, Clopper--Pearson 95\% CI of the combined leakage percentage. (b) Bootstrap draws from stored pools of 20--120 replicates (S2.17; pool-resampling confidence intervals in \tabref{tab:s2_oc20}). R1, absolute rule; R2, paired rule; combined, leakage if either rule declares it and no evidence only if both do; V0, control-referenced adjustment.
 \end{minipage}
 \end{table}%
 
